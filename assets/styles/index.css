@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #f4f4f4;
+  --main-font-color: #333;
+  --white-color: #fff;
+  --orange-color: #FB9B2A;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("/assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url("/assets/fonts/Montserrat-Bold.ttf");
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+
+  font: 14px/1.5 Montserrat, sans-serif;
+}
+
+header nav {
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 24px;
+  width: 140px;
+  background-image: url("/assets/images/logo.png");
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  padding: 0 30px;
+  height: 52px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: var(--white-color);
+  list-style: none;
+  border-radius: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+header nav button {
+  height: 52px;
+  padding: 0 24px;
+  appearance: none;
+  border: 1px solid var(--orange-color);
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
