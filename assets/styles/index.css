@@ -134,10 +134,9 @@ header nav button {
   width: 246px;
   background-color: var(--orange-color);
   height: 52px;
-  padding: 0 24px;
   /* appearance: none; */
   border: 0;
-  border-radius: 30px;
+  border-radius: 50px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
