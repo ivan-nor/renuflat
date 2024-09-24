@@ -1,36 +1,74 @@
 :root {
   --bg-color: #f4f4f4;
   --main-font-color: #333;
-  --white-color: #fff;
+  --white-color: #fefefe;
   --orange-color: #FB9B2A;
   --gray-color: #9E9E9E;
 }
 
 @font-face {
-  font-family: Montserrat;
-  font-weight: normal;
+  font-family: "Montserrat Regular";
   src: url("/assets/fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
-  font-family: Montserrat;
-  font-weight: 500;
+  font-family: "Montserrat Medium";
   src: url("/assets/fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
-  font-family: Montserrat;
-  font-weight: bold;
+  font-family: "Montserrat Bold";
   src: url("/assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: url("/assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+h1, h1, h3, h4 { margin: 0; }
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.d-grid {
+  display: grid;
 }
 
 body {
   background-color: var(--bg-color);
   margin: 0 auto;
   padding: 0 20px;
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 350px;
 
-  font: 14px/1.5 Montserrat, sans-serif;
+  font: 14px/1.5 "Montserrat Regular", sans-serif;
 }
 
 header {
@@ -101,19 +139,22 @@ header nav button {
 }
 
 .hero-title {
+  margin: 0;
   width: 370px;
 
-  font: 500 80px/100px Montserrat, sans-serif;
+  font: 80px/100px "Montserrat Medium", sans-serif;
 }
 
 .hero-content {
   width: 470px;
   padding-top: 20px;
 
+  flex-basis: 1;
+
   display: flex;
   flex-direction: column;
 
-  font: 16px/20px Montserrat, sans-serif;
+  font: 16px/20px "Montserrat Regular", sans-serif;
 }
 
 .hero-description {
@@ -148,5 +189,152 @@ header nav button {
   width: 200px;
   margin: 0;
   color: var(--gray-color);
-  font:  12px/16px Montserrat, sans-serif;
+  font:  12px/16px "Montserrat Regular", sans-serif;
 }
+
+.services {
+  margin-bottom: 40px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+}
+
+.services h2 {
+  margin: 0;
+  font: 44px/56px "Montserrat Medium";
+}
+
+.card {
+  /* width: 30%; */
+  height: 536px;
+  padding: 16px;
+  gap: 16px;
+  box-sizing: border-box;
+
+  flex: 0 1 30%;
+
+  justify-content: end;
+  align-items: start;
+
+  border-radius: 20px;
+
+  background-color: var(--white-color);
+}
+
+.card-description {
+  font: 16px/20px "Montserrat Regular";
+}
+
+.card-title {
+  font: 24px/30px "Montserrat Medium";
+}
+
+.card:nth-child(1) {
+  background-image: url("/assets/images/card_1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: top;
+  
+}
+
+.card:nth-child(2) {
+  background-image: url("/assets/images/card_2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: top;
+}
+
+.card:nth-child(3) {
+  background-image: url("/assets/images/card_3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: top;
+}
+
+.card-disabled-button {
+  border: 1px solid var(--gray-color);
+  border-radius: 30px;
+  color: var(--gray-color);
+  white-space: nowrap;
+  padding: 8px;
+  font: 12px/16px "Montserrat SemiBold";
+}
+
+.services-button {
+  width: 100%;
+  background-color: var(--orange-color);
+  height: 52px;
+  /* appearance: none; */
+  border: 0;
+  border-radius: 50px;
+  font: 16px/20px "Montserrat Bold";
+  text-align: center;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+
+.price {
+  font: 28px/36px "Montserrat SemiBold", sans-serif;
+}
+
+.period {
+  font: 24px/30px "Montserrat Medium", sans-serif;
+}
+
+.guarantee {
+  height: 566px;
+  padding-bottom: 34px;
+  background-image: url("/assets/images/guarantee.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: center;
+
+  position: relative;
+
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки одинаковой ширины */
+  grid-template-rows: repeat(2, 1fr); /* 2 строки одинаковой высоты */
+  /* width: 100%; */
+  grid-gap: 40px;
+  /* height: 100vh; */
+}
+
+.guarantee-title {
+  position: absolute;
+  font: 44px/56px "Montserrat Medium";
+}
+
+.guarantee-item {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 20px; */
+  
+}
+
+.guarantee-item h4 {
+  margin: 0;
+  font: 24px/30px "Montserrat Medium";
+}
+
+.guarantee-item p {
+  font: 16px/20px "Montserrat Regular";
+}
+
+.item-1 {
+  /* padding-bottom: 20px; */
+  grid-area: 1 / 1 / 2 / 2;
+  justify-content: flex-end;
+}
+
+.item-2 {
+  /* padding-bottom: 20px; */
+  grid-area: 1 / 2 / 2 / 3;
+  justify-content: flex-end;
+}
+
+.item-7 { grid-area: 2 / 3 / 3 / 4; }
+.item-8 { grid-area: 2 / 4 / 3 / 5; }
