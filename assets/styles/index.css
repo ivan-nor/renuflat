@@ -4,6 +4,7 @@
 @import url('globals.css');
 @import url('/assets/styles/blocks/button.css');
 @import url('/assets/styles/blocks/header.css');
+@import url('/assets/styles/blocks/dropdown.css');
 @import url('media.css');
 
 
@@ -80,7 +81,7 @@
 }
 
 .services-button {
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--orange-color);
   height: 52px;
   /* appearance: none; */

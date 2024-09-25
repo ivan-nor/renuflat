@@ -1,9 +1,17 @@
 .header {
+  position: fixed;
+  width: 100%;
+  padding-inline: var(--container-padding-x);
+  top: 0;
+  left: 0;
+  right: 0;
+
+  min-height: var(--header-height);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: var(--header-height);
-  background-color: var(--color-dark-alternate);
+  background-color: var(--bg-color) ;
 }
 
 .header-logo {
@@ -13,11 +21,15 @@
 .header-menu-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 32px;
-  padding-inline: 24px;
+  /* column-gap: 32px; */
+  
 
   background-color: var(--white-color);
   border-radius: var(--border-radius);
+}
+
+.header-menu-item {
+  padding-inline: 16px;
 }
 
 .header-menu-link {

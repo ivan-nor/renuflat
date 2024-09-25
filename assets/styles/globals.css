@@ -1,17 +1,16 @@
 body {
   background-color: var(--bg-color);
-  margin: 0 auto;
-  padding: 0 20px;
   max-width: 1200px;
   min-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-padding-x);
 
   font: var(--font-regular) "Montserrat Regular";
 }
 
-.container {
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  margin-inline: auto;
-  padding-inline: var(--container-padding-x);
+.position-relative {
+  position: relative;
 }
 
 /* .desktop-hidden {
@@ -69,6 +68,10 @@ p {
   margin: 0;
 }
 
-.d-grid {
+/* .d-grid {
   display: grid;
+} */
+
+main {
+  padding-top: var(--header-height);
 }
