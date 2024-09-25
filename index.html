@@ -9,35 +9,45 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo"></div>
-      <ul>
-        <li>
-          <a href="#">о нас</a>
+  <header class="header container">
+    <a class="header-logo" href="/">
+      <img class="header-logo-image" src="/assets/images/logo.png" alt="Renuflat logo" width="140" height="24"
+        loading="lazy" />
+    </a>
+    <nav class="header-menu mobile-hidden">
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="/">о нас</a>
         </li>
-        <li>
-          <a href="#">услуги</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="/">услуги</a>
         </li>
-        <li>
-          <a href="#">проекты</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="/">проекты</a>
         </li>
-        <li>
-          <a href="#">контакты</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="/">контакты</a>
         </li>
       </ul>
-      <button>У вас есть вопрос?</button>
     </nav>
+    <button class="header-button button transparent mobile-hidden" type="button">У вас есть вопрос?</button>
+    <button class="header-burger-button button desktop-hidden" type="button">
+      <span class="visually-hidden">Open menu</span>
+      <span class="header-burger-button-line"></span>
+      <span class="header-burger-button-line"></span>
+    </button>
   </header>
 
-  <main>
-    <section class="hero">
+  <main class="content">
+    <section class="hero container">
       <h1 class="hero-title">ДЕЛАЕМ РЕМОНТ</h1>
       <div class="hero-content">
-        <p class="hero-description">качественно, быстро и надежно <br> от простой отделки помещений <br> до масштабных индивидуальных проектов</p>
+        <p class="hero-description">качественно, быстро и надежно <br> от простой отделки помещений <br> до масштабных
+          индивидуальных проектов</p>
         <div class="hero-footer">
-          <button>Бесплатная консультация</button>
-          <p class="hero-footer-description">Отправьте заявку сейчас, <br> и наш специалист свяжется <br> с вами в течении 1 часа</p>
+          <button class="button">Бесплатная консультация</button>
+          <p class="hero-footer-description">Отправьте заявку сейчас, <br> и наш специалист свяжется <br> с вами в
+            течении 1 часа</p>
         </div>
       </div>
     </section>
@@ -52,7 +62,7 @@
       <div class="d-flex justify-space f-wrap f-row">
         <div class="card d-flex f-column">
           <div class="card-title">Косметический ремонт</div>
-          <p  class="card-description">Рекомендуем для:</p>
+          <p class="card-description">Рекомендуем для:</p>
           <div class="d-flex f-wrap gap-12">
             <button class="card-disabled-button" disabled>Обновления ремонта</button>
             <button class="card-disabled-button" disabled>Сдачи в аренду</button>
@@ -62,7 +72,7 @@
           <p class="period">14 дней</p>
           <button class="services-button">Оставить заявку</button>
         </div>
-  
+
         <div class="card d-flex f-column">
           <div class="card-title">Капитальный ремонт</div>
           <p class="card-description">Рекомендуем для:</p>
@@ -75,7 +85,7 @@
           <p class="period">28 дней</p>
           <button class="services-button">Оставить заявку</button>
         </div>
-  
+
         <div class="card d-flex f-column">
           <div class="card-title">Эксклюзивный ремонт</div>
           <p class="card-description">Рекомендуем для:</p>
@@ -113,10 +123,10 @@
 
       </div>
     </section>
-    
+
     <section class="projects">
       <div class="project">
-        <div class="swapper">PROJECT  1</div>
+        <div class="swapper">PROJECT 1</div>
       </div>
       <div class="project">
         <div class="swapper">PROJECT 2</div>

@@ -1,10 +1,17 @@
 :root {
   --bg-color: #f4f4f4;
-  --main-font-color: #333;
+  --black-color: #333;
   --white-color: #fefefe;
   --orange-color: #FB9B2A;
   --gray-color: #9E9E9E;
 
   --container-width: 1200px;
   --container-padding-x: 20px;
+
+  --border: 1px solid var(--orange-color);
+  --border-radius: 100px;
+
+  --font-regular: 14px/1.43;
+
+  --header-height: 100px;
 }

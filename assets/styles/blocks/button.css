@@ -1,0 +1,45 @@
+.button {
+  height: 52px;
+  padding-inline: 24px;
+
+  display: inline-flex;
+  align-items: center;
+
+  font-family: "Montserrat Bold";
+  font-size: var(--font-regular);
+  letter-spacing: -0.5%;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: var(--orange-color);
+  
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.button:hover {
+  background-color: var(--gray-color);
+}
+
+.button.transparent {
+  position: relative;
+  color: var(--black-color);
+  background-color: transparent;
+  border: var(--border);
+
+}
+
+/* .button.transparent::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url('./icons/arrow-top-right.svg') center/70% no-repeat;
+  border: var(--border);
+  border-radius: 50%;
+} */
+
+.button.transparent:hover {
+  color: var(--black-color);
+  background-color: var(--orange-color);
+}

@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: var(--header-height);
+  background-color: var(--color-dark-alternate);
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  padding-inline: 24px;
+
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+}
+
+.header-menu-link {
+  height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  column-gap: 7px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font: var(--font-regular) "Montserrat Regular";
+  color: var(--black-color);
+}
+
+/* .header-menu-link.is-current::after {
+  content: "";
+  width: 20px;
+  aspect-ratio: 1;
+  background-color: currentColor;
+  border-radius: 50%;
+} */
+
+
+
+.header-burger-button {
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  width: 40px;
+  aspect-ratio: 1;
+  /* padding-left: 8px; */
+  color: var(--color-light);
+  background-color: transparent;
+  border: none;
+}
+
+.header-burger-button:hover {
+  color: var(--black-color);
+  /* border-color: currentColor; */
+}
+
+.header-burger-button-line {
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  /* box-shadow: 16px 0 0 currentColor; */
+}
