@@ -1,0 +1,10 @@
+:root {
+  --bg-color: #f4f4f4;
+  --main-font-color: #333;
+  --white-color: #fefefe;
+  --orange-color: #FB9B2A;
+  --gray-color: #9E9E9E;
+
+  --container-width: 1200px;
+  --container-padding-x: 20px;
+}
