@@ -1,37 +1,37 @@
-
-.hero {
+.banner {
   height: 854px;
-  padding-bottom: 64px;
+  /* padding-bottom: 64px; */
   box-sizing: border-box;
 
   display: flex;
   gap: 32px;
   /* для media-запроса изменить flex-wrap! */
 
-  background-image: url("/assets/images/interior-design-zoom-calls-with-plants\ 1.png");
+  background-image: url("/assets/images/banner.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-origin: content-box;
   background-position: bottom;
 }
 
-.hero-title {
+.banner-title {
   margin: 0;
   /* width: 370px; */
-
-  font: 80px/100px "Montserrat Medium", sans-serif;
+  /* flex: 1 1 auto; */
+  flex-basis: 1;
+  font: 80px/100px "Montserrat Medium";
 }
 
-.hero-content {
+.banner-content {
   /* width: 470px; */
   padding-top: 20px;
 
-  flex-basis: 1;
+  flex-basis: 2;
 
   display: flex;
   flex-direction: column;
 
-  font: 16px/20px "Montserrat Regular", sans-serif;
+  font: 16px/20px "Montserrat Regular";
 }
 
 .hero-description {
@@ -65,6 +65,6 @@
 .hero-footer-description {
   /* width: 200px; */
   margin: 0;
+  font:  12px/16px "Montserrat Regular";
   color: var(--gray-color);
-  font:  12px/16px "Montserrat Regular", sans-serif;
 }

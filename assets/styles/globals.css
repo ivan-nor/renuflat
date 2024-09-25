@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
   padding: 0 var(--container-padding-x);
 
-  font: var(--font-regular) "Montserrat Regular";
+  font: var(--font-regular-size)/var(--font-regular-line-height) "Montserrat Regular";
 }
 
 .position-relative {
