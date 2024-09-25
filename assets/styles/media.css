@@ -18,14 +18,6 @@
   .mobile-hidden {
     display: inline-block !important;
   }
-
-  /* .container {
-    width: 768px;
-  } */
-
-  .header-menu-list {
-    /* column-gap: 20px; */
-  }
 }
 
 /* mobile */
@@ -37,9 +29,4 @@
   .mobile-hidden {
     display: none !important;
   }
-
-  /* .container {
-    width: 360px;
-  } */
-
 }

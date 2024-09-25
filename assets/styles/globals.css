@@ -13,14 +13,6 @@ body {
   position: relative;
 }
 
-/* .desktop-hidden {
-  display: none !important;
-}
-
-.mobile-hidden {
-  display: none !important;
-} */
-
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -55,10 +47,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-.gap-12 {
-  gap: 12px;
-}
-
 .justify-space {
   justify-content: space-between;
 }
@@ -67,10 +55,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
-/* .d-grid {
-  display: grid;
-} */
 
 main {
   padding-top: var(--header-height);

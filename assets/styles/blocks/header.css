@@ -31,10 +31,6 @@
   border-radius: var(--border-radius);
 }
 
-.header-menu-item {
-  /* padding-inline: 16px; */
-}
-
 .header-menu-link {
   height: 52px;
 
@@ -50,15 +46,14 @@
   color: var(--black-color);
 }
 
+/* стрелка внутри кнопки */
 /* .header-menu-link.is-current::after {
-  content: "";
+content: "";
   width: 20px;
   aspect-ratio: 1;
   background-color: currentColor;
   border-radius: 50%;
 } */
-
-
 
 .header-burger-button {
   flex-direction: column;
