@@ -1,0 +1,110 @@
+.services {
+  /* display: flex; */
+}
+
+.services-title {
+  text-align: center;
+
+  font-family: "Montserrat Medium";
+  font-size: 44px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.services-button-group {
+  text-align: center;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  /* justify-content: space-between; */
+}
+
+.services-card {
+  padding: 16px;
+  height: 536px;
+  width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 16px;
+  
+  box-sizing: border-box;
+
+  flex: 0 1 30%;
+
+  justify-content: end;
+  align-items: start;
+
+  border-radius: 20px;
+
+  background-color: var(--white-color);
+}
+
+.services-card-description {
+  font: 16px/20px "Montserrat Regular";
+  letter-spacing: -0.5%;
+}
+
+.services-card-title {
+  font: 24px/30px "Montserrat Medium";
+  letter-spacing: -0.5%;
+}
+
+.services-card:nth-child(1) {
+  background-image: url("/assets/images/card_1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: top;
+  
+}
+
+.services-card:nth-child(2) {
+  background-image: url("/assets/images/card_2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: top;
+}
+
+.services-card:nth-child(3) {
+  background-image: url("/assets/images/card_3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-position: top;
+}
+
+.services-card-disabled-button {
+  border: 1px solid var(--gray-color);
+  border-radius: 30px;
+  color: var(--gray-color);
+  white-space: nowrap;
+  padding: 8px;
+  font: 12px/16px "Montserrat SemiBold";
+}
+
+.services-card-button {
+  width: 328px;
+  background-color: var(--orange-color);
+  height: 52px;
+  /* appearance: none; */
+  border: 0;
+  border-radius: 50px;
+  font: 16px/20px "Montserrat Bold";
+  text-align: center;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+
+.services-card-price {
+  font: 28px/36px "Montserrat SemiBold", sans-serif;
+}
+
+.services-card-period {
+  font: 24px/30px "Montserrat Medium", sans-serif;
+}
