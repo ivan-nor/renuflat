@@ -69,6 +69,7 @@ content: "";
 
 .header-burger-button:hover {
   color: var(--black-color);
+  background-color: var(--bg-color);
   /* border-color: currentColor; */
 }
 

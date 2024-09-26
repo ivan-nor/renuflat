@@ -60,6 +60,9 @@
   height: 50px;
 }
 
+.cross-button:hover {
+  background-color: var(--bg-color);
+}
 .cross-button::before,
 .cross-button::after {
   content: '';

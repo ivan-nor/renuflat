@@ -1,5 +1,6 @@
 .button {
   height: 52px;
+  width: max-content;
   padding-inline: 24px;
 
   display: inline-flex;
