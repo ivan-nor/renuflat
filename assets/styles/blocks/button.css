@@ -14,6 +14,7 @@
   white-space: nowrap;
   background-color: var(--orange-color);
   box-sizing: border-box;
+  color: var(--white-color);
   
   border: var(--border);
   border-radius: var(--border-radius);
