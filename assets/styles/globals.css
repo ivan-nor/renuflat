@@ -4,7 +4,6 @@ body {
   min-width: 360px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 var(--container-padding-x);
 
   font: var(--font-regular-size)/var(--font-regular-line-height) "Montserrat Regular";
 }
@@ -58,4 +57,10 @@ p {
 
 main {
   padding-top: var(--header-height);
+}
+
+.container {
+  padding-inline: 20px;
+  margin: 0 auto;
+  padding-inline: var(--container-padding-x);
 }
