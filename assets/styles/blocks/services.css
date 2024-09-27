@@ -1,24 +1,44 @@
 .services {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .services-title {
   margin-top: 6rem;
 
-  text-align: center;
   font-family: "Montserrat Medium";
   font-size: 44px;
   line-height: 56px;
   text-transform: uppercase;
 }
 
-.services-button-group {
-  margin-bottom: 64px;
-  text-align: center;
+.services-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+
+  background-color: var(--white-color);
 }
 
-.services-button {
-  
+.services-tab {
+  box-sizing: border-box;
+  border: 0;
+}
+
+.services-tab[tabindex="0"]  {
+  box-sizing: border-box;
+
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+
+.services-tab[tabindex="-1"]  {
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .services-cards {

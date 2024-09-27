@@ -60,34 +60,51 @@
   </header>
 
   <main class="content container">
-    <!-- <section class="banner">
-      
+    <section class="banner">
       <h1 class="banner-title">ДЕЛАЕМ<br>РЕМОНТ</h1>
-      
-      <p class="banner-description">качественно, быстро и надежно <br> от простой отделки помещений <br> до масштабных
-        индивидуальных проектов</p>
-        
-        <div class="banner-footer">
-          
-          <button class="banner-button button">Бесплатная консультация</button>
-          
-          <p class="banner-footer-description">
-            Отправьте заявку сейчас, <br class="mobile-hidden">
-            и наш специалист свяжется <br class="mobile-hidden">
-            с вами в течении 1 часа
-          </p>
-        </div>
-        <img src="/assets/images/banner.png" alt="banner" class="banner-image"  width="1160" height="550">
-    </section> -->
-
-    <!-- <section class="services">
-      <h2 class="services-title">наши услуги</h2>
-      <div class="services-button-group">
-        <button class="service-button button">Для жилых помещений</button>
-        <button class="service-button button">Для коммерческих объектов</button>
+      <p class="banner-description">
+        качественно, быстро и надежно <br>
+        от простой отделки помещений <br>
+        до масштабных индивидуальных проектов
+      </p>
+      <div class="banner-footer">
+        <button class="banner-button button">Бесплатная консультация</button>
+        <p class="banner-footer-description">
+          Отправьте заявку сейчас, <br class="mobile-hidden">
+          и наш специалист свяжется <br class="mobile-hidden">
+          с вами в течении 1 часа
+        </p>
       </div>
+      <img src="/assets/images/banner.png" alt="banner" class="banner-image" width="1160" height="550">
+    </section>
 
-      <div class="services-cards">
+    <section class="services">
+      <h2 id="tabs-label" class="services-title">наши услуги</h2>
+      <div id="tabs" class="services-tabs" role="tablist" aria-labelledby="tabs-label">
+        <button
+          tabindex="0"
+          class="services-tab button"
+          role="tab"
+          type="button"
+          id="tab-1"
+          aria-selected="true"
+          aria-controls="tabpanel-1"
+        >
+          Для жилых помещений
+        </button>
+        <button
+          tabindex="-1"
+          class="services-tab button"
+          role="tab"
+          type="button"
+          id="tab-2"
+          aria-selected="true"
+          aria-controls="tabpanel-2"
+        >
+          Для коммерческих объектов
+        </button>
+      </div>
+      <div role="tabpanel" class="services-cards">
         <div class="services-card">
           <div class="services-card-title">Косметический ремонт</div>
           <p class="services-card-description">Рекомендуем для:</p>
@@ -100,7 +117,6 @@
           <p class="services-card-period">14 дней</p>
           <button class="services-card-button">Оставить заявку</button>
         </div>
-
         <div class="services-card">
           <div class="services-card-title">Капитальный ремонт</div>
           <p class="services-card-description">Рекомендуем для:</p>
@@ -113,40 +129,40 @@
           <p class="services-card-period">28 дней</p>
           <button class="services-card-button">Оставить заявку</button>
         </div>
-
         <div class="services-card">
           <div class="services-card-title">Эксклюзивный ремонт</div>
           <p class="services-card-description">Рекомендуем для:</p>
           <div class="services-card-chips">
             <button class="services-card-chips-disabled-button" disabled>Авторского дизайн-проекта</button>
             <button class="services-card-chips-disabled-button" disabled>LOREM IPSUM</button>
-            <button class="services-card-chips-disabled-button" disabled>Несиандартных решений</button>
+            <button class="services-card-chips-disabled-button" disabled>Нестандартных решений</button>
           </div>
           <p class="services-card-price">от 5 500 ₽/м2</p>
           <p class="services-card-period">54 дня</p>
           <button class="services-card-button">Оставить заявку</button>
         </div>
       </div>
-    </section> -->
+      <div role="tabpanel"></div> 
+    </section>
 
     <section class="guarantee">
       <h2 class="guarantee-title">МЫ ГАРАНТИРУЕМ</h2>
-        <div class="guarantee-item guarantee-item-5">
-          <h3>качество</h3>
-          <p>Наша команда это мастера высокой квалификации, прорабы и руководители проектов</p>
-        </div>
-        <div class="guarantee-item guarantee-item-6">
-          <h3>скорость</h3>
-          <p>Мы имеем достаточный ресурс производственных сил, для выполнения наших работ точно в срок</p>
-        </div>
-        <div class="guarantee-item guarantee-item-15">
-          <h3>надежность</h3>
-          <p>Предоставляем гарантию на все виды работ, используем проверенные и надежные материалы</p>
-        </div>
-        <div class="guarantee-item guarantee-item-16">
-          <h3>комфорт</h3>
-          <p>Составляем график работ, делаем сметный расчет по проекту и даём постоянную обратную связь</p>
-        </div>
+      <div class="guarantee-item guarantee-item-5">
+        <h3>качество</h3>
+        <p>Наша команда это мастера высокой квалификации, прорабы и руководители проектов</p>
+      </div>
+      <div class="guarantee-item guarantee-item-6">
+        <h3>скорость</h3>
+        <p>Мы имеем достаточный ресурс производственных сил, для выполнения наших работ точно в срок</p>
+      </div>
+      <div class="guarantee-item guarantee-item-15">
+        <h3>надежность</h3>
+        <p>Предоставляем гарантию на все виды работ, используем проверенные и надежные материалы</p>
+      </div>
+      <div class="guarantee-item guarantee-item-16">
+        <h3>комфорт</h3>
+        <p>Составляем график работ, делаем сметный расчет по проекту и даём постоянную обратную связь</p>
+      </div>
       </div>
     </section>
 
@@ -162,12 +178,12 @@
       </div>
     </section> -->
 
-    <!-- <div class="swapper">swapper</div> -->
+    <section class="reviews"></section>
+
+    <section class="contact-us"></section>
   </main>
 
-  <!-- <footer>
-    FOOTER
-  </footer> -->
+  <footer class="footer"></footer>
 
   <script src="index.js"></script>
 </body>
