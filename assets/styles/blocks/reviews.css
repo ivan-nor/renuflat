@@ -1,0 +1,38 @@
+.reviews {
+  padding-bottom: 200px;
+}
+
+.reviews-title {
+  font: 44px/56px "Montserrat Medium";
+  text-transform: uppercase;
+  text-align: center;
+  margin: 64px auto;
+}
+
+.reviews-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+
+  overflow: hidden;
+}
+
+.reviews-card {
+  flex: 0 1 30%;
+}
+
+.reviews-card-image {
+  border-radius: 50%;
+}
+
+.reviews-card-title {
+
+}
+
+.reviews-card-description {
+
+}
+
+.reviews-card-text {
+
+}
