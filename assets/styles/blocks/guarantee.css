@@ -13,6 +13,7 @@
   background-origin: border-box;
   background-position: center;
 
+  counter-reset: items 0;
 }
 
 .guarantee-title {
@@ -23,17 +24,36 @@
 }
 
 .guarantee-item {
+  position: relative;
   padding: 0 20px;
+
+  counter-increment: items 1;
 }
 
-.guarantee-item h3 {
-  margin: 0;
-  text-align: center;
+.guarantee-item .guarantee-item-title {
+  /* margin: 0; */
+  /* text-align: center; */
+  position: relative;
+  display: list-item;
+  margin-left: 16px;
+  padding-left: 16px;
   font: 24px/30px "Montserrat Medium";
 }
 
 .guarantee-item p {
   font: 16px/20px "Montserrat Regular";
+}
+
+/* #TODO стилизовать цифру перед заголовком  */
+.guarantee-item-title::marker {
+  content: counter(items);
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  /* display: inline; */
+  padding: 1rem;
+  color: var(--orange-color);
+  font: 24px/30px  "Montserrat SemiBold";
 }
 
 .guarantee-item-5 { grid-area: 2 / 1 / 3 / 2; }
