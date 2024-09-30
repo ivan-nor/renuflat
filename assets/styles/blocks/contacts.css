@@ -1,0 +1,123 @@
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-container {
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  flex: 2 1 66%;
+
+  border-radius: 12px;
+  background-image: url('/assets/images/contacts-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts-form {
+  max-width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  
+}
+
+.contacts-form-title {
+  max-width: 66%;
+  font: 44px/56px "Montserrat Medium";
+}
+
+.contacts-form-input {
+  width: 100%;
+  display: inline-block;
+
+  color: var(--black-color);
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.contacts-form-description {
+  max-width: 50%;
+  font: 16px/20px "Montserrat Regular";
+}
+
+.contacts-form-footer {
+  display: flex;
+  gap: 12px;
+}
+
+.contacts-form-footer-description {
+  font: 12px/16px "Montserrat Regular";
+  text-decoration: underline;
+}
+
+.contacts-form-footer-description strong {
+  font: 12px/16px "Montserrat Bold";
+}
+
+.contacts-card {
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  flex: 1 1 33%;
+  align-self: flex-start;
+
+  background-color: var(--white-color);
+  border-radius: 12px;
+}
+
+.contacts-card-title {
+  font: 28px/36px "Montserrat SemiBold";
+  text-transform: none;
+}
+
+.contacts-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts-card-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-card-link {
+  padding-left: 8px;
+
+  font: 16px/20px "Montserrat Regular";
+  list-style: none;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.contacts-card-item:nth-child(1)::before {
+  content: url('/assets/images/call.png');
+  width: 24px;
+  height: auto;
+}
+
+.contacts-card-item:nth-child(2)::before {
+  content: url('/assets/images/mail.png');
+  width: 24px;
+  height: auto;
+}
+
+.contacts-card-item:nth-child(3)::before {
+  content: url('/assets/images/distance.png');
+  width: 24px;
+  height: auto;
+}
+
+.contacts-socials-list {
+  display: flex;
+  gap: 32px;
+}
