@@ -19,6 +19,9 @@
 .guarantee-title {
   position: absolute;
   top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
 
   font: 44px/56px "Montserrat Medium";
 }
@@ -29,6 +32,10 @@
 
   counter-increment: items 1;
 }
+
+/* .guarantee-item:first-child {
+  padding-left: 0 ;
+} */
 
 .guarantee-item .guarantee-item-title {
   /* margin: 0; */

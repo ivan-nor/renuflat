@@ -1,4 +1,5 @@
 .banner {
+  padding-top: 0;
   display: grid;
 
   grid-template-columns: 1fr 2fr;

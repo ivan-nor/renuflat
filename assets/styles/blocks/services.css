@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: flex-start;
   gap: 30px;
 }
 
 .services-title {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 
   font-family: "Montserrat Medium";
   font-size: 44px;

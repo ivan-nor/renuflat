@@ -36,7 +36,6 @@ main {
 }
 
 .container {
-  padding-inline: 20px;
-  margin: 0 auto;
-  padding-inline: var(--container-padding-x);
+  /* margin: 0 auto; */
+  padding: var(--container-padding-y) var(--container-padding-x);
 }
