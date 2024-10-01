@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/index.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>Renuflat</title>
 </head>
 
@@ -166,17 +171,29 @@
       </div>
     </section>
 
-    <!-- <section class="projects container">
-      <div class="project">
-        <div class="swapper">PROJECT 1</div>
+    <section class="projects container">
+      <h2 class="projects-title">реализованные проекты</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
-      <div class="project">
-        <div class="swapper">PROJECT 2</div>
-      </div>
-      <div class="project">
-        <div class="swapper">PROJECT 3</div>
-      </div>
-    </section> -->
+    </section>
 
     <section class="reviews container">
       <h2 class="reviews-title">что говорят о нас <br> наши клиенты</h2>
@@ -261,6 +278,7 @@
   </footer>
 
   <script src="index.js"></script>
+  <script src="swiper.js"></script>
 </body>
 
 </html>
