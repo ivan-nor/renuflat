@@ -1,6 +1,8 @@
 .guarantee {
   position: relative;
   height: 566px;
+  padding: 0;
+  margin: 64px 0;
   width: auto;
   
   display: grid;
