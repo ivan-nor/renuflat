@@ -122,6 +122,7 @@
   padding: 8px;
   font: 12px/16px "Montserrat SemiBold";
   background-color: transparent;
+  cursor: default;
 }
 
 .services-card-button {
