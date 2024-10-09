@@ -1,5 +1,5 @@
 // выпадающее меню хедера
-const dropdownOpenButton = document.querySelector('.header-burger-button')
+const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
 const dropdownElement = document.querySelector('.dropdown')
 

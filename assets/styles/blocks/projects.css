@@ -110,4 +110,18 @@
   margin-right: auto;
 }
 
+.swiper-pagination-bullet {
+  margin-inline: 8px !important;
+  width: 32px !important;
+  height: 4px !important;
+  background: var(--white-color) !important;
+  opacity: 1 !important;
+  border-radius: 100px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--orange-color) !important;
+  opacity: 1 !important;
+}
+
 
