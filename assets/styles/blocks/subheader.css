@@ -45,13 +45,4 @@
   /* box-sizing: content-box; */
 }
 
-.sub-header-dropdown {
-  background-image: url(/assets/images/dropdown-triangle.png);
-  background-repeat: no-repeat;
-  
-  width: 8px;
-  height: 4px;
-
-  padding-inline: 10px;
-}
 
