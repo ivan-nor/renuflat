@@ -1,4 +1,5 @@
 .contacts {
+  /* width: 100%; */
   display: flex;
   gap: 40px;
 }
@@ -19,7 +20,7 @@
 }
 
 .contacts-form {
-  max-width: 50%;
+  max-width: 56%;
 
   display: flex;
   flex-direction: column;
@@ -27,12 +28,13 @@
 }
 
 .contacts-form-title {
-  max-width: 66%;
+  max-width: 60%;
   font: 44px/56px "Montserrat Medium";
 }
 
 .contacts-form-input {
-  width: 100%;
+  height: 52px;
+  width: 80%;
   display: inline-block;
 
   color: var(--black-color);
@@ -41,8 +43,14 @@
   border-bottom: 1px solid var(--black-color);
 }
 
+.contacts-form-input::placeholder {
+  font: 16px/20px "Montserrat Regular";
+  color: var(--black-color);
+  vertical-align: center;
+}
+
 .contacts-form-description {
-  max-width: 50%;
+  max-width: 80%;
   font: 16px/20px "Montserrat Regular";
 }
 
@@ -61,6 +69,7 @@
 }
 
 .contacts-card {
+  max-width: 360px;
   padding: 16px;
 
   display: flex;
@@ -86,12 +95,15 @@
 }
 
 .contacts-card-item {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .contacts-card-link {
-  padding-left: 8px;
+  /* padding-left: 8px; */
+  display: flex;
+  gap: 8px;
+  align-items: center;
 
   font: 16px/20px "Montserrat Regular";
   list-style: none;
@@ -99,7 +111,7 @@
   color: var(--black-color);
 }
 
-.contacts-card-item:nth-child(1)::before {
+/* .contacts-card-item:nth-child(1)::before {
   content: url('/assets/images/call.png');
   width: 24px;
   height: auto;
@@ -115,7 +127,7 @@
   content: url('/assets/images/distance.png');
   width: 24px;
   height: auto;
-}
+} */
 
 .contacts-socials-list {
   display: flex;

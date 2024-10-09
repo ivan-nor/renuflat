@@ -25,6 +25,7 @@
   background-color: var(--gray-color);
   border: none;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .button.transparent {
