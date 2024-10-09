@@ -1,5 +1,4 @@
 .contacts {
-  /* width: 100%; */
   display: flex;
   gap: 40px;
 }
@@ -94,13 +93,7 @@
   gap: 24px;
 }
 
-.contacts-card-item {
-  /* display: flex;
-  align-items: center; */
-}
-
 .contacts-card-link {
-  /* padding-left: 8px; */
   display: flex;
   gap: 8px;
   align-items: center;
@@ -110,24 +103,6 @@
   text-decoration: none;
   color: var(--black-color);
 }
-
-/* .contacts-card-item:nth-child(1)::before {
-  content: url('/assets/images/call.png');
-  width: 24px;
-  height: auto;
-}
-
-.contacts-card-item:nth-child(2)::before {
-  content: url('/assets/images/mail.png');
-  width: 24px;
-  height: auto;
-}
-
-.contacts-card-item:nth-child(3)::before {
-  content: url('/assets/images/distance.png');
-  width: 24px;
-  height: auto;
-} */
 
 .contacts-socials-list {
   display: flex;
