@@ -144,13 +144,13 @@
 
     <section class="services container">
       <h2 id="tabs-label" class="services-title">наши услуги</h2>
-      <div id="tabs" class="services-tabs" role="tablist" aria-labelledby="tabs-label">
+      <div id="services-tabs" class="tabs" role="tablist" aria-labelledby="tabs-label">
         <button
           tabindex="0"
-          class="services-tab button"
+          class="tab-button button"
           role="tab"
           type="button"
-          id="tab-1"
+          id="services-tab-1"
           aria-selected="true"
           aria-controls="tabpanel-1"
         >
@@ -158,10 +158,10 @@
         </button>
         <button
           tabindex="-1"
-          class="services-tab button"
+          class="tab-button button"
           role="tab"
           type="button"
-          id="tab-2"
+          id="services-tab-2"
           aria-selected="true"
           aria-controls="tabpanel-2"
         >
@@ -442,6 +442,123 @@
             <a href="#"><img src="/assets/images/whatsapp.png" alt="telegram link" width="44" height="44"></a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="renovations container">
+      <h2 class="renovations-title">виды ремонта</h2>
+      <div id="renovations-tabs" class="tabs" role="tablist" aria-labelledby="renovations-tabs-label">
+        <button
+          tabindex="0"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-1"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-1"
+        >
+          Отделка балконов
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-2"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-2"
+        >
+          Остекление балконов
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-3"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-3"
+        >
+          Ремонт квартир
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-4"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-4"
+        >
+          Отделочные работы
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-5"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-5"
+        >
+          Ремонт коммерческих помещений
+        </button>
+      </div>
+      <div role="tabpanel" class="renovations-card">
+        <div class="renovations-body">
+          <h3 class="renovations-body-title">Отделка балконов</h3>
+          <p class="renovations-body-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <ul class="renovations-list">
+            <li class="renovations-item">
+              <h4 class="renovations-item-title">Внешняя отделка</h4>
+              <div class="renovations-item-price">от 1 500 ₽/м2</div>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </li>
+            <li class="renovations-item">
+              <div class="renovations-item-divider"></div>
+            </li>
+            <li class="renovations-item">
+              <h4 class="renovations-item-title">Вагонкой</h4>
+              <div class="renovations-item-price">от 1 500 ₽/м2</div>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+            <li class="renovations-item">
+              <div class="renovations-item-divider"></div>
+            </li>
+            <li class="renovations-item">
+              <h4 class="renovations-item-title">Пластиком</h4>
+              <div class="renovations-item-price">от 1 500 ₽/м2</div>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+            <li class="renovations-item">
+              <div class="renovations-item-divider"></div>
+            </li>
+            <div class="renovations-item renovations-footer">
+              <p class="renovations-footer-description">Посмотреть еще</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_2197_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16" height="16">
+                <rect x="4.80029" y="19.1997" width="14.4" height="14.4" transform="rotate(-90 4.80029 19.1997)" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_2197_735)">
+                <path d="M11.9996 13.9717L16.7234 9.24774C16.8006 9.17054 16.8955 9.13214 17.0081 9.13254C17.1206 9.13294 17.2163 9.17174 17.2951 9.24894C17.3738 9.32254 17.4131 9.41689 17.4131 9.53199C17.4131 9.64709 17.3738 9.74404 17.2951 9.82284L12.6085 14.5028C12.5213 14.5899 12.425 14.653 12.3196 14.692C12.2142 14.731 12.1075 14.7505 11.9996 14.7505C11.8917 14.7505 11.7851 14.731 11.6797 14.692C11.5743 14.653 11.4755 14.5899 11.3832 14.5028L6.70075 9.81279C6.62205 9.73919 6.5833 9.64629 6.5845 9.53409C6.5856 9.42189 6.6255 9.32644 6.7042 9.24774C6.783 9.17054 6.8783 9.13159 6.9901 9.13089C7.1018 9.13009 7.19705 9.16904 7.27585 9.24774L11.9996 13.9717Z" fill="#7F7F7F"/>
+                </g>
+              </svg>
+            </div>
+          </ul>
+          <div class="renovations-body-button button">Узнать подробнее</div>
+        </div>
+        <img class="renovations-image" src="/assets/images/renovations-image-1.png" alt="renovation of balcony"/>
       </div>
     </section>
   </main>

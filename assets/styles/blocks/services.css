@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.services-tabs {
+.tabs {
   margin-bottom: 64px;
 
   display: inline-flex;
@@ -30,19 +30,19 @@
   background-color: var(--white-color);
 }
 
-.services-tab {
+.tab-button {
   /* box-sizing: border-box; */
   border: 0;
 }
 
-.services-tab[tabindex="0"]  {
+.tab-button[tabindex="0"] {
   box-sizing: border-box;
 
   background-color: var(--orange-color);
   color: var(--white-color);
 }
 
-.services-tab[tabindex="-1"]  {
+.tab-button[tabindex="-1"]  {
   background-color: var(--white-color);
   color: var(--black-color);
 }

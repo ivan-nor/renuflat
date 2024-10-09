@@ -20,13 +20,29 @@ dropdownCloseButton.addEventListener('click', (e) => {
 })
 
 // переключение вкладок 
-const tabElements = document.querySelectorAll('#tabs button')
-console.log(tabElements)
-for (const tab of tabElements) {
+const servicesTabElements = document.querySelectorAll('#services-tabs button')
+const renovationsTabElements = document.querySelectorAll('#renovations-tabs button')
+
+// console.log(tabElements)
+
+for (const tab of renovationsTabElements) {
   console.log(tab)
 
   tab.addEventListener('click', (e) => {
-    const activeTabElement = document.querySelector('button[tabindex="0"]')
+    const activeTabElement = document.querySelector('#renovations-tabs button[tabindex="0"]')
+    const activeTabId = activeTabElement.id
+    console.log('click', e.target.id, activeTabId)
+    if (e.target.id !== activeTabElement)  {
+      activeTabElement.setAttribute('tabindex', '-1')
+      e.target.setAttribute('tabindex', '0')
+    }
+  })
+}
+for (const tab of servicesTabElements) {
+  console.log(tab)
+
+  tab.addEventListener('click', (e) => {
+    const activeTabElement = document.querySelector('#services-tabs button[tabindex="0"]')
     const activeTabId = activeTabElement.id
     console.log('click', e.target.id, activeTabId)
     if (e.target.id !== activeTabElement)  {

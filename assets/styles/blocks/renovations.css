@@ -1,0 +1,101 @@
+.renovations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.renovations-title {
+  font: 44px/56px "Montserrat Medium";
+  text-transform: uppercase;
+}
+
+.renovations-tabs {
+  margin-bottom: 48px;
+}
+
+.renovations-card {
+  display: flex;
+  gap: 32px;
+}
+
+.renovations-image {
+  height: 100%;
+  /* width: auto; */
+  flex: 1 1 auto;
+}
+
+.renovations-body-title {
+  text-transform: none;
+  font-family: "Montserrat Semibold";
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: -0.5%;
+}
+
+.renovations-body {
+  flex: 1 1 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.renovations-body-description {
+  font-size: 16px;
+  line-height: auto;
+  font-family: "Montserrat Regular";
+}
+
+.renovations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.renovations-item {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.renovations-item-title {
+  width: 50%;
+
+  text-transform: none;
+  font-family: "Montserrat SemiBold";
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.renovations-item-price {
+  font-family: "Montserrat SemiBold";
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--orange-color);
+}
+
+.renovations-item-divider {
+  width: 100%;
+  height: 1px;
+  /* box-sizing: content-box; */
+  border: 0.5px solid var(--light-grey-color);
+}
+
+.renovations-footer {
+  justify-content: start;
+  gap: 8px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+  color: #7F7F7F;
+}
+
+.renovations-body-button {
+  width: 100%;
+}
+
+
+
