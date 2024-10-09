@@ -31,7 +31,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 
   color: var(--black-color);
   text-decoration: none;
