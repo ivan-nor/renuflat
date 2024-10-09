@@ -23,6 +23,7 @@
 
 .button:hover {
   background-color: var(--gray-color);
+  border: none;
   cursor: pointer;
 }
 
