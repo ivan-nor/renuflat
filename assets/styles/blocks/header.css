@@ -16,8 +16,8 @@
 
 
 .header-dropdown {
-  width: 8px;
-  height: 4px;
+  width: 24px;
+  height: 24px;
 
   align-self: center;
 
@@ -68,20 +68,19 @@
   height: 52px;
 
   display: inline-flex;
-  /* align-items: center; */
-  column-gap: 7px;
+  align-items: center;˝
 
   text-decoration: none;
   font-family: "Montserrat Regular";
-  font-size: var(--font-regular-size);
-  line-height: var(--font-regular-line-height);
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.5%;
   color: var(--black-color);
 }
 
 .main-header-menu-link p {
   margin: 0;
-  vertical-align: center;
+  /* vertical-align: center; */
 }
 
 .main-header-burger-button {
