@@ -14,17 +14,31 @@
   flex-direction: column;
 }
 
+
+.header-dropdown {
+  width: 8px;
+  height: 4px;
+
+  align-self: center;
+
+  background-image: url(/assets/images/dropdown-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .main-header {
   max-width: 1200px;
   width: 100%;
+  /* min-height: var(--header-height); */
   margin: auto;
-  padding: 0 20px;  
-
-  min-height: var(--header-height);
+  padding: 20px;  
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+
   background-color: var(--bg-color) ;
 }
 
@@ -54,7 +68,7 @@
   height: 52px;
 
   display: inline-flex;
-  align-items: center;
+  /* align-items: center; */
   column-gap: 7px;
 
   text-decoration: none;
@@ -65,14 +79,10 @@
   color: var(--black-color);
 }
 
-/* стрелка внутри кнопки */
-/* .header-menu-link.is-current::after {
-content: "";
-  width: 20px;
-  aspect-ratio: 1;
-  background-color: currentColor;
-  border-radius: 50%;
-} */
+.main-header-menu-link p {
+  margin: 0;
+  vertical-align: center;
+}
 
 .main-header-burger-button {
   flex-direction: column;
