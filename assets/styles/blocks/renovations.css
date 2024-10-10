@@ -56,8 +56,11 @@
 .renovations-item {
   display: flex;
   gap: 48px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+
+  text-decoration: none;
+  color: inherit;
 }
 
 .renovations-item-title {
@@ -84,14 +87,17 @@
 }
 
 .renovations-footer {
-  justify-content: start;
+  justify-content: flex-start;
   gap: 8px;
+  /* width: max-content; */
 
   font-size: 16px;
   line-height: 20px;
   font-family: "Montserrat Regular";
   color: #7F7F7F;
 }
+
+
 
 .renovations-body-button {
   width: 100%;
