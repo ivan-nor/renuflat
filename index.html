@@ -20,14 +20,14 @@
           <li class="sub-header-item ">
             <a href="#" class="sub-header-link">
               <span>Ремонт квартир</span>
-              <span class="sub-header-dropdown"></span>
+              <span class="header-dropdown"></span>
             </a>
           </li>
           <li class="sub-header-item"><span class="sub-header-divider"></span></li>
           <li class="sub-header-item">
             <a href="#" class="sub-header-link">
               <span>Ремонт офисов</span>
-              <span class="sub-header-dropdown"></span>
+              <span class="header-dropdown"></span>
             </a>
           </li>
           <li class="sub-header-item"><span class="sub-header-divider"></span></li>
@@ -48,7 +48,6 @@
       <a class="main-header-logo" href="/">
         <!-- <img class="main-header-logo-image" src="/assets/images/logo.png" alt="Renuflat logo" width="140" height="24"
         loading="lazy" /> -->
-        <div>
           <svg class="main-header-logo-image-svg" width="140" height="24" viewBox="0 0 140 24" xmlns="http://www.w3.org/2000/svg" fill="#fb9b2a">
             <path d="M36.42 6.4607C36.42 7.0516 36.42 7.50075 36.42 7.9499C36.4216 11.9269 36.4248 15.9055 36.4264 19.8825C36.4264 20.1469 36.4376 20.4145 36.4089 20.6773C36.3579 21.1344 36.0203 21.4689 35.5934 21.5215C35.2367 21.5661 34.805 21.3064 34.6697 20.9051C34.5868 20.6614 34.5629 20.3858 34.5629 20.1246C34.555 15.8546 34.5534 11.5861 34.5629 7.31599C34.5629 7.0309 34.598 6.7251 34.7031 6.46389C34.891 5.99085 35.2621 5.88892 36.1397 6.0243C35.6141 5.19131 34.9834 4.62908 34.0039 4.56855C33.6869 4.54944 33.3668 4.54785 33.0483 4.54785C28.3497 4.54467 23.6512 4.54307 18.9543 4.53988C18.6899 4.53988 18.4191 4.55422 18.1611 4.50962C17.696 4.42999 17.3313 3.97129 17.36 3.55559C17.3886 3.12237 17.7773 2.76719 18.2774 2.7433C18.6756 2.72419 19.0737 2.73056 19.4719 2.73056C24.1163 2.72897 28.7623 2.76082 33.4066 2.70985C35.2207 2.68915 36.5522 3.39791 37.605 4.82817C40.577 8.86412 43.5745 12.8794 46.5641 16.9026C46.7345 17.1335 46.9193 17.3533 47.2203 17.7324C47.241 17.296 47.2649 17.0268 47.2649 16.7576C47.2665 12.5672 47.2649 8.37834 47.2665 4.1879C47.2665 3.97606 47.2521 3.76105 47.2776 3.5524C47.3429 3.01725 47.6678 2.72578 48.1664 2.73056C48.6935 2.73534 48.9914 3.0061 49.0535 3.54762C49.071 3.7053 49.0631 3.86617 49.0631 4.02385C49.0631 8.79722 49.0599 13.5706 49.0631 18.344C49.0631 18.8473 49.0997 19.3506 49.1108 19.8539C49.1156 20.0928 49.1188 20.3317 49.0933 20.569C49.0487 20.9927 48.8608 21.3478 48.4403 21.4864C48.0023 21.6313 47.6551 21.4052 47.3987 21.0803C46.889 20.4352 46.4048 19.7711 45.9142 19.1117C42.8467 14.9833 39.7791 10.8534 36.7099 6.7251C36.6653 6.66616 36.6016 6.62157 36.428 6.45752L36.42 6.4607Z" />
             <path d="M70.1441 9.36264C70.1441 11.086 70.1569 12.8077 70.1409 14.531C70.1107 17.8709 67.7296 20.655 64.4661 21.3733C60.4206 22.2637 56.0119 19.0973 55.9992 14.5708C55.9896 11.0191 55.9928 7.4673 55.9992 3.91713C55.9992 3.05388 56.2843 2.71781 56.9309 2.7417C57.4247 2.76082 57.7209 3.02521 57.7719 3.51259C57.791 3.69575 57.7751 3.88369 57.7751 4.06844C57.7783 7.40837 57.7783 10.7467 57.7878 14.0866C57.7926 15.8147 58.3485 17.3246 59.7023 18.4523C61.338 19.8141 63.1887 20.0785 65.1303 19.2375C67.0702 18.3965 68.2185 16.8851 68.2615 14.746C68.33 11.3281 68.2854 7.90849 68.2886 4.48892C68.2886 4.22453 68.2775 3.95854 68.2982 3.69415C68.3444 3.07299 68.6868 2.73215 69.2347 2.73693C69.8081 2.74171 70.1171 3.06184 70.1202 3.71804C70.1298 5.59904 70.1234 7.48164 70.1234 9.36264C70.1298 9.36264 70.1378 9.36264 70.1441 9.36264Z" />
@@ -65,18 +64,29 @@
             <path d="M100.293 21.5199C99.3374 21.5199 98.3818 21.5215 97.4277 21.5183C97.243 21.5183 97.0502 21.523 96.8751 21.4769C96.4466 21.3654 96.1456 20.9385 96.1742 20.5308C96.2045 20.1119 96.4673 19.8348 96.9388 19.7535C97.1729 19.7137 97.4134 19.6882 97.6507 19.6882C99.562 19.6819 101.472 19.6834 103.383 19.6834C103.488 19.6834 103.596 19.6819 103.7 19.701C104.186 19.7902 104.56 20.1836 104.566 20.6025C104.574 21.0532 104.168 21.4753 103.636 21.5119C103.16 21.5453 102.682 21.5278 102.204 21.5294C101.567 21.531 100.93 21.5294 100.293 21.5294V21.5199Z" />
             <path d="M114.788 16.6159C113.807 16.6159 112.828 16.6302 111.846 16.6095C111.264 16.5968 111.033 16.3913 110.943 15.9135C110.859 15.4564 111.034 15.1362 111.48 14.9945C111.678 14.9308 111.894 14.8989 112.103 14.8989C113.931 14.8926 115.76 14.8894 117.588 14.9021C118.209 14.9069 118.471 15.0885 118.58 15.501C118.746 16.1317 118.415 16.5936 117.728 16.6095C116.749 16.6334 115.768 16.6159 114.787 16.6159H114.788Z" />
           </svg>
-        </div>
       </a>
       <nav class="main-header-menu mobile-hidden">
         <ul class="main-header-menu-list">
           <li class="main-header-menu-item">
-            <a class="main-header-menu-link" href="/">о нас</a>
+            <a class="main-header-menu-link" href="/">
+              <p>о нас</p>
+              <span class="header-dropdown"></span>
+            </a>
           </li>
           <li class="main-header-menu-item">
-            <a class="main-header-menu-link" href="/">услуги</a>
+            <a class="main-header-menu-link" href="/">акции</a>
           </li>
           <li class="main-header-menu-item">
-            <a class="main-header-menu-link" href="/">проекты</a>
+            <a class="main-header-menu-link" href="/">блог</a>
+          </li>
+          <li class="main-header-menu-item">
+            <a class="main-header-menu-link" href="/">оплата</a>
+          </li>
+          <li class="main-header-menu-item">
+            <a class="main-header-menu-link" href="/">калькулятор</a>
+          </li>
+          <li class="main-header-menu-item">
+            <a class="main-header-menu-link" href="/">портфолио</a>
           </li>
           <li class="main-header-menu-item">
             <a class="main-header-menu-link" href="/">контакты</a>
@@ -134,13 +144,13 @@
 
     <section class="services container">
       <h2 id="tabs-label" class="services-title">наши услуги</h2>
-      <div id="tabs" class="services-tabs" role="tablist" aria-labelledby="tabs-label">
+      <div id="services-tabs" class="tabs" role="tablist" aria-labelledby="tabs-label">
         <button
           tabindex="0"
-          class="services-tab button"
+          class="tab-button button"
           role="tab"
           type="button"
-          id="tab-1"
+          id="services-tab-1"
           aria-selected="true"
           aria-controls="tabpanel-1"
         >
@@ -148,10 +158,10 @@
         </button>
         <button
           tabindex="-1"
-          class="services-tab button"
+          class="tab-button button"
           role="tab"
           type="button"
-          id="tab-2"
+          id="services-tab-2"
           aria-selected="true"
           aria-controls="tabpanel-2"
         >
@@ -160,40 +170,55 @@
       </div>
       <div role="tabpanel" class="services-cards">
         <div class="services-card">
-          <div class="services-card-title">Косметический ремонт</div>
-          <p class="services-card-description">Рекомендуем для:</p>
-          <div class="services-card-chips">
-            <button class="services-card-chips-disabled-button" disabled>Обновления ремонта</button>
-            <button class="services-card-chips-disabled-button" disabled>Сдачи в аренду</button>
-            <button class="services-card-chips-disabled-button" disabled>Предпродажной подготовки</button>
+          <img src="/assets/images/card_1.png" alt="Фото косметического ремонта" class="services-card-image" />
+          <h3 class="services-card-title">Косметический ремонт</h3>
+          <div class="services-card-body">
+            <p class="services-card-description">Рекомендуем для:</p>
+            <div class="services-card-chips">
+              <button class="services-card-chips-disabled-button" disabled>Обновления ремонта</button>
+              <button class="services-card-chips-disabled-button" disabled>Сдачи в аренду</button>
+              <button class="services-card-chips-disabled-button" disabled>Предпродажной подготовки</button>
+            </div>
+            <div class="services-card-body-content">
+              <p class="services-card-price">от 1 500 ₽/м2</p>
+              <p class="services-card-period">14 дней</p>
+            </div>
+            <button class="services-card-button button">Заказать ремонт</button>
           </div>
-          <p class="services-card-price">от 1 500 ₽/м2</p>
-          <p class="services-card-period">14 дней</p>
-          <button class="services-card-button">Оставить заявку</button>
         </div>
         <div class="services-card">
-          <div class="services-card-title">Капитальный ремонт</div>
-          <p class="services-card-description">Рекомендуем для:</p>
-          <div class="services-card-chips">
-            <button class="services-card-chips-disabled-button" disabled>Ремонта коттеджа</button>
-            <button class="services-card-chips-disabled-button" disabled>Обновления квартиры</button>
-            <button class="services-card-chips-disabled-button" disabled>Ремонта новой квартиры</button>
+          <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
+          <h3 class="services-card-title">Капитальный ремонт</h3>
+          <div class="services-card-body">
+            <p class="services-card-description">Рекомендуем для:</p>
+            <div class="services-card-chips">
+              <button class="services-card-chips-disabled-button" disabled>Ремонта коттеджа</button>
+              <button class="services-card-chips-disabled-button" disabled>Обновления квартиры</button>
+              <button class="services-card-chips-disabled-button" disabled>Ремонта новой квартиры</button>
+            </div>
+            <div class="services-card-body-content">
+              <p class="services-card-price">от 3 500 ₽/м2</p>
+              <p class="services-card-period">28 дней</p>
+            </div>
+            <button class="services-card-button button">Заказать ремонт</button>
           </div>
-          <p class="services-card-price">от 3 500 ₽/м2</p>
-          <p class="services-card-period">28 дней</p>
-          <button class="services-card-button">Оставить заявку</button>
         </div>
         <div class="services-card">
-          <div class="services-card-title">Эксклюзивный ремонт</div>
-          <p class="services-card-description">Рекомендуем для:</p>
-          <div class="services-card-chips">
-            <button class="services-card-chips-disabled-button" disabled>Авторского дизайн-проекта</button>
-            <button class="services-card-chips-disabled-button" disabled>LOREM IPSUM</button>
-            <button class="services-card-chips-disabled-button" disabled>Нестандартных решений</button>
+          <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
+          <h3 class="services-card-title">Эксклюзивный ремонт</h3>
+          <div class="services-card-body">
+            <p class="services-card-description">Рекомендуем для:</p>
+            <div class="services-card-chips">
+              <button class="services-card-chips-disabled-button" disabled>Авторского дизайн-проекта</button>
+              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
+              <button class="services-card-chips-disabled-button" disabled>Нестандартных решений</button>
+            </div>
+            <div class="services-card-body-content">
+              <p class="services-card-price">от 5 500 ₽/м2</p>
+              <p class="services-card-period">54 дня</p>
+            </div>
+            <button class="services-card-button button">Заказать ремонт</button>
           </div>
-          <p class="services-card-price">от 5 500 ₽/м2</p>
-          <p class="services-card-period">54 дня</p>
-          <button class="services-card-button">Оставить заявку</button>
         </div>
       </div>
       <!-- <div role="tabpanel"></div>  -->
@@ -202,19 +227,39 @@
     <section class="guarantee container">
       <h2 class="guarantee-title">МЫ ГАРАНТИРУЕМ</h2>
       <div class="guarantee-item guarantee-item-5">
-        <h3 class="guarantee-item-title">качество</h3>
+        <div class="guarantee-item-title">
+          <svg width="7" height="17" viewBox="0 0 7 17" fill="#FB9B2A" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.744 17V1.4L5.112 2.816H0.192V0.199999H6.864V17H3.744Z" />
+          </svg>
+          <h3 class="guarantee-item-title">качество</h3>
+        </div>
         <p>Наша команда это мастера высокой квалификации, прорабы и руководители проектов</p>
       </div>
       <div class="guarantee-item guarantee-item-6">
-        <h3 class="guarantee-item-title">скорость</h3>
+        <div class="guarantee-item-title">
+          <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.84 18V15.912L7.512 9.576C8.072 9.048 8.488 8.584 8.76 8.184C9.032 7.784 9.208 7.416 9.288 7.08C9.384 6.728 9.432 6.4 9.432 6.096C9.432 5.328 9.168 4.736 8.64 4.32C8.112 3.888 7.336 3.672 6.312 3.672C5.496 3.672 4.752 3.816 4.08 4.104C3.424 4.392 2.856 4.832 2.376 5.424L0.192 3.744C0.848 2.864 1.728 2.184 2.832 1.704C3.952 1.208 5.2 0.959999 6.576 0.959999C7.792 0.959999 8.848 1.16 9.744 1.56C10.656 1.944 11.352 2.496 11.832 3.216C12.328 3.936 12.576 4.792 12.576 5.784C12.576 6.328 12.504 6.872 12.36 7.416C12.216 7.944 11.944 8.504 11.544 9.096C11.144 9.688 10.56 10.352 9.792 11.088L4.056 16.536L3.408 15.36H13.224V18H0.84Z" fill="#FB9B2A"/>
+          </svg>
+          <h3>скорость</h3>
+        </div>
         <p>Мы имеем достаточный ресурс производственных сил, для выполнения наших работ точно в срок</p>
       </div>
       <div class="guarantee-item guarantee-item-15">
-        <h3 class="guarantee-item-title">надежность</h3>
+        <div class="guarantee-item-title">
+          <svg width="13" height="18" viewBox="0 0 13 18" fill="#FB9B2A" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.336 17.24C5.152 17.24 3.992 17.072 2.856 16.736C1.736 16.384 0.792 15.904 0.024 15.296L1.368 12.872C1.976 13.368 2.712 13.768 3.576 14.072C4.44 14.376 5.344 14.528 6.288 14.528C7.408 14.528 8.28 14.304 8.904 13.856C9.528 13.392 9.84 12.768 9.84 11.984C9.84 11.216 9.552 10.608 8.976 10.16C8.4 9.712 7.472 9.488 6.192 9.488H4.656V7.352L9.456 1.64L9.864 2.816H0.84V0.199999H12.288V2.288L7.488 8L5.856 7.04H6.792C8.856 7.04 10.4 7.504 11.424 8.432C12.464 9.344 12.984 10.52 12.984 11.96C12.984 12.904 12.744 13.776 12.264 14.576C11.784 15.376 11.048 16.024 10.056 16.52C9.08 17 7.84 17.24 6.336 17.24Z" fill="#FB9B2A"/>
+          </svg>
+          <h3>надежность</h3>
+        </div>
         <p>Предоставляем гарантию на все виды работ, используем проверенные и надежные материалы</p>
       </div>
       <div class="guarantee-item guarantee-item-16">
-        <h3 class="guarantee-item-title">комфорт</h3>
+        <div class="guarantee-item-title">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="#FB9B2A" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.816 13.184V11.024L9.096 0.199999H12.432L4.272 11.024L2.712 10.544H16.032V13.184H0.816ZM10.032 17V13.184L10.128 10.544V7.16H13.056V17H10.032Z" />
+          </svg>
+          <h3>комфорт</h3>
+        </div>
         <p>Составляем график работ, делаем сметный расчет по проекту и даём постоянную обратную связь</p>
       </div>
       </div>
@@ -335,8 +380,8 @@
     <section class="contacts container">
       <div class="contacts-container">
         <h2 class="contacts-form-title">обсудим ваш проект?</h2>
-        <p class="contacts-form-description">Заполните форму, и наш специалист свяжется с вами в течении 1 часа</p>
         <form class="contacts-form">
+          <p class="contacts-form-description">Заполните форму, и наш специалист свяжется с вами в течении 1 часа</p>
           <input class="contacts-form-input" type="text" placeholder="Как вас зовут?" />
           <input class="contacts-form-input" type="text" placeholder="Ваш номер телефона" />
           <div class="contacts-form-footer">
@@ -350,13 +395,43 @@
         <h2 class="contacts-card-title">Связаться с нами</h2>
         <ul class="contacts-card-list">
           <li  class="contacts-card-item">
-            <a class="contacts-card-link" href="tel:+79999999999">+7 999 999 99 99</a>
+            <a class="contacts-card-link" href="tel:+79999999999">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_2066_885" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_2066_885)">
+                <path d="M19.4402 20.5C17.5557 20.5 15.6625 20.0618 13.7605 19.1855C11.8587 18.3092 10.1113 17.073 8.51825 15.477C6.92542 13.8808 5.69083 12.1333 4.8145 10.2345C3.93817 8.33583 3.5 6.44425 3.5 4.55975C3.5 4.25692 3.6 4.00458 3.8 3.80275C4 3.60092 4.25 3.5 4.55 3.5H7.8115C8.064 3.5 8.28675 3.58242 8.47975 3.74725C8.67275 3.91192 8.7955 4.11542 8.848 4.35775L9.42125 7.3C9.46092 7.573 9.45258 7.80758 9.39625 8.00375C9.33975 8.19992 9.23842 8.36467 9.09225 8.498L6.78275 10.7462C7.15442 11.4269 7.57908 12.0708 8.05675 12.678C8.53425 13.285 9.05125 13.8648 9.60775 14.4173C10.1564 14.9661 10.7397 15.4757 11.3577 15.9462C11.9757 16.4167 12.6431 16.8546 13.3598 17.2598L15.6038 14.9963C15.7603 14.8334 15.9498 14.7193 16.1723 14.6538C16.3946 14.5884 16.6257 14.5724 16.8655 14.6058L19.6423 15.1713C19.8948 15.2379 20.1008 15.3667 20.2605 15.5577C20.4202 15.7487 20.5 15.9654 20.5 16.2078V19.45C20.5 19.75 20.3991 20 20.1973 20.2C19.9954 20.4 19.7431 20.5 19.4402 20.5ZM6.073 9.327L7.85775 7.61925C7.88975 7.59358 7.91058 7.55833 7.92025 7.5135C7.92992 7.46867 7.92833 7.427 7.9155 7.3885L7.48075 5.15375C7.46792 5.10258 7.4455 5.06417 7.4135 5.0385C7.3815 5.01283 7.33983 5 7.2885 5H5.15C5.1115 5 5.07942 5.01283 5.05375 5.0385C5.02825 5.06417 5.0155 5.09625 5.0155 5.13475C5.06667 5.81808 5.1785 6.51225 5.351 7.21725C5.52333 7.92242 5.764 8.62567 6.073 9.327ZM14.773 17.9693C15.4358 18.2783 16.1272 18.5145 16.847 18.678C17.567 18.8413 18.2397 18.9384 18.8652 18.9693C18.9037 18.9693 18.9358 18.9564 18.9615 18.9307C18.9872 18.9051 19 18.873 19 18.8345V16.7308C19 16.6794 18.9872 16.6377 18.9615 16.6058C18.9358 16.5738 18.8974 16.5513 18.8462 16.5385L16.7462 16.1115C16.7077 16.0987 16.6741 16.0971 16.6453 16.1067C16.6164 16.1164 16.5859 16.1372 16.5538 16.1692L14.773 17.9693Z" fill="#FB9B2A"/>
+                </g>
+              </svg>
+              <span>+7 999 999 99 99</span>
+            </a>
           </li>
           <li class="contacts-card-item">
-            <a class="contacts-card-link" href="mailto:example@email.com">example@email.com</a>
+            <a class="contacts-card-link" href="mailto:example@email.com">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_2066_890" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_2066_890)">
+                <path d="M4.30775 19.5C3.80258 19.5 3.375 19.325 3.025 18.975C2.675 18.625 2.5 18.1974 2.5 17.6923V6.30775C2.5 5.80258 2.675 5.375 3.025 5.025C3.375 4.675 3.80258 4.5 4.30775 4.5H19.6923C20.1974 4.5 20.625 4.675 20.975 5.025C21.325 5.375 21.5 5.80258 21.5 6.30775V17.6923C21.5 18.1974 21.325 18.625 20.975 18.975C20.625 19.325 20.1974 19.5 19.6923 19.5H4.30775ZM20 7.44225L12.4865 12.252C12.4097 12.2955 12.3302 12.3298 12.248 12.3548C12.166 12.3798 12.0833 12.3923 12 12.3923C11.9167 12.3923 11.834 12.3798 11.752 12.3548C11.6698 12.3298 11.5903 12.2955 11.5135 12.252L4 7.44225V17.6923C4 17.7821 4.02883 17.8558 4.0865 17.9135C4.14417 17.9712 4.21792 18 4.30775 18H19.6923C19.7821 18 19.8558 17.9712 19.9135 17.9135C19.9712 17.8558 20 17.7821 20 17.6923V7.44225ZM12 11L19.8463 6H4.15375L12 11ZM4 7.673V6.52975V6.5595V6.52775V7.673Z" fill="#FB9B2A"/>
+                </g>
+              </svg>
+              <span>example@email.com</span>
+            </a>
           </li>
           <li class="contacts-card-item">
-            <a class="contacts-card-link" href="#">Москва</a>
+            <a class="contacts-card-link" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_2066_895" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_2066_895)">
+                <path d="M12 21.5C10.3103 21.5 8.92958 21.2577 7.85775 20.773C6.78592 20.2885 6.25 19.6623 6.25 18.8943C6.25 18.5904 6.35292 18.3052 6.55875 18.0385C6.76442 17.7718 7.057 17.5314 7.4365 17.3173C7.61217 17.2019 7.80383 17.1625 8.0115 17.199C8.21917 17.2355 8.38075 17.3416 8.49625 17.5173C8.61158 17.6929 8.64683 17.883 8.602 18.0875C8.55717 18.292 8.44692 18.4519 8.27125 18.5673C8.16225 18.6058 8.05808 18.6538 7.95875 18.7115C7.85925 18.7692 7.79992 18.8268 7.78075 18.8845C7.94608 19.1833 8.43808 19.4439 9.25675 19.6663C10.0752 19.8888 10.9897 20 12 20C13.0103 20 13.9247 19.8888 14.7432 19.6663C15.5619 19.4439 16.0539 19.1833 16.2193 18.8845C16.2001 18.8268 16.1408 18.7692 16.0413 18.7115C15.9419 18.6538 15.8378 18.6058 15.7288 18.5673C15.5531 18.4519 15.4428 18.292 15.398 18.0875C15.3532 17.883 15.3884 17.6929 15.5038 17.5173C15.6193 17.3416 15.7808 17.2355 15.9885 17.199C16.1962 17.1625 16.3878 17.2019 16.5635 17.3173C16.943 17.5314 17.2356 17.7718 17.4413 18.0385C17.6471 18.3052 17.75 18.5904 17.75 18.8943C17.75 19.6623 17.2141 20.2885 16.1423 20.773C15.0704 21.2577 13.6897 21.5 12 21.5ZM12.025 16.625C13.6813 15.3698 14.9246 14.1266 15.7548 12.8953C16.5849 11.6638 17 10.441 17 9.227C17 7.50133 16.4599 6.19875 15.3798 5.31925C14.2996 4.43975 13.173 4 12 4C10.8333 4 9.70833 4.43975 8.625 5.31925C7.54167 6.19875 7 7.50133 7 9.227C7 10.3628 7.40992 11.5398 8.22975 12.7578C9.04958 13.9758 10.3147 15.2648 12.025 16.625ZM12 18.0635C11.8192 18.0635 11.6384 18.0317 11.4577 17.9682C11.2769 17.9047 11.1096 17.8127 10.9558 17.6923C9.12375 16.2154 7.7565 14.7744 6.854 13.3693C5.95133 11.9641 5.5 10.5833 5.5 9.227C5.5 8.11417 5.6965 7.13917 6.0895 6.302C6.4825 5.46483 6.98983 4.76383 7.6115 4.199C8.23333 3.63433 8.9305 3.21 9.703 2.926C10.4753 2.642 11.241 2.5 12 2.5C12.759 2.5 13.5247 2.642 14.297 2.926C15.0695 3.21 15.7667 3.63433 16.3885 4.199C17.0102 4.76383 17.5175 5.46483 17.9105 6.302C18.3035 7.13917 18.5 8.11417 18.5 9.227C18.5 10.5833 18.0487 11.9641 17.146 13.3693C16.2435 14.7744 14.8763 16.2154 13.0443 17.6923C12.8904 17.8127 12.7231 17.9047 12.5423 17.9682C12.3616 18.0317 12.1808 18.0635 12 18.0635ZM12 10.8943C12.4987 10.8943 12.9246 10.7193 13.2777 10.3693C13.6311 10.0193 13.8077 9.59167 13.8077 9.0865C13.8077 8.58783 13.6311 8.16192 13.2777 7.80875C12.9246 7.45542 12.4987 7.27875 12 7.27875C11.5077 7.27875 11.0833 7.45542 10.727 7.80875C10.3705 8.16192 10.1923 8.58783 10.1923 9.0865C10.1923 9.59167 10.3705 10.0193 10.727 10.3693C11.0833 10.7193 11.5077 10.8943 12 10.8943Z" fill="#FB9B2A"/>
+                </g>
+              </svg>
+              <span>г. Москва, ул. Майская д1</span>
+              </a>
           </li>
         </ul>
         <ul class="contacts-socials-list">
@@ -369,6 +444,147 @@
         </ul>
       </div>
     </section>
+
+    <section class="renovations container">
+      <h2 class="renovations-title">виды ремонта</h2>
+      <div id="renovations-tabs" class="tabs" role="tablist" aria-labelledby="renovations-tabs-label">
+        <button
+          tabindex="0"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-1"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-1"
+        >
+          Отделка балконов
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-2"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-2"
+        >
+          Остекление балконов
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-3"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-3"
+        >
+          Ремонт квартир
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-4"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-4"
+        >
+          Отделочные работы
+        </button>
+        <button
+          tabindex="-1"
+          class="tab-button button"
+          role="tab"
+          type="button"
+          id="renovations-tab-5"
+          aria-selected="true"
+          aria-controls="renovations-tabpanel-5"
+        >
+          Ремонт коммерческих помещений
+        </button>
+      </div>
+      <div role="tabpanel" class="renovations-card">
+        <div class="renovations-body">
+          <h3 class="renovations-body-title">Отделка балконов</h3>
+          <p class="renovations-body-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <ul class="renovations-list">
+            <li >
+              <a href="#" class="renovations-item">
+                <h4 class="renovations-item-title">Внешняя отделка</h4>
+                <div class="renovations-item-price">от 1 500 ₽/м2</div>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="renovations-item">
+              <div class="renovations-item-divider"></div>
+            </li>
+            <li >
+              <a href="#" class="renovations-item">
+                <h4 class="renovations-item-title">Вагонкой</h4>
+                <div class="renovations-item-price">от 1 500 ₽/м2</div>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="renovations-item">
+              <div class="renovations-item-divider"></div>
+            </li>
+            <li >
+              <a href="#" class="renovations-item">
+                <h4 class="renovations-item-title">Пластиком</h4>
+                <div class="renovations-item-price">от 1 500 ₽/м2</div>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="renovations-item">
+              <div class="renovations-item-divider"></div>
+            </li>
+            <li class="">
+              <a href="#" class="renovations-item renovations-footer">
+                <p class="renovations-footer-description">Посмотреть еще</p>
+                <svg width="24" height="24" fill="#7F7F7F" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_2197_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16" height="16">
+                  <rect x="4.80029" y="19.1997" width="14.4" height="14.4" transform="rotate(-90 4.80029 19.1997)"/>
+                  </mask>
+                  <g mask="url(#mask0_2197_735)">
+                  <path d="M11.9996 13.9717L16.7234 9.24774C16.8006 9.17054 16.8955 9.13214 17.0081 9.13254C17.1206 9.13294 17.2163 9.17174 17.2951 9.24894C17.3738 9.32254 17.4131 9.41689 17.4131 9.53199C17.4131 9.64709 17.3738 9.74404 17.2951 9.82284L12.6085 14.5028C12.5213 14.5899 12.425 14.653 12.3196 14.692C12.2142 14.731 12.1075 14.7505 11.9996 14.7505C11.8917 14.7505 11.7851 14.731 11.6797 14.692C11.5743 14.653 11.4755 14.5899 11.3832 14.5028L6.70075 9.81279C6.62205 9.73919 6.5833 9.64629 6.5845 9.53409C6.5856 9.42189 6.6255 9.32644 6.7042 9.24774C6.783 9.17054 6.8783 9.13159 6.9901 9.13089C7.1018 9.13009 7.19705 9.16904 7.27585 9.24774L11.9996 13.9717Z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="renovations-body-button button">Узнать подробнее</div>
+        </div>
+        <img class="renovations-image" src="/assets/images/renovations-image-1.png" alt="renovation of balcony"/>
+      </div>
+    </section>
+    <button class="chat-button">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.0663 20.2501L4.5 24.7501V6.75006C4.5 6.45169 4.61853 6.16554 4.82951 5.95457C5.04048 5.74359 5.32663 5.62506 5.625 5.62506H23.625C23.9234 5.62506 24.2095 5.74359 24.4205 5.95457C24.6315 6.16554 24.75 6.45169 24.75 6.75006V19.1251C24.75 19.4234 24.6315 19.7096 24.4205 19.9206C24.2095 20.1315 23.9234 20.2501 23.625 20.2501H10.0663Z" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.25 20.2501V25.8751C11.25 26.1734 11.3685 26.4596 11.5795 26.6706C11.7905 26.8815 12.0766 27.0001 12.375 27.0001H25.9337L31.5 31.5001V13.5001C31.5 13.2017 31.3815 12.9155 31.1705 12.7046C30.9595 12.4936 30.6734 12.3751 30.375 12.3751H24.75" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="scroll-button">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_2254_170" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+        <rect y="56" width="56" height="56" transform="rotate(-90 0 56)" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_2254_170)">
+        <path d="M29.75 17.2037L29.75 43.75C29.75 44.2466 29.5824 44.6623 29.2472 44.9972C28.9124 45.3324 28.4966 45.5 28 45.5C27.5034 45.5 27.0877 45.3324 26.7529 44.9972C26.4176 44.6623 26.25 44.2466 26.25 43.75L26.25 17.2037L14.1884 29.2652C13.8415 29.6121 13.4355 29.7834 12.9704 29.7792C12.5053 29.7745 12.0917 29.5913 11.7297 29.2297C11.3917 28.8676 11.2167 28.4577 11.2047 28C11.1926 27.5423 11.3676 27.1324 11.7297 26.7703L26.5236 11.9764C26.7422 11.7579 26.9726 11.6039 27.2149 11.5144C27.4571 11.4246 27.7189 11.3797 28 11.3797C28.2812 11.3797 28.5429 11.4246 28.7852 11.5144C29.0275 11.6039 29.2579 11.7579 29.4764 11.9764L44.2704 26.7703C44.5935 27.0935 44.7588 27.4937 44.7662 27.9708C44.7736 28.448 44.6083 28.8676 44.2704 29.2297C43.9083 29.5913 43.4926 29.7722 43.0232 29.7722C42.5534 29.7722 42.1375 29.5913 41.7754 29.2297L29.75 17.2037Z" fill="#222222"/>
+        </g>
+      </svg>
+    </button>
   </main>
 
   <footer class="footer container">

@@ -43,3 +43,48 @@ main {
   /* margin: 0 auto; */
   padding: var(--container-padding-y) var(--container-padding-x);
 }
+
+.chat-button {
+  z-index: 3000;
+  position: fixed;
+  right: 35px;
+  bottom: 20px;
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 43px;
+  background-color: var(--orange-color);
+  border: none;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.scroll-button {
+  z-index: 3000;
+  position: fixed;
+  right: 20px;
+  bottom: 116px;
+  width: 86px;
+  height: 86px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--orange-color);
+  border-radius: 43px;
+  border: none;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.scroll-button:hover,
+.chat-button:hover {
+  box-shadow: 0 0 11px 11px rgba(251, 155, 42, 0.5);
+}
+
+.hide {
+  display: none;
+}

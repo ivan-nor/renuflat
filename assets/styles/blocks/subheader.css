@@ -31,7 +31,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 
   color: var(--black-color);
   text-decoration: none;
@@ -45,13 +45,4 @@
   /* box-sizing: content-box; */
 }
 
-.sub-header-dropdown {
-  background-image: url(/assets/images/dropdown-triangle.png);
-  background-repeat: no-repeat;
-  
-  width: 8px;
-  height: 4px;
-
-  padding-inline: 10px;
-}
 
