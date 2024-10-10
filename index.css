@@ -1,6 +1,6 @@
-@import url('./renuflat/assets/styles/normalize.css');
-@import url('./renuflat/assets/styles/variables.css');
-@import url('./renuflat/assets/styles/fonts.css');
+@import url('/renuflat/assets/styles/normalize.css');
+@import url('/renuflat/assets/styles/variables.css');
+@import url('/renuflat/assets/styles/fonts.css');
 @import url('./renuflat/assets/styles/globals.css');
 @import url('./assets/styles/blocks/button.css');
 @import url('./assets/styles/blocks/subheader.css');
