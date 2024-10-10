@@ -13,7 +13,7 @@
   flex: 2 1 66%;
 
   border-radius: 12px;
-  background-image: url('/assets/images/contacts-background.png');
+  background-image: url('./renuflat/assets/images/contacts-background.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
