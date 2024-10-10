@@ -41,7 +41,7 @@
 }
 
 .project-area::before {
-  content: url(./renuflat/assets/images/project-area-icon.png);
+  content: url(../../images/project-area-icon.png);
   padding-right: 8px;
 }
 
@@ -54,7 +54,7 @@
 
 .project-period::before {
   padding-right: 8px;
-  content: url(./renuflat/assets/images/project-period-icon.png);
+  content: url(../../images/project-period-icon.png);
 }
 
 
