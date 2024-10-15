@@ -25,18 +25,6 @@ const servicesTabPanels = document.querySelectorAll('.services-tabpanel')
 const renovationsTabButtons = document.querySelectorAll('#renovations-tabs button')
 const renovationsTabPanels = document.querySelectorAll('.renovations-tabpanel')
 
-
-// for (const tab of renovationsTabButtons) {
-//   tab.addEventListener('click', (e) => {
-//     const activeTabElement = document.querySelector('#renovations-tabs button[tabindex="0"]')
-//     const activeTabId = activeTabElement.id
-//     if (e.target.id !== activeTabId)  {
-//       activeTabElement.setAttribute('tabindex', '-1')
-//       e.target.setAttribute('tabindex', '0')
-//     }
-//   })
-// }
-
 for (const tab of renovationsTabButtons) {
   tab.addEventListener('click', (e) => {
     for (const tabEl of renovationsTabButtons) {
@@ -123,4 +111,30 @@ for (const subDropdown of subDropdowns) {
     const subDropdownList = subDropdown.querySelector('.sub-menu-list')
     subDropdownList.classList.add('hide');
   });
+}
+
+const faqButtons = document.querySelectorAll('.faq-item-button')
+const faqItemsBody = document.querySelectorAll('.faq-item-body')
+// console.log(faqButtons);
+for (button of faqButtons) {
+  button.addEventListener('click', (e) => {
+    const targetText = e.target.parentNode.parentNode.parentNode.querySelector('.faq-item-body');
+
+    for (button of faqButtons) {
+      button.classList.remove('rotate-180')
+    }
+    for (textElement of faqItemsBody) {
+      if (targetText != textElement) {
+        textElement.classList.add('hide')
+      }
+    }
+
+    if (targetText.classList.contains('hide')) {
+      targetText.classList.remove('hide')
+      e.target.classList.add('rotate-180');
+    } else {
+      targetText.classList.add('hide')
+      e.target.classList.remove('rotate-180');
+    }
+  })
 }

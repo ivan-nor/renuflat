@@ -1,0 +1,68 @@
+.faq.container {
+  padding: 64px 24px 48px 24px;
+}
+
+.faq-title {
+  font: 44px/56px "Montserrat Medium";
+  padding-bottom: 40px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.faq-item-title {
+  /* margin: 0; */
+  font: 16px/20px "Montserrat SemiBold";
+  text-transform: none;
+}
+
+.faq-item-button {
+  padding: 0;
+  height: 40px;
+  aspect-ratio: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-color);
+  border-radius: 50%;
+}
+
+.faq-item-button:hover {
+  background-color: var(--orange-color);
+}
+
+.faq-item-button:hover svg {
+  fill: var(--white-color);
+}
+
+.faq-item-divider {
+  height: 2px;
+  width: 100%;
+
+  border: 1px solid var(--orange-color);
+}
+
+.faq-list,
+.faq-item-body,
+.faq-item,
+.faq {
+  transition: all 0.4s;
+}
