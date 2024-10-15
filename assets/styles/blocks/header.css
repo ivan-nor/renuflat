@@ -126,4 +126,8 @@
   background-color: var(--white-color);
 }
 
+.sub-menu {
+  transition: all 0.5s;
+}
+
 
