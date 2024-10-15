@@ -56,6 +56,15 @@
   justify-content: space-between;
 }
 
+.services-tabpanel {
+  display: none;
+  transition: all 0.5s;
+}
+
+.services-tabpanel.active {
+  display: flex;
+}
+
 .services-card {
   max-width: 360px;
 

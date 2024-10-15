@@ -20,28 +20,63 @@ dropdownCloseButton.addEventListener('click', (e) => {
 })
 
 // переключение вкладок 
-const servicesTabElements = document.querySelectorAll('#services-tabs button')
-const renovationsTabElements = document.querySelectorAll('#renovations-tabs button')
+const servicesTabButtons = document.querySelectorAll('#services-tabs button')
+const servicesTabPanels = document.querySelectorAll('.services-tabpanel')
+const renovationsTabButtons = document.querySelectorAll('#renovations-tabs button')
+const renovationsTabPanels = document.querySelectorAll('.renovations-tabpanel')
 
-// console.log(tabElements)
 
-for (const tab of renovationsTabElements) {
+// for (const tab of renovationsTabButtons) {
+//   tab.addEventListener('click', (e) => {
+//     const activeTabElement = document.querySelector('#renovations-tabs button[tabindex="0"]')
+//     const activeTabId = activeTabElement.id
+//     if (e.target.id !== activeTabId)  {
+//       activeTabElement.setAttribute('tabindex', '-1')
+//       e.target.setAttribute('tabindex', '0')
+//     }
+//   })
+// }
+
+for (const tab of renovationsTabButtons) {
   tab.addEventListener('click', (e) => {
+    for (const tabEl of renovationsTabButtons) {
+      tabEl.setAttribute('aria-selected', 'false')
+    }
+    for (const tabpanel of renovationsTabPanels) {
+      tabpanel.classList.remove('active')
+    }
     const activeTabElement = document.querySelector('#renovations-tabs button[tabindex="0"]')
     const activeTabId = activeTabElement.id
-    console.log('click', e.target.id, activeTabId)
-    if (e.target.id !== activeTabElement)  {
+    const activeTabControls = tab.getAttribute('aria-controls')
+    const tabPanel = document.getElementById(activeTabControls);
+    console.log(activeTabControls, tabPanel);
+    tabPanel.classList.add('active')
+
+    if (e.target.id !== activeTabId)  {
       activeTabElement.setAttribute('tabindex', '-1')
+      activeTabElement.setAttribute('aria-selected', 'true')
       e.target.setAttribute('tabindex', '0')
     }
   })
 }
-for (const tab of servicesTabElements) {
+
+for (const tab of servicesTabButtons) {
   tab.addEventListener('click', (e) => {
+    for (const tabEl of servicesTabButtons) {
+      tabEl.setAttribute('aria-selected', 'false')
+    }
+    for (const tabpanel of servicesTabPanels) {
+      tabpanel.classList.remove('active')
+    }
     const activeTabElement = document.querySelector('#services-tabs button[tabindex="0"]')
     const activeTabId = activeTabElement.id
-    if (e.target.id !== activeTabElement)  {
+    const activeTabControls = tab.getAttribute('aria-controls')
+    const tabPanel = document.getElementById(activeTabControls);
+    tabPanel.classList.add('active')
+
+    if (e.target.id !== activeTabId)  {
       activeTabElement.setAttribute('tabindex', '-1')
+      activeTabElement.setAttribute('aria-selected', 'true')
       e.target.setAttribute('tabindex', '0')
     }
   })
@@ -76,11 +111,9 @@ const scrollButton = {
     }
   }
 }
-
 scrollButton.addEventListener();
 
 const subDropdowns = document.querySelectorAll('.sub-menu')
-
 for (const subDropdown of subDropdowns) {
   subDropdown.addEventListener("mouseenter", (e) => {
     const subDropdownList = subDropdown.querySelector('.sub-menu-list')

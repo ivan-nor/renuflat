@@ -19,6 +19,16 @@
   gap: 32px;
 }
 
+.renovations-tabpanel {
+  display: none;
+  /* transition: all 0.5s; */
+}
+
+.renovations-tabpanel.active {
+  display: flex;
+}
+
+
 .renovations-image {
   height: 100%;
   /* width: auto; */
