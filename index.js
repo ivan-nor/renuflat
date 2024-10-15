@@ -1,21 +1,21 @@
 // выпадающее меню хедера
 const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
-const dropdownElement = document.querySelector('.dropdown')
+const dropdownMenuElement = document.querySelector('.dropdown-menu')
 
-dropdownElement.addEventListener('blur', (e) => {
-  dropdownElement.classList.add('visually-hidden')
+dropdownMenuElement.addEventListener('blur', (e) => {
+  dropdownMenuElement.classList.add('visually-hidden')
   dropdownOpenButton.classList.toggle('visually-hidden')
 })
 
 dropdownOpenButton.addEventListener('click', (e) => {
-  dropdownElement.classList.toggle('visually-hidden')
-  dropdownElement.focus()
+  dropdownMenuElement.classList.toggle('visually-hidden')
+  dropdownMenuElement.focus()
   dropdownOpenButton.classList.add('visually-hidden')
 })
 
 dropdownCloseButton.addEventListener('click', (e) => {
-  dropdownElement.classList.add('visually-hidden')
+  dropdownMenuElement.classList.add('visually-hidden')
   dropdownOpenButton.classList.toggle('visually-hidden')
 })
 
@@ -26,8 +26,6 @@ const renovationsTabElements = document.querySelectorAll('#renovations-tabs butt
 // console.log(tabElements)
 
 for (const tab of renovationsTabElements) {
-  console.log(tab)
-
   tab.addEventListener('click', (e) => {
     const activeTabElement = document.querySelector('#renovations-tabs button[tabindex="0"]')
     const activeTabId = activeTabElement.id
@@ -39,12 +37,9 @@ for (const tab of renovationsTabElements) {
   })
 }
 for (const tab of servicesTabElements) {
-  console.log(tab)
-
   tab.addEventListener('click', (e) => {
     const activeTabElement = document.querySelector('#services-tabs button[tabindex="0"]')
     const activeTabId = activeTabElement.id
-    console.log('click', e.target.id, activeTabId)
     if (e.target.id !== activeTabElement)  {
       activeTabElement.setAttribute('tabindex', '-1')
       e.target.setAttribute('tabindex', '0')
@@ -84,4 +79,15 @@ const scrollButton = {
 
 scrollButton.addEventListener();
 
+const subDropdowns = document.querySelectorAll('.sub-menu')
 
+for (const subDropdown of subDropdowns) {
+  subDropdown.addEventListener("mouseenter", (e) => {
+    const subDropdownList = subDropdown.querySelector('.sub-menu-list')
+    subDropdownList.classList.remove('hide');
+  });
+  subDropdown.addEventListener("mouseleave", (e) => {
+    const subDropdownList = subDropdown.querySelector('.sub-menu-list')
+    subDropdownList.classList.add('hide');
+  });
+}

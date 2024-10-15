@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -86,5 +91,5 @@ main {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
