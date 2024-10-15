@@ -1,0 +1,58 @@
+.remont {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.remont-title {
+  font: 80px/100px "Montserrat Medium";
+}
+
+.remont-lines-list {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.remont-lines-item {
+  /* width: max-content; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: 33%;
+}
+
+.remont-lines-item p {
+  font: 24px/30px "Montserrat Medium";
+  color: var(--black-color);
+}
+
+.remont-line-header {
+  /* position: relative; */
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.remont-line {
+  /* position: absolute; */
+  padding-inline: 16px;
+
+  height: 4px;
+  width: 100%;
+
+  border: 2px solid var(--orange-color);
+  border-radius: 100px;
+}
+
+
+.remont-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.remont-footer-description {
+  color: var(--gray-color);
+}
