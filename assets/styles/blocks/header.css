@@ -107,3 +107,23 @@
   background-color: currentColor;
   /* box-shadow: 16px 0 0 currentColor; */
 }
+
+.sub-header-item.sub-menu {
+  position: relative;
+}
+
+.sub-menu-list {
+  padding: 10px;
+
+  position: absolute;
+  z-index: 5000;
+
+  text-transform: none;
+  background-color: var(--bg-color);
+}
+
+.main-header-menu .sub-menu-list{
+  background-color: var(--white-color);
+}
+
+
