@@ -1,4 +1,3 @@
-// выпадающее меню хедера
 const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
 const dropdownMenuElement = document.querySelector('.dropdown-menu')
@@ -13,13 +12,11 @@ dropdownOpenButton.addEventListener('click', (e) => {
   dropdownMenuElement.focus()
   dropdownOpenButton.classList.add('visually-hidden')
 })
-
 dropdownCloseButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.add('visually-hidden')
   dropdownOpenButton.classList.toggle('visually-hidden')
 })
 
-// переключение вкладок 
 const servicesTabButtons = document.querySelectorAll('#services-tabs button')
 const servicesTabPanels = document.querySelectorAll('.services-tabpanel')
 const renovationsTabButtons = document.querySelectorAll('#renovations-tabs button')
@@ -37,10 +34,9 @@ for (const tab of renovationsTabButtons) {
     const activeTabId = activeTabElement.id
     const activeTabControls = tab.getAttribute('aria-controls')
     const tabPanel = document.getElementById(activeTabControls);
-    console.log(activeTabControls, tabPanel);
     tabPanel.classList.add('active')
 
-    if (e.target.id !== activeTabId)  {
+    if (e.target.id !== activeTabId) {
       activeTabElement.setAttribute('tabindex', '-1')
       activeTabElement.setAttribute('aria-selected', 'true')
       e.target.setAttribute('tabindex', '0')
@@ -62,7 +58,7 @@ for (const tab of servicesTabButtons) {
     const tabPanel = document.getElementById(activeTabControls);
     tabPanel.classList.add('active')
 
-    if (e.target.id !== activeTabId)  {
+    if (e.target.id !== activeTabId) {
       activeTabElement.setAttribute('tabindex', '-1')
       activeTabElement.setAttribute('aria-selected', 'true')
       e.target.setAttribute('tabindex', '0')
@@ -73,24 +69,17 @@ for (const tab of servicesTabButtons) {
 const scrollButton = {
   el: document.querySelector('.scroll-button'),
   show() {
-    // удалим у кнопки класс btn-up_hide
     this.el.classList.remove('hide');
   },
   hide() {
-    // добавим к кнопке класс btn-up_hide
     this.el.classList.add('hide');
   },
   addEventListener() {
-    // при прокрутке содержимого страницы
     window.addEventListener('scroll', () => {
-      // определяем величину прокрутки
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
       scrollY > 400 ? this.show() : this.hide();
     });
-    // при нажатии на кнопку .btn-up
     document.querySelector('.scroll-button').onclick = () => {
-      // переместим в начало страницы
       window.scrollTo({
         top: 0,
         left: 0,
