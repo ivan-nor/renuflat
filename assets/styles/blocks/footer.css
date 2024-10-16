@@ -9,3 +9,11 @@
   background-color: var(--gray-color);
   color: var(--white-color);
 }
+
+.footer-logo {
+  width: 140px;
+  height: 24px;
+
+  background-image: url('/assets/images/footer-logo.svg');
+  fill: var(--white-color);
+}

@@ -51,6 +51,10 @@
 }
 
 .main-header-logo-image {
+  width: 140px;
+  height: 24px;
+
+  background-image: url('/assets/images/logo.svg');
   fill: var(--orange-color);
 }
 
