@@ -99,6 +99,7 @@ const scrollButton = {
     }
   }
 }
+scrollButton.hide();
 scrollButton.addEventListener();
 
 const subDropdowns = document.querySelectorAll('.sub-menu')
