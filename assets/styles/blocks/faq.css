@@ -51,14 +51,14 @@
 .faq-item-button-icon {
   width: 40px;
   height: 40px;
-  background-image: url("/assets/images/arrow_back_ios_new.svg");
+  background-image: url("/renuflat/assets/images/arrow_back_ios_new.svg");
   background-size: contain;
 }
 
 .faq-item:hover .faq-item-button-icon {
   width: 40px;
   height: 40px;
-  background-image: url("/assets/images/arrow_back_white.svg");
+  background-image: url("/renuflat/assets/images/arrow_back_white.svg");
   background-size: contain;
 }
 
