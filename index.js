@@ -1,30 +1,24 @@
-// выпадающее меню хедера
 const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
 const dropdownMenuElement = document.querySelector('.dropdown-menu')
-
 dropdownMenuElement.addEventListener('blur', (e) => {
   dropdownMenuElement.classList.add('visually-hidden')
   dropdownOpenButton.classList.toggle('visually-hidden')
 })
-
 dropdownOpenButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.toggle('visually-hidden')
   dropdownMenuElement.focus()
   dropdownOpenButton.classList.add('visually-hidden')
 })
-
 dropdownCloseButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.add('visually-hidden')
   dropdownOpenButton.classList.toggle('visually-hidden')
 })
 
-// переключение вкладок 
 const servicesTabButtons = document.querySelectorAll('#services-tabs button')
 const servicesTabPanels = document.querySelectorAll('.services-tabpanel')
 const renovationsTabButtons = document.querySelectorAll('#renovations-tabs button')
 const renovationsTabPanels = document.querySelectorAll('.renovations-tabpanel')
-
 for (const tab of renovationsTabButtons) {
   tab.addEventListener('click', (e) => {
     for (const tabEl of renovationsTabButtons) {
@@ -37,17 +31,15 @@ for (const tab of renovationsTabButtons) {
     const activeTabId = activeTabElement.id
     const activeTabControls = tab.getAttribute('aria-controls')
     const tabPanel = document.getElementById(activeTabControls);
-    console.log(activeTabControls, tabPanel);
     tabPanel.classList.add('active')
 
-    if (e.target.id !== activeTabId)  {
+    if (e.target.id !== activeTabId) {
       activeTabElement.setAttribute('tabindex', '-1')
       activeTabElement.setAttribute('aria-selected', 'true')
       e.target.setAttribute('tabindex', '0')
     }
   })
 }
-
 for (const tab of servicesTabButtons) {
   tab.addEventListener('click', (e) => {
     for (const tabEl of servicesTabButtons) {
@@ -62,7 +54,7 @@ for (const tab of servicesTabButtons) {
     const tabPanel = document.getElementById(activeTabControls);
     tabPanel.classList.add('active')
 
-    if (e.target.id !== activeTabId)  {
+    if (e.target.id !== activeTabId) {
       activeTabElement.setAttribute('tabindex', '-1')
       activeTabElement.setAttribute('aria-selected', 'true')
       e.target.setAttribute('tabindex', '0')
@@ -73,24 +65,17 @@ for (const tab of servicesTabButtons) {
 const scrollButton = {
   el: document.querySelector('.scroll-button'),
   show() {
-    // удалим у кнопки класс btn-up_hide
     this.el.classList.remove('hide');
   },
   hide() {
-    // добавим к кнопке класс btn-up_hide
     this.el.classList.add('hide');
   },
   addEventListener() {
-    // при прокрутке содержимого страницы
     window.addEventListener('scroll', () => {
-      // определяем величину прокрутки
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
       scrollY > 400 ? this.show() : this.hide();
     });
-    // при нажатии на кнопку .btn-up
     document.querySelector('.scroll-button').onclick = () => {
-      // переместим в начало страницы
       window.scrollTo({
         top: 0,
         left: 0,
@@ -99,6 +84,7 @@ const scrollButton = {
     }
   }
 }
+scrollButton.hide();
 scrollButton.addEventListener();
 
 const subDropdowns = document.querySelectorAll('.sub-menu')
@@ -113,28 +99,29 @@ for (const subDropdown of subDropdowns) {
   });
 }
 
-const faqButtons = document.querySelectorAll('.faq-item-button')
-const faqItemsBody = document.querySelectorAll('.faq-item-body')
-// console.log(faqButtons);
-for (button of faqButtons) {
-  button.addEventListener('click', (e) => {
-    const targetText = e.target.parentNode.parentNode.parentNode.querySelector('.faq-item-body');
+const faqItems = document.querySelectorAll('.faq-item')
+const faqItemDescriptions = document.querySelectorAll('.faq-item-description')
+const faqButtons = document.querySelectorAll('.faq-item-button');
+for (item of faqItems) {
+  item.addEventListener('click', (e) => {
+    const targetDescription = e.currentTarget.querySelector('.faq-item-description');
 
-    for (button of faqButtons) {
-      button.classList.remove('rotate-180')
-    }
-    for (textElement of faqItemsBody) {
-      if (targetText != textElement) {
-        textElement.classList.add('hide')
+    for (element of faqItems) {
+      const elButton = element.querySelector('.faq-item-button')
+      const elDescription = element.querySelector('.faq-item-description')
+
+      if (elDescription === targetDescription) {
+        if (elDescription.classList.contains('hide')) {
+          elButton.classList.add('rotate-180');
+          elDescription.classList.remove('hide')
+        } else {
+          elButton.classList.remove('rotate-180');
+          elDescription.classList.add('hide')
+        }
+      } else {
+        elButton.classList.remove('rotate-180');
+        elDescription.classList.add('hide')
       }
-    }
-
-    if (targetText.classList.contains('hide')) {
-      targetText.classList.remove('hide')
-      e.target.classList.add('rotate-180');
-    } else {
-      targetText.classList.add('hide')
-      e.target.classList.remove('rotate-180');
     }
   })
 }
