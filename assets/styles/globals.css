@@ -95,10 +95,13 @@ main {
   visibility: hidden;
   max-height: 0;
   opacity: 0;
-  transition: all 0.2s;
 }
 
 .rotate-180 {
   transform: rotate(180deg);
   transition: transform 0.2s;
+}
+
+body * {
+  transition: all 0.2s;
 }

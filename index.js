@@ -1,12 +1,10 @@
 const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
 const dropdownMenuElement = document.querySelector('.dropdown-menu')
-
 dropdownMenuElement.addEventListener('blur', (e) => {
   dropdownMenuElement.classList.add('visually-hidden')
   dropdownOpenButton.classList.toggle('visually-hidden')
 })
-
 dropdownOpenButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.toggle('visually-hidden')
   dropdownMenuElement.focus()
@@ -21,7 +19,6 @@ const servicesTabButtons = document.querySelectorAll('#services-tabs button')
 const servicesTabPanels = document.querySelectorAll('.services-tabpanel')
 const renovationsTabButtons = document.querySelectorAll('#renovations-tabs button')
 const renovationsTabPanels = document.querySelectorAll('.renovations-tabpanel')
-
 for (const tab of renovationsTabButtons) {
   tab.addEventListener('click', (e) => {
     for (const tabEl of renovationsTabButtons) {
@@ -43,7 +40,6 @@ for (const tab of renovationsTabButtons) {
     }
   })
 }
-
 for (const tab of servicesTabButtons) {
   tab.addEventListener('click', (e) => {
     for (const tabEl of servicesTabButtons) {
@@ -103,28 +99,29 @@ for (const subDropdown of subDropdowns) {
   });
 }
 
-const faqButtons = document.querySelectorAll('.faq-item-button')
-const faqItemsBody = document.querySelectorAll('.faq-item-body')
-// console.log(faqButtons);
-for (button of faqButtons) {
-  button.addEventListener('click', (e) => {
-    const targetText = e.target.parentNode.parentNode.parentNode.querySelector('.faq-item-body');
+const faqItems = document.querySelectorAll('.faq-item')
+const faqItemDescriptions = document.querySelectorAll('.faq-item-description')
+const faqButtons = document.querySelectorAll('.faq-item-button');
+for (item of faqItems) {
+  item.addEventListener('click', (e) => {
+    const targetDescription = e.currentTarget.querySelector('.faq-item-description');
 
-    for (button of faqButtons) {
-      button.classList.remove('rotate-180')
-    }
-    for (textElement of faqItemsBody) {
-      if (targetText != textElement) {
-        textElement.classList.add('hide')
+    for (element of faqItems) {
+      const elButton = element.querySelector('.faq-item-button')
+      const elDescription = element.querySelector('.faq-item-description')
+
+      if (elDescription === targetDescription) {
+        if (elDescription.classList.contains('hide')) {
+          elButton.classList.add('rotate-180');
+          elDescription.classList.remove('hide')
+        } else {
+          elButton.classList.remove('rotate-180');
+          elDescription.classList.add('hide')
+        }
+      } else {
+        elButton.classList.remove('rotate-180');
+        elDescription.classList.add('hide')
       }
-    }
-
-    if (targetText.classList.contains('hide')) {
-      targetText.classList.remove('hide')
-      e.target.classList.add('rotate-180');
-    } else {
-      targetText.classList.add('hide')
-      e.target.classList.remove('rotate-180');
     }
   })
 }
