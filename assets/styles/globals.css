@@ -41,23 +41,19 @@ p {
 }
 
 main {
-  padding-top: calc(var(--header-height) + 40px + 24px);
+  padding-top: calc(var(--header-height) + 40px);
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--container-padding-y) var(--container-padding-x);
+  padding: 65px var(--container-padding-x);
 }
-
-.header .container {
-  padding: 0 var(--container-padding-x);
-}
-
+/* 
 section {
   padding: 65px 0;
-}
+} */
 
 
 .chat-button {
@@ -102,7 +98,7 @@ section {
 }
 
 .hide {
-  /* display: none; */
+  display: none;
   visibility: hidden;
   max-height: 0;
   opacity: 0;
