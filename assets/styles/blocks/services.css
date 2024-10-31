@@ -1,4 +1,4 @@
-.services {
+.services > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,24 +52,27 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 40px;
   justify-content: space-between;
 }
 
 .services-tabpanel {
   display: none;
-  transition: all 0.5s;
 }
 
 .services-tabpanel.active {
-  display: flex;
+  display: block;
 }
 
 .services-card {
-  max-width: 360px;
+  /* max-width: 360px; */
+  flex: 1 0 30%;
 
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  /* display: flex; */
+  /* flex-direction: column;
+  gap: 16px; */
 
   border-radius: 12px;
   overflow: hidden;
@@ -83,9 +86,11 @@
   text-transform: none;
 }
 
-.services-card-image {
-  object-fit: cover;
-  box-sizing: border-box;
+.services-card-image > img {
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  /* object-position: bottom; */
   /* overflow: hidden; */
 }
 
@@ -95,20 +100,12 @@
 
   display: flex;
   flex-direction: column;
-  /* gap: 12px; */
+  gap: 32px;
 }
 
-
-
-.services-card-description {
-  margin-bottom: 12px;
-
-  font: 16px/20px "Montserrat Regular";
-  letter-spacing: -0.5%;
-}
 
 .services-card-body-content {
-  margin: 32px 0;
+  /* margin: 32px 0; */
 
   display: flex;
   flex-direction: column;
@@ -148,7 +145,16 @@
   gap: 12px;
 }
 
-.services-card-chips-disabled-button {
+.services-card-chips-description {
+  flex: 1 0 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+  letter-spacing: -0.5%;
+}
+
+
+.services-card-chips-item {
   border: 1px solid var(--gray-color);
   border-radius: 30px;
   color: var(--gray-color);
@@ -156,7 +162,7 @@
   padding: 8px;
   font: 12px/16px "Montserrat SemiBold";
   background-color: transparent;
-  cursor: default;
+  /* cursor: default; */
 }
 
 .services-card-button {

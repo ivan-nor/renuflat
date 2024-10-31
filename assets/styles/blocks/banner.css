@@ -1,6 +1,8 @@
-.banner > .container {
+.banner {
   padding-top: 24px;
+}
 
+.banner > .container {
   display: grid;
   align-items: center;
 

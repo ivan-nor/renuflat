@@ -145,147 +145,159 @@
   <main class="content">
     <section class="banner">
       <div class="container">
-      <h1 class="banner-title">ДЕЛАЕМ<br>РЕМОНТ</h1>
-      <div class="banner-description">
-        <p>
-          качественно, быстро и надежно
-        </p>
-        <p>
-          от простой отделки помещений
-        </p>
-        <p>
-          до масштабных индивидуальных проектов
-        </p>
+        <h1 class="banner-title">ДЕЛАЕМ<br>РЕМОНТ</h1>
+        <div class="banner-description">
+          <p>
+            качественно, быстро и надежно
+          </p>
+          <p>
+            от простой отделки помещений
+          </p>
+          <p>
+            до масштабных индивидуальных проектов
+          </p>
+        </div>
+        <div class="banner-footer">
+          <button class="banner-button button">Бесплатная консультация</button>
+          <p class="banner-footer-description">
+            Отправьте заявку сейчас, <br class="mobile-hidden">
+            и наш специалист свяжется <br class="mobile-hidden">
+            с вами в течении 1 часа
+          </p>
+        </div>
+        <img src="/assets/images/banner.png" alt="banner" class="banner-image" width="1160" height="550">
       </div>
-      <div class="banner-footer">
-        <button class="banner-button button">Бесплатная консультация</button>
-        <p class="banner-footer-description">
-          Отправьте заявку сейчас, <br class="mobile-hidden">
-          и наш специалист свяжется <br class="mobile-hidden">
-          с вами в течении 1 часа
-        </p>
-      </div>
-      <img src="/assets/images/banner.png" alt="banner" class="banner-image" width="1160" height="550">
-    </div>
     </section>
 
-    <section class="services container">
-      <h2 id="tabs-label" class="services-title">наши услуги</h2>
-      <div id="services-tabs" class="tabs" role="tablist" aria-labelledby="tabs-label">
-        <button tabindex="0" class="tab-button button" role="tab" type="button" id="services-tab-1" aria-selected="true"
-          aria-controls="services-tabpanel-1">
-          Для жилых помещений
-        </button>
-        <button tabindex="-1" class="tab-button button" role="tab" type="button" id="services-tab-2"
-          aria-selected="false" aria-controls="services-tabpanel-2">
-          Для коммерческих объектов
-        </button>
-      </div>
-      <div id="services-tabpanel-1" role="tabpanel" class="services-cards services-tabpanel active">
-        <div class="services-card">
-          <div class="services-card_img">
-            <img src="/assets/images/card_1.png" alt="Фото косметического ремонта" class="services-card-image" />
-          </div>
-          <div class="services-card-body">
-            <h3 class="services-card-title">Косметический ремонт</h3>
-            <p class="services-card-description">Рекомендуем для:</p>
-            <div class="services-card-chips">
-              <div class="services-card-chips-disabled-button" disabled>Обновления ремонта</div>
-              <div class="services-card-chips-disabled-button" disabled>Сдачи в аренду</div>
-              <div class="services-card-chips-disabled-button" disabled>Предпродажной подготовки</div>
+    <section class="services">
+      <div class="container">
+        <h2 id="tabs-label" class="services-title">наши услуги</h2>
+
+        <div id="services-tabs" class="tabs" role="tablist" aria-labelledby="tabs-label">
+          <button tabindex="0" class="tab-button button" role="tab" type="button" id="services-tab-1"
+            aria-selected="true" aria-controls="services-tabpanel-1">
+            Для жилых помещений
+          </button>
+          <button tabindex="-1" class="tab-button button" role="tab" type="button" id="services-tab-2"
+            aria-selected="false" aria-controls="services-tabpanel-2">
+            Для коммерческих объектов
+          </button>
+        </div>
+
+        <div id="services-tabpanel-1" role="tabpanel" class="services-cards services-tabpanel active">
+          <div class="services-cards">
+            <div class="services-card">
+              <div class="services-card-image">
+                <img src="/assets/images/card_1.png" alt="Фото косметического ремонта" class="services-card-image" />
+              </div>
+              <h3 class="services-card-title">Косметический ремонт</h3>
+              <div class="services-card-body">
+                <div class="services-card-chips">
+                  <p class="services-card-chips-description">Рекомендуем для:</p>
+                  <div class="services-card-chips-item">Обновления ремонта</div>
+                  <div class="services-card-chips-item">Сдачи в аренду</div>
+                  <div class="services-card-chips-item">Предпродажной подготовки</div>
+                </div>
+                <div class="services-card-body-content">
+                  <p class="services-card-price">от 1 500 ₽/м2</p>
+                  <p class="services-card-period">14 дней</p>
+                </div>
+                <a href="" class="services-card-button button">Заказать ремонт</a>
+              </div>
             </div>
-            <div class="services-card-body-content">
-              <p class="services-card-price">от 1 500 ₽/м2</p>
-              <p class="services-card-period">14 дней</p>
+
+            <div class="services-card">
+              <div class="services-card-image">
+                <img src="/assets/images/card_2.png" alt="Фото косметического ремонта" class="services-card-image" />
+              </div>
+              <h3 class="services-card-title">Капитальный ремонт</h3>
+              <div class="services-card-body">
+                <div class="services-card-chips">
+                  <p class="services-card-chips-description">Рекомендуем для:</p>
+                  <button class="services-card-chips-item" disabled>Ремонта коттеджа</button>
+                  <button class="services-card-chips-item" disabled>Обновления квартиры</button>
+                  <button class="services-card-chips-item" disabled>Ремонта новой квартиры</button>
+                </div>
+                <div class="services-card-body-content">
+                  <p class="services-card-price">от 3 500 ₽/м2</p>
+                  <p class="services-card-period">28 дней</p>
+                </div>
+                <button class="services-card-button button">Заказать ремонт</button>
+              </div>
             </div>
-            <a href="" class="services-card-button button">Заказать ремонт</a>
+            <div class="services-card">
+              <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
+              <div class="services-card-body">
+                <h3 class="services-card-title">Эксклюзивный ремонт</h3>
+                <p class="services-card-description">Рекомендуем для:</p>
+                <div class="services-card-chips">
+                  <button class="services-card-chips-item" disabled>Авторского дизайн-проекта</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Нестандартных решений</button>
+                </div>
+                <div class="services-card-body-content">
+                  <p class="services-card-price">от 5 500 ₽/м2</p>
+                  <p class="services-card-period">54 дня</p>
+                </div>
+                <button class="services-card-button button">Заказать ремонт</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="services-card">
-          <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
-          <h3 class="services-card-title">Капитальный ремонт</h3>
-          <div class="services-card-body">
-            <p class="services-card-description">Рекомендуем для:</p>
-            <div class="services-card-chips">
-              <button class="services-card-chips-disabled-button" disabled>Ремонта коттеджа</button>
-              <button class="services-card-chips-disabled-button" disabled>Обновления квартиры</button>
-              <button class="services-card-chips-disabled-button" disabled>Ремонта новой квартиры</button>
+
+        <div id="services-tabpanel-2" role="tabpanel" class="services-cards services-tabpanel">
+          <div class="services-cards">
+            <div class="services-card">
+              <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
+              <div class="services-card-body">
+                <h3 class="services-card-title">Lorem, ipsum.</h3>
+                <p class="services-card-description">Lorem, ipsum.</p>
+                <div class="services-card-chips">
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                </div>
+                <div class="services-card-body-content">
+                  <p class="services-card-price">от 1 500 ₽/м2</p>
+                  <p class="services-card-period">14 дней</p>
+                </div>
+                <button class="services-card-button button">Lorem, ipsum.</button>
+              </div>
             </div>
-            <div class="services-card-body-content">
-              <p class="services-card-price">от 3 500 ₽/м2</p>
-              <p class="services-card-period">28 дней</p>
+            <div class="services-card">
+              <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
+              <div class="services-card-body">
+                <h3 class="services-card-title">Lorem, ipsum.</h3>
+                <p class="services-card-description">Lorem, ipsum.</p>
+                <div class="services-card-chips">
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                </div>
+                <div class="services-card-body-content">
+                  <p class="services-card-price">от 3 500 ₽/м2</p>
+                  <p class="services-card-period">28 дней</p>
+                </div>
+                <button class="services-card-button button">Заказать ремонт</button>
+              </div>
             </div>
-            <button class="services-card-button button">Заказать ремонт</button>
-          </div>
-        </div>
-        <div class="services-card">
-          <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
-          <h3 class="services-card-title">Эксклюзивный ремонт</h3>
-          <div class="services-card-body">
-            <p class="services-card-description">Рекомендуем для:</p>
-            <div class="services-card-chips">
-              <button class="services-card-chips-disabled-button" disabled>Авторского дизайн-проекта</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Нестандартных решений</button>
+            <div class="services-card">
+              <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
+              <div class="services-card-body">
+                <h3 class="services-card-title">Lorem, ipsum.</h3>
+                <p class="services-card-description">Lorem, ipsum.</p>
+                <div class="services-card-chips">
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                  <button class="services-card-chips-item" disabled>Lorem, ipsum.</button>
+                </div>
+                <div class="services-card-body-content">
+                  <p class="services-card-price">от 5 500 ₽/м2</p>
+                  <p class="services-card-period">54 дня</p>
+                </div>
+                <button class="services-card-button button">Заказать ремонт</button>
+              </div>
             </div>
-            <div class="services-card-body-content">
-              <p class="services-card-price">от 5 500 ₽/м2</p>
-              <p class="services-card-period">54 дня</p>
-            </div>
-            <button class="services-card-button button">Заказать ремонт</button>
-          </div>
-        </div>
-      </div>
-      <div id="services-tabpanel-2" role="tabpanel" class="services-cards services-tabpanel">
-        <div class="services-card">
-          <img src="/assets/images/card_1.png" alt="Фото косметического ремонта" class="services-card-image" />
-          <h3 class="services-card-title">Lorem, ipsum.</h3>
-          <div class="services-card-body">
-            <p class="services-card-description">Lorem, ipsum.</p>
-            <div class="services-card-chips">
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-            </div>
-            <div class="services-card-body-content">
-              <p class="services-card-price">от 1 500 ₽/м2</p>
-              <p class="services-card-period">14 дней</p>
-            </div>
-            <button class="services-card-button button">Lorem, ipsum.</button>
-          </div>
-        </div>
-        <div class="services-card">
-          <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
-          <h3 class="services-card-title">Lorem, ipsum.</h3>
-          <div class="services-card-body">
-            <p class="services-card-description">Lorem, ipsum.</p>
-            <div class="services-card-chips">
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-            </div>
-            <div class="services-card-body-content">
-              <p class="services-card-price">от 3 500 ₽/м2</p>
-              <p class="services-card-period">28 дней</p>
-            </div>
-            <button class="services-card-button button">Заказать ремонт</button>
-          </div>
-        </div>
-        <div class="services-card">
-          <img src="/assets/images/card_2.png" alt="Фото капитального ремонта" class="services-card-image" />
-          <h3 class="services-card-title">Lorem, ipsum.</h3>
-          <div class="services-card-body">
-            <p class="services-card-description">Lorem, ipsum.</p>
-            <div class="services-card-chips">
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-              <button class="services-card-chips-disabled-button" disabled>Lorem, ipsum.</button>
-            </div>
-            <div class="services-card-body-content">
-              <p class="services-card-price">от 5 500 ₽/м2</p>
-              <p class="services-card-period">54 дня</p>
-            </div>
-            <button class="services-card-button button">Заказать ремонт</button>
           </div>
         </div>
       </div>

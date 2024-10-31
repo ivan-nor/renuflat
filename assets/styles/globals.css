@@ -48,12 +48,13 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 65px var(--container-padding-x);
+  padding-inline: var(--container-padding-x);
 }
-/* 
+
 section {
-  padding: 65px 0;
-} */
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
 
 
 .chat-button {
