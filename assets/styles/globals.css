@@ -35,19 +35,30 @@ a:hover {
   cursor: pointer;
 }
 
-/* p {
+p {
   padding: 0;
   margin: 0;
-} */
+}
 
 main {
   padding-top: calc(var(--header-height) + 40px + 24px);
 }
 
 .container {
-  /* margin: 0 auto; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: var(--container-padding-y) var(--container-padding-x);
 }
+
+.header .container {
+  padding: 0 var(--container-padding-x);
+}
+
+section {
+  padding: 65px 0;
+}
+
 
 .chat-button {
   z-index: 3000;

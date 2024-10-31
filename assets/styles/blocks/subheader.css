@@ -1,6 +1,7 @@
 .sub-header {
-  padding: 0 20px;
-  z-index: 2000;
+  /* padding: 0 20px; */
+  /* z-index: 2000; */
+  position: relative;
 
   background-color: var(--bg-color);
   box-shadow: 0 2px 4px -4px var(--black-color);
