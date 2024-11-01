@@ -2,10 +2,11 @@
   font: 44px/56px "Montserrat Medium";
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 64px;
 }
 
 .reviews-cards {
+  padding-top: 64px;
+
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;

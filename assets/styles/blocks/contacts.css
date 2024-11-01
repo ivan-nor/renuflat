@@ -16,10 +16,11 @@
   background-image: url('/assets/images/contacts-background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 
 .contacts-form {
-  max-width: 56%;
+  max-width: 400px;
 
   display: flex;
   flex-direction: column;
@@ -27,13 +28,15 @@
 }
 
 .contacts-form-title {
-  max-width: 60%;
+  max-width: 400px;
+
   font: 44px/56px "Montserrat Medium";
 }
 
 .contacts-form-input {
   height: 52px;
-  width: 80%;
+  max-width: 80%;
+  min-width: 250px;
   display: inline-block;
 
   color: var(--black-color);
