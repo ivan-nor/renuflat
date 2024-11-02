@@ -40,11 +40,17 @@
 
   background-color: var(--orange-color);
   color: var(--white-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Montserrat Bold";
 }
 
 .tab-button[tabindex="-1"]  {
   background-color: var(--white-color);
   color: var(--black-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Montserrat Regular";
 }
 
 .services-cards {
