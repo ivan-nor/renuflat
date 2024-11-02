@@ -64,6 +64,7 @@
 
 .faq-item:hover .faq-item-button {
   background-color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .faq-item-divider {
