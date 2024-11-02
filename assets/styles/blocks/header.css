@@ -33,7 +33,7 @@
 }
 
 .main-header-menu-list {
-  /* padding: 0 24px; */
+  padding: 0 24px;
 
   display: flex;
   flex-wrap: wrap;
@@ -76,11 +76,11 @@
 }
 
 .main-header-menu-item:first-child > .main-header-menu-link {
-  padding-left: 24px;
+  padding-left: 0;
 }
 
 .main-header-menu-item:last-child > .main-header-menu-link {
-  padding-right: 24px;
+  padding-right: 0;
 }
 
 .main-header-burger-button {
