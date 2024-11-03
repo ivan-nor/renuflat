@@ -125,3 +125,16 @@ for (item of faqItems) {
     }
   })
 }
+
+const chatButton = document.getElementById('chat-button');
+console.log(chatButton);
+chatButton.addEventListener('click', (e) => {
+  const chatButtons = document.querySelectorAll('#chat-button ~ .chat-button');
+  console.log('chatButtons :>> ', chatButtons);
+
+  for (const button of chatButtons) {
+    // if (button.classList)
+    button.classList.toggle('hide');
+  }
+})
+

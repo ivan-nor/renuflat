@@ -56,12 +56,24 @@ section {
   padding-bottom: 65px;
 }
 
-
-.chat-button {
-  z-index: 3000;
+.fixed-buttons {
+  width: 86px;
   position: fixed;
   right: 35px;
   bottom: 20px;
+  z-index: 3000;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.chat-button {
+  /* z-index: 3000;
+  position: fixed;
+  right: 35px;
+  bottom: 20px; */
   width: 64px;
   height: 64px;
 
@@ -75,11 +87,25 @@ section {
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
+
+#chat-button + .chat-button {
+  /* right: 135px; */
+  /* bottom: 180px; */
+  /* background-color: var(--white-color); */
+  /* fill: var(--bg-color); */
+}
+
+#chat-button + .chat-button + .chat-button {
+  /* right: 135px; */
+  /* background-color: var(--black-color); */
+  /* bottom: 100px; */
+}
+
 .scroll-button {
-  z-index: 3000;
+  /* z-index: 3000;
   position: fixed;
   right: 20px;
-  bottom: 116px;
+  bottom: 116px; */
   width: 86px;
   height: 86px;
 
