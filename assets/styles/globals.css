@@ -57,7 +57,7 @@ section {
 }
 
 .fixed-buttons {
-  width: 86px;
+  /* width: 86px; */
   position: fixed;
   right: 35px;
   bottom: 20px;
@@ -65,7 +65,7 @@ section {
 
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
+  align-items: flex-end;
   gap: 20px;
 }
 
@@ -91,8 +91,10 @@ section {
 
 #chat-button + .chat-button {
   position: absolute;
-  right: 80px;
-  bottom: 40px;
+  right: 84px;
+  width: 48px;
+  height: 48px;
+  /* bottom: 40px; */
   /* right: 135px; */
   /* bottom: 180px; */
   /* background-color: var(--white-color); */
@@ -100,7 +102,20 @@ section {
 }
 
 #chat-button + .chat-button + .chat-button {
-  top: 80px;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  width: 48px;
+  height: 48px;
+  /* bottom: 40px; */
+  /* background-color: var(--black-color); */
+  /* bottom: 100px; */
+}
+
+#chat-button + .chat-button + .chat-button +.chat-button {
+  width: 48px;
+  height: 48px;
+  /* top: 120px; */
   /* background-color: var(--black-color); */
   /* bottom: 100px; */
 }
