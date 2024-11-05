@@ -30,6 +30,10 @@
   text-transform: none;
 }
 
+.faq-item-description {
+  padding-right: 40px;
+}
+
 .faq-item-button {
   padding: 0;
   height: 40px;
