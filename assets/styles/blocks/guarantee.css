@@ -31,8 +31,14 @@
   align-items: center;
 }
 
-.guarantee-item-title svg {
-  height:  clamp(1rem, 2vw, 1.5rem);
+.guarantee-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guarantee-icon svg {
+  height:  clamp(1rem, 2vw, 1.25rem);
   width: auto;
 }
 
