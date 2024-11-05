@@ -1,5 +1,4 @@
-.remont {
-  padding: 20px 24px;
+.remont .container {
   display: flex;
   flex-direction: column;
   gap: 32px;
