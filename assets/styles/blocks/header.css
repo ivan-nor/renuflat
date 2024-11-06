@@ -120,6 +120,8 @@
 
   text-transform: none;
   background-color: var(--bg-color);
+
+  border-radius: 0 0 5px 5px;
 }
 
 .main-header-menu .sub-menu-list{
