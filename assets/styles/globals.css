@@ -21,7 +21,12 @@ body {
   overflow: hidden !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -38,6 +43,10 @@ a:hover {
 p {
   padding: 0;
   margin: 0;
+}
+
+img {
+  pointer-events: none;
 }
 
 main {
@@ -57,7 +66,6 @@ section {
 }
 
 .fixed-buttons {
-  /* width: 86px; */
   position: fixed;
   right: 35px;
   bottom: 20px;
@@ -70,13 +78,8 @@ section {
 }
 
 .chat-button {
-  /* z-index: 3000;
-  position: fixed;
-  right: 35px;
-  bottom: 20px; */
-  /* position: relative; */
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
 
   display: flex;
   align-items: center;
@@ -88,45 +91,35 @@ section {
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
+#chat-button {
+  width: 64px;
+  height: 64px;
+}
 
-#chat-button + .chat-button {
+#chat-button > .icon > img {
+  width: 36px;
+  height: 36px;
+}
+
+.chat-button > .icon > img {
+  width: 32px;
+  height: 32px;
+}
+
+.chat-button:nth-child(2) {
   position: absolute;
   right: 84px;
-  width: 48px;
-  height: 48px;
-  /* bottom: 40px; */
-  /* right: 135px; */
-  /* bottom: 180px; */
-  /* background-color: var(--white-color); */
-  /* fill: var(--bg-color); */
 }
 
-#chat-button + .chat-button + .chat-button {
+.chat-button:nth-child(3) {
   position: absolute;
-  bottom: 60px;
-  right: 60px;
-  width: 48px;
-  height: 48px;
-  /* bottom: 40px; */
-  /* background-color: var(--black-color); */
-  /* bottom: 100px; */
-}
-
-#chat-button + .chat-button + .chat-button +.chat-button {
-  width: 48px;
-  height: 48px;
-  /* top: 120px; */
-  /* background-color: var(--black-color); */
-  /* bottom: 100px; */
+  bottom: 58px;
+  right: 55px;
 }
 
 .scroll-button {
-  /* z-index: 3000;
-  position: fixed;
-  right: 20px;
-  bottom: 116px; */
   position: relative;
-  /* top: 100px; */
+
   width: 86px;
   height: 86px;
 
@@ -141,8 +134,12 @@ section {
 }
 
 .scroll-button:hover,
-.chat-button:hover {
+.chat-button:nth-child(1):hover {
   box-shadow: 0 0 11px 11px rgba(251, 155, 42, 0.5);
+}
+
+.chat-button:hover {
+  box-shadow: 0 0 8px 8px rgba(251, 155, 42, 0.5);
 }
 
 .hide {

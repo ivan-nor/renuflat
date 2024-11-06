@@ -126,15 +126,39 @@ for (item of faqItems) {
   })
 }
 
+const state = {
+  isChatsActive: false,
+  modal: false,
+}
 const chatButton = document.getElementById('chat-button');
-console.log(chatButton);
-chatButton.addEventListener('click', (e) => {
-  const chatButtons = document.querySelectorAll('#chat-button ~ .chat-button');
-  console.log('chatButtons :>> ', chatButtons);
+const chatButtons = document.querySelectorAll('#chat-button ~ .chat-button');
+const showModalButton = chatButtons[chatButtons.length - 1]
 
-  for (const button of chatButtons) {
-    // if (button.classList)
-    button.classList.toggle('hide');
-  }
-})
+const showModal = (e) => {
+  state.modal = !state.modal
+  console.log('show modal', state.modal);
+}
+
+const handleChats = (e) => {
+  chatButtons.forEach((button, index) => {
+    if (!state.isChatsActive) {
+      if (index === 2) {
+        chatButton.querySelector('.icon > img').src = "/assets/icons/cross.svg"
+        state.isChatsActive = !state.isChatsActive
+      } 
+    } else {
+      if (index === 2) {
+        chatButton.querySelector('.icon > img').src = "/assets/icons/chat.svg"
+        state.isChatsActive = !state.isChatsActive
+      } 
+    }
+    button.classList.toggle('hide')
+  })
+}
+
+showModalButton.addEventListener("click", showModal)
+
+chatButton.addEventListener('click', handleChats)
+
+
 
