@@ -133,6 +133,7 @@ const state = {
 const chatButton = document.getElementById('chat-button');
 const chatButtons = document.querySelectorAll('#chat-button ~ .chat-button');
 const showModalButton = chatButtons[chatButtons.length - 1]
+const fixedButtons = document.querySelector('.fixed-buttons')
 
 const showModal = (e) => {
   state.modal = !state.modal
@@ -143,11 +144,13 @@ const handleChats = (e) => {
   chatButtons.forEach((button, index) => {
     if (!state.isChatsActive) {
       if (index === 2) {
+        fixedButtons.style.gap = '20px'
         chatButton.querySelector('.icon > img').src = "/assets/icons/cross.svg"
         state.isChatsActive = !state.isChatsActive
       } 
     } else {
       if (index === 2) {
+        fixedButtons.style.gap = '10px'
         chatButton.querySelector('.icon > img').src = "/assets/icons/chat.svg"
         state.isChatsActive = !state.isChatsActive
       } 
@@ -156,9 +159,9 @@ const handleChats = (e) => {
   })
 }
 
-showModalButton.addEventListener("click", showModal)
-
+// showModalButton.style.display = 'none'
 chatButton.addEventListener('click', handleChats)
+showModalButton.addEventListener("click", showModal)
 
 
 

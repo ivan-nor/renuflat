@@ -74,5 +74,5 @@
 }
 
 .faq * {
-  transition: fill 0s, transform 0.4s;
+  transition: rotate 0.2s;
 }

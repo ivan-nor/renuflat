@@ -74,18 +74,15 @@ section {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  /* gap: 20px; */
-}
+  gap: 10px;
 
-
-
-.fixed-buttons:last-child {
-  margin-top: 20px;
+  transition: gap 0s;
 }
 
 .chat-button {
   width: 48px;
   height: 48px;
+  /* margin-top: 20px; */
 
   display: flex;
   align-items: center;
@@ -100,6 +97,7 @@ section {
 #chat-button {
   width: 64px;
   height: 64px;
+  /* margin-top: 20px; */
 }
 
 #chat-button > .icon > img {
@@ -122,6 +120,10 @@ section {
   /* display: none; */
   bottom: 58px;
   right: 55px;
+}
+
+.chat-button:nth-child(4) {
+  /* margin-bottom: 20px; */
 }
 
 .scroll-button {
@@ -154,7 +156,6 @@ section {
   /* visibility: hidden; */
   max-height: 0;
   opacity: 0;
-  animation: hide 0.3s;
 }
 
 .scroll-button.hide {
@@ -162,8 +163,12 @@ section {
   animation: none;
 }
 
+.chat-button.hide {
+  animation: hide 0.2s;
+}
+
 .active {
-  animation: show 0.3s;
+  animation: show 0.2s;
 }
 
 .show {
@@ -171,8 +176,8 @@ section {
 }
 
 .rotate-180 {
-  transform: rotate(180deg);
-  transition: transform 0.2s;
+  rotate: 180deg;
+  transition: rotate 0.2s;
 }
 
 body * {
@@ -197,12 +202,12 @@ body * {
   from {
     opacity: 1;
     visibility: visible;
-    display: block;
+    /* display: block; */
   }
 
   to {
     opacity: 0;
     visibility: hidden;
-    display: none;
+    /* display: none; */
   }
 }
