@@ -74,7 +74,13 @@ section {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  gap: 20px;
+  /* gap: 20px; */
+}
+
+
+
+.fixed-buttons:last-child {
+  margin-top: 20px;
 }
 
 .chat-button {
@@ -113,6 +119,7 @@ section {
 
 .chat-button:nth-child(3) {
   position: absolute;
+  /* display: none; */
   bottom: 58px;
   right: 55px;
 }
@@ -142,11 +149,25 @@ section {
   box-shadow: 0 0 8px 8px rgba(251, 155, 42, 0.5);
 }
 
-.hide {
-  display: none;
-  visibility: hidden;
+.hide, .hide * {
+  /* display: none; */
+  /* visibility: hidden; */
   max-height: 0;
   opacity: 0;
+  animation: hide 0.3s;
+}
+
+.scroll-button.hide {
+  display: none;
+  animation: none;
+}
+
+.active {
+  animation: show 0.3s;
+}
+
+.show {
+  animation: show 0.2s;
 }
 
 .rotate-180 {
@@ -156,4 +177,32 @@ section {
 
 body * {
   transition: all 0.2s;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+  
+  to {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
 }
