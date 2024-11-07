@@ -103,6 +103,12 @@ section {
 #chat-button > .icon > img {
   width: 36px;
   height: 36px;
+
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 
 .chat-button > .icon > img {
