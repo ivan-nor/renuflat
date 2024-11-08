@@ -38,9 +38,12 @@
   main {
     padding-top: 300px;
   }
+  .container:has(.main-header) {
+    padding: 8px 16px 24px 16px;
+  }
 
   .main-header {
-    padding: 8px 16px 24px 16px;
+    padding: 0;
     flex-direction: column;
     gap: 16px;
   }
@@ -72,6 +75,20 @@
   .main-header-menu-link {
     /* padding: 0; */
     text-transform: uppercase;
+  }
+
+  .sub-header-list {
+    padding-right: 8px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0.5px solid var(--light-grey-color);
   }
 
   .banner {
