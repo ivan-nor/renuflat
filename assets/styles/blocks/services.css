@@ -24,7 +24,6 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  box-sizing: border-box;
   border-radius: var(--border-radius);
 
   background-color: var(--white-color);
@@ -36,7 +35,6 @@
 }
 
 .tab-button[tabindex="0"] {
-  box-sizing: border-box;
 
   background-color: var(--orange-color);
   color: var(--white-color);

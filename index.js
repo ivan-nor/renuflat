@@ -1,18 +1,30 @@
 const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
-const dropdownMenuElement = document.querySelector('.dropdown-menu')
-dropdownMenuElement.addEventListener('blur', (e) => {
-  dropdownMenuElement.classList.add('visually-hidden')
-  dropdownOpenButton.classList.toggle('visually-hidden')
-})
+const dropdownMenuElement = document.querySelector('.main-header-menu')
+const mainHeaderButton = document.querySelector('.main-header-button')
+// const header = document.querySelector('.main-header')
+// console.log(header);
+// document.addEventListener('focusout', e => console.log(e.target))
+
+// header.addEventListener('focusout', (e) => {
+//   console.log('header blur');
+//   dropdownMenuElement.classList.toggle('mobile-hidden')
+//   mainHeaderButton.classList.toggle('mobile-hidden')
+//   dropdownOpenButton.classList.remove('hide')
+//   dropdownCloseButton.classList.add('hide')
+// })
 dropdownOpenButton.addEventListener('click', (e) => {
-  dropdownMenuElement.classList.toggle('visually-hidden')
-  dropdownMenuElement.focus()
-  dropdownOpenButton.classList.add('visually-hidden')
+  // header.focus()
+  dropdownMenuElement.classList.toggle('mobile-hidden')
+  mainHeaderButton.classList.toggle('mobile-hidden')
+  dropdownOpenButton.classList.add('hide')
+  dropdownCloseButton.classList.remove('hide')
 })
 dropdownCloseButton.addEventListener('click', (e) => {
-  dropdownMenuElement.classList.add('visually-hidden')
-  dropdownOpenButton.classList.toggle('visually-hidden')
+  dropdownMenuElement.classList.add('mobile-hidden')
+  mainHeaderButton.classList.add('mobile-hidden')
+  dropdownCloseButton.classList.add('hide')
+  dropdownOpenButton.classList.remove('hide')
 })
 
 const servicesTabButtons = document.querySelectorAll('#services-tabs button')

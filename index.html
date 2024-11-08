@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/styles/index.css">
   <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/styles/index.css">
   <title>Renuflat</title>
 </head>
 
@@ -86,11 +86,17 @@
         </nav>
       </div>
     </div>
-    <div class="main-header">
-      <div class="container">
-        <a class="main-header-logo" href="#">
-          <div class="main-header-logo-image"></div>
-        </a>
+    <div class="container">
+      <div class="main-header">
+        <div class="main-header-head">
+          <a class="main-header-logo" href="#"><div class="main-header-logo-image"></div></a>
+            <button class="main-header-burger-button button desktop-hidden" type="button">
+              <span class="visually-hidden">Open menu</span>
+              <span class="main-header-burger-button-line"></span>
+              <span class="main-header-burger-button-line"></span>
+            </button>
+            <button class="dropdown-button button cross-button hide"></button>
+        </div>
         <nav class="main-header-menu mobile-hidden">
           <ul class="main-header-menu-list">
             <li class="main-header-menu-item sub-menu">
@@ -133,32 +139,6 @@
           </ul>
         </nav>
         <button class="main-header-button button transparent mobile-hidden" type="button">У вас есть вопрос?</button>
-        <button class="main-header-burger-button button desktop-hidden" type="button">
-          <span class="visually-hidden">Open menu</span>
-          <span class="main-header-burger-button-line"></span>
-          <span class="main-header-burger-button-line"></span>
-        </button>
-        <div class="dropdown-menu visually-hidden container position-relative" tabindex="0">
-          <button class="dropdown-button button cross-button"></button>
-          <ul class="dropdown-menu-list">
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">о нас</a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">услуги</a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">проекты</a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">контакты</a>
-            </li>
-            <li class="dropdown-menu-item">
-            </li>
-          </ul>
-          <button class="main-header-button button transparent dropdown-menu-button" type="button">У вас есть
-            вопрос?</button>
-        </div>
       </div>
     </div>
   </header>
