@@ -1,11 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
   background-color: var(--bg-color);
-  max-width: 1200px;
-  min-width: 360px;
-  width: 100%;
-  margin: 0 auto;
 
-  font: var(--font-regular-size)/var(--font-regular-line-height) "Montserrat Regular";
+  font-size: var(--font-regular-size);
+  line-height: var(--font-regular-line-height);
+  font-family: "Montserrat Regular";
 }
 
 .visually-hidden {
@@ -158,10 +158,10 @@ section {
 }
 
 .hide, .hide * {
-  /* display: none; */
+  display: none !important;
   /* visibility: hidden; */
-  max-height: 0;
-  opacity: 0;
+  /* max-height: 0; */
+  /* opacity: 0; */
 }
 
 .scroll-button.hide {
