@@ -36,10 +36,11 @@
   }
 
   main {
-    padding-top: 300px;
+    padding-top: 252px;
   }
-  .container:has(.main-header) {
-    padding: 8px 16px 24px 16px;
+
+  section {
+    padding: 44px 0;
   }
 
   .main-header {
@@ -77,6 +78,10 @@
     text-transform: uppercase;
   }
 
+  .main-header-button {
+    margin-bottom: 24px;
+  }
+
   .sub-header-list {
     padding-right: 8px;
 
@@ -92,10 +97,20 @@
   }
 
   .banner {
-    /* position: relative;
-    height: auto;
-    margin-top: 24px;
-    display: flex;
+    padding-top: 0;
+  }
+
+  .banner .container {
+    /* position: relative; */
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    /* row-gap: 16px; */
+    grid-gap: 16px;
+    /* height: auto; */
+    /* margin-top: 44px; */
+    padding-top: 44px;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 0; */
@@ -111,17 +126,30 @@
   }
 
   .banner-title {
-    /* font-size: 3rem; */
+    padding-top: 24px;
+
+    grid-row: 1/2;
+    grid-column: 1/1;
+
+    font: 44px/56px "Montserrat SemiBold";
+    text-align: center;
   }
 
   .banner-description {
-  /*  padding: 0;
-    text-align: center; */
+    grid-row: 2/3;
+    grid-column: 1/1;
+    /* padding: 0; */
+    text-align: center;
   }
 
   .banner-footer {
-    /* justify-content: center;
-    margin-top: 220px; */
+    padding-top: 8px;
+
+    grid-row: 4/5;
+    grid-column: 1/1;
+
+    text-align: center;
+    justify-content: center;
   }
 
   .banner-footer-description {
@@ -129,18 +157,27 @@
   }
 
   .banner-image {
+    /* display: none; */
+    grid-row: 1/4;
+    grid-column: 1/1;
+
     /* position: absolute;
     top: -24px;
-    left: 0;
+    left: 0; */
 
     height: 428px;
     width: auto;
 
+    content: url(/assets/images/banner-mobile.png);
     object-fit: cover;
     object-position: bottom right;
     box-sizing: content-box;
     border-radius: 15px;
     
-    z-index: -1; */
+    z-index: -1;
+  }
+
+  .banner-image > img {
+    
   }
 }
