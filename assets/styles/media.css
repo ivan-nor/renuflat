@@ -302,7 +302,6 @@
     font: 28px/36px "Montserrat SemiBold";
   }
   .reviews-cards {
-
     gap: 12px;
   }
 
@@ -310,4 +309,42 @@
     max-height: 340px;
     max-width: 280px;
   }
+
+  /* CONTACTS */
+  .contacts .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+  .contacts-card-title {
+    max-width: 300px;
+    font: 28px/36px "Montserrat SemiBold";
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts-container {
+    gap: 16px;
+  }
+
+  .contacts-form {
+    gap: 24px;
+  }
+
+  .contacts-form-title {
+    font: 22px/28px "Montserrat SemiBold";
+  }
+
+  .contacts-form-description {
+    max-width: 100%;
+    
+  }
+  .contacts-form-input {
+    max-width: 100%;
+  }
+
+  .contacts-form-footer {
+    flex-direction: column;
+  }
+
 }
