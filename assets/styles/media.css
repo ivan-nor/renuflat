@@ -1,7 +1,7 @@
 /* desktop */
 @media (min-width: 1200px) {
   .desktop-hidden {
-    display: none;
+    display: none !important;
   }
 
   /* .mobile-hidden {
@@ -12,7 +12,7 @@
 /* table */
 @media (min-width: 768px) and (max-width: 1199px) {
   .desktop-hidden {
-    display: none;
+    display: none !important;
   }
 
   /* .mobile-hidden {
@@ -22,12 +22,12 @@
 
 /* mobile */
 @media (max-width: 767px) {
-  .desktop-hidden {
-    display: inherit;
-  }
+  /* .desktop-hidden {
+    display: block !important;
+  } */
 
   .mobile-hidden {
-    display: none;
+    display: none !important;
   }
 
   .container {
@@ -35,9 +35,9 @@
     padding-inline: 16px;
   }
   /* TODO */
-  /* main {
+  main {
     padding-top: 252px;
-  } */
+  }
 
   section {
     padding: 44px 0;
@@ -222,19 +222,70 @@
     gap: 16px;
   }
   .guarantee-item-5 {
-    /* padding-top: 0; */
     grid-area: 1 / 1 / 2 / 2;
   }
   .guarantee-item-6 {
-    /* padding-top: 0; */
     grid-area: 2 / 1 / 3 / 2;
   }
   .guarantee-item-15 {
-    /* padding-bottom: 0; */
     grid-area: 3 / 1 / 4 / 2;
   }
   .guarantee-item-16 {
-    /* padding-bottom: 0; */
     grid-area: 4 / 2 / 5 / 1;
+  }
+
+  /* PROJECTS */
+  .projects .container {
+    padding-inline: 4px;
+  }
+
+  .projects-title {  
+    max-width: 100%;
+
+    font: 28px/36px "Montserrat SemiBold";
+    text-align: center;
+  }
+
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-banner {
+    top: 16px;
+    left: 16px;
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 12px;
+    column-gap: 16px;
+
+    border-radius: 12px;
+  }
+
+  .project-banner div:first-child {
+    font: 16px/20px "Montserrat SemiBold";
+    letter-spacing: -0.5%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .project-area {
+    /* display: flex; */
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .project-price {
+    /* display: flex; */
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .project-button {
+    position: static;
+    width: 100%;
+    margin: 12px 12px 0px 12px;
   }
 }

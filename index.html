@@ -61,10 +61,10 @@
             </li>
             <li class="sub-header-item sub-menu">
               <a href="#" class="sub-header-link">
-              <span>Дизайнерские решения</span>
-              <div class="header-dropdown">
-                <img src="assets/images/Arrow_drop_down.svg" alt="dropdown-icon">
-              </div>
+                <span>Дизайнерские решения</span>
+                <div class="header-dropdown">
+                  <img src="assets/images/Arrow_drop_down.svg" alt="dropdown-icon">
+                </div>
               </a>
               <ul class="sub-menu-list hide">
                 <li class="sub-menu-item">
@@ -97,13 +97,15 @@
     <div class="container">
       <div class="main-header">
         <div class="main-header-head">
-          <a class="main-header-logo" href="#"><div class="main-header-logo-image"></div></a>
-            <button class="main-header-burger-button button desktop-hidden" type="button">
-              <span class="visually-hidden">Open menu</span>
-              <span class="main-header-burger-button-line"></span>
-              <span class="main-header-burger-button-line"></span>
-            </button>
-            <button class="dropdown-button button cross-button desktop-hidden hide"></button>
+          <a class="main-header-logo" href="#">
+            <div class="main-header-logo-image"></div>
+          </a>
+          <button class="main-header-burger-button button desktop-hidden" type="button">
+            <span class="visually-hidden">Open menu</span>
+            <span class="main-header-burger-button-line"></span>
+            <span class="main-header-burger-button-line"></span>
+          </button>
+          <button class="dropdown-button button cross-button desktop-hidden hide"></button>
         </div>
         <nav class="main-header-menu mobile-hidden">
           <ul class="main-header-menu-list">
@@ -376,79 +378,126 @@
     <section class="projects">
       <div class="container">
         <h2 class="projects-title">реализованные проекты</h2>
-        <div class="swiper">
+
+        <div class="project">
           <div class="project-banner">
-            <p>Ремонт квартиры<br>ЖК ВТБ Арена Парк</p>
-            <p class="project-area">75 м2</p>
-            <p class="project-period">8 месяцев</p>
+            <div>
+              <p>Ремонт квартиры</p>
+              <p>ЖК ВТБ Арена Парк</p>
+            </div>
+            <div class="project-area">
+              <img src="/assets/icons/project-area-icon.svg" alt="area icon" width="24px" height="24px">
+              <p>75 м2</p>
+            </div>
+            <div class="project-period">
+              <img src="/assets/icons/project-period-icon.svg" alt="period icon" width="24px" height="24px">
+              <p>8 месяцев</p>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project1.png" alt="project one">
+                <img class="desktop-hidden" src="/assets/images/project1-mobile.png" alt="project one">
+              </div>
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project2.png" alt="project two">
+                <img class="desktop-hidden" src="/assets/images/project2-mobile.png" alt="project two">
+              </div>
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project3.png" alt="project three">
+                <img class="desktop-hidden" src="/assets/images/project3-mobile.png" alt="project three">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
           <a href="" class="project-button button">Заказать подобное</a>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/assets/images/project1.png" alt="project one" width="1160" height="500">
+        </div>
+
+        <div class="project">
+          <div class="project-banner">
+            <div>
+              <p>Ремонт квартиры</p>
+              <p>Холодильный переулок</p>
+              
             </div>
-            <div class="swiper-slide">
-              <img src="/assets/images/project2.png" alt="project two" width="1160" height="500">
+            <div class="project-area">
+              <img src="/assets/icons/project-area-icon.svg" alt="area icon" width="24px" height="24px">
+              <p>21 м2</p>
             </div>
-            <div class="swiper-slide">
-              <img src="/assets/images/project3.png" alt="project three" width="1160" height="500">
+            <div class="project-period">
+              <img src="/assets/icons/project-period-icon.svg" alt="period icon" width="24px" height="24px">
+              <p>2 месяца</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-  
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-  
-        <div class="swiper">
-          <div class="project-banner">
-            <p>Ремонт квартиры<br>Холодильный переулок</p>
-            <p class="project-area">31 м2</p>
-            <p class="project-period">3 месяца</p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project2.png" alt="project one">
+                <img class="desktop-hidden" src="/assets/images/project2-mobile.png" alt="project one">
+              </div>
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project3.png" alt="project two">
+                <img class="desktop-hidden" src="/assets/images/project3-mobile.png" alt="project two">
+              </div>
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project1.png" alt="project three">
+                <img class="desktop-hidden" src="/assets/images/project1-mobile.png" alt="project three">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
           </div>
           <button class="project-button button">Заказать подобное</button>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/assets/images/project1.png" alt="project one" width="1160" height="500">
+        </div>
+
+        <div class="project">
+          <div class="project-banner">
+            <div>
+              <p>Ремонт квартиры</p>
+              <p>ЖК Невский</p>
             </div>
-            <div class="swiper-slide">
-              <img src="/assets/images/project2.png" alt="project two" width="1160" height="500">
+            <div class="project-area">
+              <img src="/assets/icons/project-area-icon.svg" alt="area icon" width="24px" height="24px">
+              <p>75 м2</p>
             </div>
-            <div class="swiper-slide">
-              <img src="/assets/images/project3.png" alt="project three" width="1160" height="500">
+            <div class="project-period">
+              <img src="/assets/icons/project-period-icon.svg" alt="period icon" width="24px" height="24px">
+              <p>8 месяцев</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-  
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-  
-        <div class="swiper">
-          <div class="project-banner">
-            <p>Ремонт квартиры<br>ЖК Невский</p>
-            <p class="project-area">75 м2</p>
-            <p class="project-period">8 месяцев</p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project3.png" alt="project one">
+                <img class="desktop-hidden" src="/assets/images/project3-mobile.png" alt="project one">
+              </div>
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project1.png" alt="project two">
+                <img class="desktop-hidden" src="/assets/images/project1-mobile.png" alt="project two">
+              </div>
+              <div class="swiper-slide">
+                <img class="mobile-hidden" src="/assets/images/project2.png" alt="project three">
+                <img class="desktop-hidden" src="/assets/images/project2-mobile.png" alt="project three">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
           </div>
           <button class="project-button button">Заказать подобное</button>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/assets/images/project1.png" alt="project one" width="1160" height="500">
-            </div>
-            <div class="swiper-slide">
-              <img src="/assets/images/project2.png" alt="project two" width="1160" height="500">
-            </div>
-            <div class="swiper-slide">
-              <img src="/assets/images/project3.png" alt="project three" width="1160" height="500">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-  
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
-  
-        <button class="projects-pagination-button button transparent">Еще проекты</button
+
+
+        <button class="projects-pagination-button button transparent">Еще проекты</button>
       </div>
     </section>
 
@@ -468,7 +517,8 @@
             <div class="reviews-card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis beatae
               ipsum repellendus, asperiores amet sed fugit placeat ullam quia eaque minima architecto, excepturi, minus
               consequuntur dolorem reprehenderit perferendis temporibus tempora. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Provident sint, laudantium ipsam, in libero assumenda illum facilis similique labore neque
+              adipisicing elit. Provident sint, laudantium ipsam, in libero assumenda illum facilis similique labore
+              neque
               expedita incidunt est placeat fugit. Quidem, quis? Beatae, reprehenderit expedita! Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Illum hic alias sunt iste expedita ab quia saepe exercitationem nisi
               natus aliquam facilis dolore commodi, a quis animi? Ipsam, ea at?</div>
@@ -484,7 +534,8 @@
             <div class="reviews-card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis beatae
               ipsum repellendus, asperiores amet sed fugit placeat ullam quia eaque minima architecto, excepturi, minus
               consequuntur dolorem reprehenderit perferendis temporibus tempora. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Provident sint, laudantium ipsam, in libero assumenda illum facilis similique labore neque
+              adipisicing elit. Provident sint, laudantium ipsam, in libero assumenda illum facilis similique labore
+              neque
               expedita incidunt est placeat fugit. Quidem, quis? Beatae, reprehenderit expedita! Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Illum hic alias sunt iste expedita ab quia saepe exercitationem nisi
               natus aliquam facilis dolore commodi, a quis animi? Ipsam, ea at?</div>
@@ -500,12 +551,13 @@
             <div class="reviews-card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis beatae
               ipsum repellendus, asperiores amet sed fugit placeat ullam quia eaque minima architecto, excepturi, minus
               consequuntur dolorem reprehenderit perferendis temporibus tempora. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Provident sint, laudantium ipsam, in libero assumenda illum facilis similique labore neque
+              adipisicing elit. Provident sint, laudantium ipsam, in libero assumenda illum facilis similique labore
+              neque
               expedita incidunt est placeat fugit. Quidem, quis? Beatae, reprehenderit expedita! Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Illum hic alias sunt iste expedita ab quia saepe exercitationem nisi
               natus aliquam facilis dolore commodi, a quis animi? Ipsam, ea at?</div>
           </div>
-      </div>
+        </div>
     </section>
 
     <section class="contacts">
@@ -524,7 +576,7 @@
             </div>
           </form>
         </div>
-  
+
         <div class="contacts-card">
           <h2 class="contacts-card-title">Связаться с нами</h2>
           <ul class="contacts-card-list">
@@ -629,7 +681,8 @@
                   <h4 class="renovations-item-title">Внешняя отделка</h4>
                   <div class="renovations-item-price">от 1 500 ₽/м2</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -643,7 +696,8 @@
                   <h4 class="renovations-item-title">Вагонкой</h4>
                   <div class="renovations-item-price">от 1 500 ₽/м2</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -657,7 +711,8 @@
                   <h4 class="renovations-item-title">Пластиком</h4>
                   <div class="renovations-item-price">от 1 500 ₽/м2</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -671,7 +726,8 @@
                   <p class="renovations-footer-description">Посмотреть еще</p>
                   <div class="renovations-footer-icon">
                     <svg width="11" height="6" viewBox="0 0 20 10" fill="#7F7F7F" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
+                      <path
+                        d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
                     </svg>
                   </div>
                 </a>
@@ -695,7 +751,8 @@
                   <h4 class="renovations-item-title">lorem2</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -709,7 +766,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -723,7 +781,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -738,7 +797,8 @@
                   <svg width="24" height="24" fill="#7F7F7F" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_2197_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16"
                       height="16">
-                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4" transform="rotate(-90 4.80029 19.1997)" />
+                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4"
+                        transform="rotate(-90 4.80029 19.1997)" />
                     </mask>
                     <g mask="url(#mask0_2197_735)">
                       <path
@@ -766,7 +826,8 @@
                   <h4 class="renovations-item-title">lorem2</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -780,7 +841,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -794,7 +856,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -809,7 +872,8 @@
                   <svg width="24" height="24" fill="#7F7F7F" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_2197_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16"
                       height="16">
-                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4" transform="rotate(-90 4.80029 19.1997)" />
+                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4"
+                        transform="rotate(-90 4.80029 19.1997)" />
                     </mask>
                     <g mask="url(#mask0_2197_735)">
                       <path
@@ -837,7 +901,8 @@
                   <h4 class="renovations-item-title">lorem2</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -851,7 +916,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -865,7 +931,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -880,7 +947,8 @@
                   <svg width="24" height="24" fill="#7F7F7F" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_2197_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16"
                       height="16">
-                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4" transform="rotate(-90 4.80029 19.1997)" />
+                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4"
+                        transform="rotate(-90 4.80029 19.1997)" />
                     </mask>
                     <g mask="url(#mask0_2197_735)">
                       <path
@@ -908,7 +976,8 @@
                   <h4 class="renovations-item-title">lorem2</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -922,7 +991,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -936,7 +1006,8 @@
                   <h4 class="renovations-item-title">Lorem, ipsum.</h4>
                   <div class="renovations-item-price">Lorem.</div>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 16H27" stroke="#161614" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                     <path d="M18 7L27 16L18 25" stroke="#161614" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
@@ -951,7 +1022,8 @@
                   <svg width="24" height="24" fill="#7F7F7F" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_2197_735" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16"
                       height="16">
-                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4" transform="rotate(-90 4.80029 19.1997)" />
+                      <rect x="4.80029" y="19.1997" width="14.4" height="14.4"
+                        transform="rotate(-90 4.80029 19.1997)" />
                     </mask>
                     <g mask="url(#mask0_2197_735)">
                       <path
@@ -971,7 +1043,7 @@
     <section class="remont">
       <div class="container">
         <h2 class="remont-title">делаем ремонт</h2>
-  
+
         <ul class="remont-lines-list">
           <li class="remont-lines-item">
             <div class="remont-line-header">
@@ -1016,13 +1088,13 @@
             <p class="">до масштабных индивидуальных проектов</p>
           </li>
         </ul>
-  
+
         <div class="remont-footer">
           <button type="submit" class="remont-button button">Бесплатная консультация</button>
-          <p class="remont-footer-description">Отправьте заявку сейчас, и наш специалист свяжется с вами в течении 1 часа
+          <p class="remont-footer-description">Отправьте заявку сейчас, и наш специалист свяжется с вами в течении 1
+            часа
           </p>
-        </div
-      </div>
+        </div </div>
     </section>
 
     <section class="faq">
@@ -1035,11 +1107,13 @@
                 <h3 class="faq-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h3>
                 <div class="faq-item-button button">
                   <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
+                    <path
+                      d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
                   </svg>
                 </div>
               </div>
-              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
+              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus,
                 commodi, veritatis ad optio, similique rerum corporis culpa maiores exercitationem perferendis ratione
                 consequatur qui sed aliquid illo id saepe quos totam.</p>
             </div>
@@ -1051,11 +1125,13 @@
                 <h3 class="faq-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h3>
                 <div class="faq-item-button button">
                   <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
+                    <path
+                      d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
                   </svg>
                 </div>
               </div>
-              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
+              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus,
                 commodi, veritatis ad optio, similique rerum corporis culpa maiores exercitationem perferendis ratione
                 consequatur qui sed aliquid illo id saepe quos totam.</p>
             </div>
@@ -1067,11 +1143,13 @@
                 <h3 class="faq-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h3>
                 <div class="faq-item-button button">
                   <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
+                    <path
+                      d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
                   </svg>
                 </div>
               </div>
-              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
+              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus,
                 commodi, veritatis ad optio, similique rerum corporis culpa maiores exercitationem perferendis ratione
                 consequatur qui sed aliquid illo id saepe quos totam.</p>
             </div>
@@ -1083,11 +1161,13 @@
                 <h3 class="faq-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h3>
                 <div class="faq-item-button button">
                   <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
+                    <path
+                      d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
                   </svg>
                 </div>
               </div>
-              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
+              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus,
                 commodi, veritatis ad optio, similique rerum corporis culpa maiores exercitationem perferendis ratione
                 consequatur qui sed aliquid illo id saepe quos totam.</p>
             </div>
@@ -1099,11 +1179,13 @@
                 <h3 class="faq-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h3>
                 <div class="faq-item-button button">
                   <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
+                    <path
+                      d="M9.9999 8.28598L17.8729 0.412736C18.0016 0.284069 18.1597 0.220069 18.3474 0.220736C18.5349 0.221402 18.6943 0.286069 18.8257 0.414736C18.9568 0.537402 19.0224 0.694653 19.0224 0.886485C19.0224 1.07832 18.9568 1.2399 18.8257 1.37123L11.0147 9.17124C10.8693 9.3164 10.7088 9.42148 10.5332 9.48648C10.3575 9.55148 10.1797 9.58398 9.9999 9.58398C9.82007 9.58398 9.64232 9.55148 9.46665 9.48648C9.29099 9.42148 9.12624 9.3164 8.9724 9.17124L1.1684 1.35448C1.03724 1.23182 0.972655 1.07698 0.974655 0.889984C0.976488 0.702985 1.04299 0.543902 1.17415 0.412736C1.30549 0.284069 1.46432 0.219152 1.65066 0.217984C1.83682 0.216651 1.99557 0.281569 2.12691 0.412736L9.9999 8.28598Z" />
                   </svg>
                 </div>
               </div>
-              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
+              <p class="faq-item-description hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus,
                 commodi, veritatis ad optio, similique rerum corporis culpa maiores exercitationem perferendis ratione
                 consequatur qui sed aliquid illo id saepe quos totam.</p>
             </div>
@@ -1120,7 +1202,7 @@
       </a>
       <a href="https://t.me/your_username" target="_blanc" class="chat-button hide">
         <div class="icon">
-        <img src="/assets/icons/telegram.svg" alt="telegram icon">
+          <img src="/assets/icons/telegram.svg" alt="telegram icon">
         </div>
       </a>
       <a href="https://wa.me/your-phone-number?text=Ваше%20сообщение" target="_blank" class="chat-button hide">
