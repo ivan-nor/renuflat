@@ -1,29 +1,41 @@
+.reviews .container {
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews-title {
+  max-width: 600px;
+
   font: 44px/56px "Montserrat Medium";
   text-transform: uppercase;
   text-align: center;
 }
 
 .reviews-cards {
-  padding-top: 64px;
+    width: 100%;
+    padding: 0 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 12px;
-
-  /* это для медиазапросов */
-  overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .reviews-card {
   position: relative;
 
   padding: 16px;
-  max-height: 360px;
+  max-height: 260px;
   min-height: 260px;
   max-width: 360px;
-  flex: 0 0 33%;
+  min-width: 280px;
+  flex: 0 0 360px;
 
   display: flex;
   flex-direction: column;
