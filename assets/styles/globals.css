@@ -128,9 +128,9 @@ section {
   right: 55px;
 }
 
-.chat-button:nth-child(4) {
-  /* margin-bottom: 20px; */
-}
+/* .chat-button:nth-child(4) {
+  margin-bottom: 20px;
+} */
 
 .scroll-button {
   position: relative;
