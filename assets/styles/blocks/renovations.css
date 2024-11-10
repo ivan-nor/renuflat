@@ -15,6 +15,7 @@
 }
 
 .renovations-card {
+  max-width: 100%;
   padding: 32px;
 
   display: flex;
@@ -36,8 +37,22 @@
 
 .renovations-image {
   height: 100%;
-  /* width: auto; */
-  flex: 1 1 auto;
+  width: 100%;
+  max-width: 550px;
+  /* aspect-ratio: 1; */
+  flex: 1;
+
+  background-image: url(/assets/images/renovations-image-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.renovations-image > img {
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .renovations-body-title {
@@ -49,7 +64,7 @@
 }
 
 .renovations-body {
-  flex: 1 1 50%;
+  flex: 1;
 
   display: flex;
   flex-direction: column;
@@ -58,7 +73,7 @@
 
 .renovations-body-description {
   font-size: 16px;
-  line-height: auto;
+  line-height: 20px;
   font-family: "Montserrat Regular";
 }
 
@@ -69,8 +84,18 @@
 }
 
 .renovations-item {
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid var(--light-grey-color);
+}
+
+.renovations-item:last-child {
+  border: 0;
+}
+
+.renovations-item > a {
   display: flex;
-  gap: 48px;
+  /* gap: 48px; */
   /* align-items: center; */
   justify-content: space-between;
 
@@ -79,7 +104,7 @@
 }
 
 .renovations-item-title {
-  width: 50%;
+  min-width: 200px;
 
   text-transform: none;
   font-family: "Montserrat SemiBold";
