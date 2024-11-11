@@ -185,10 +185,25 @@ function updateMainMargin() {
 }
 
 // ОБРАБОТКА ПАГИНАЦИИ ПРОЕКТОВ
-const projectsPaginationButton = document.querySelector('.projects-pagination-button')
-projectsPaginationButton.addEventListener('click', () => {
+const projectsPagination = document.querySelector('.projects-pagination-button')
+projectsPagination.addEventListener('click', () => {
   const hiddenProject = document.querySelector('.project.hide')
   if (hiddenProject) {
     hiddenProject.classList.remove('hide')
   }
 })
+
+// ПАГИНАЦИЯ RENOVATIONS
+const renovationsPaginations = document.querySelectorAll('.renovations-footer')
+console.log(renovationsPaginations);
+renovationsPaginations.forEach(renovationsPagination => renovationsPagination.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  const grandparent = renovationsPagination.parentElement.parentElement;
+  console.log(grandparent);
+  const hiddenRenovationItem = grandparent.querySelector('.renovations-item.hide')
+  console.log(hiddenRenovationItem);
+  if (hiddenRenovationItem) {
+    hiddenRenovationItem.classList.remove('hide')
+  }
+}))
