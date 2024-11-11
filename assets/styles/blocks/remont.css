@@ -5,7 +5,9 @@
 }
 
 .remont-title {
-  font: 80px/100px "Montserrat Medium";
+  font-size: 80px;
+  line-height: 100px;
+  font-family: "Montserrat Medium";
 }
 
 .remont-lines-list {
@@ -54,5 +56,13 @@
 }
 
 .remont-footer-description {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+  letter-spacing: -0.005em;
   color: var(--gray-color);
+}
+
+.remont-button {
+  max-width: max-content;
 }
