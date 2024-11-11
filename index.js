@@ -175,11 +175,20 @@ const handleChats = (e) => {
 chatButton.addEventListener('click', handleChats)
 showModalButton.addEventListener("click", showModal)
 
+
+// ВЫЧИСЛЕНИЕ ОТСТУПА MAIN
 window.addEventListener('load', updateMainMargin);
 window.addEventListener('resize', updateMainMargin);
-
 function updateMainMargin() {
   const headerHeight = document.querySelector('header').offsetHeight;
   document.querySelector('main').style.paddingTop = `${headerHeight}px`;
 }
 
+// ОБРАБОТКА ПАГИНАЦИИ ПРОЕКТОВ
+const projectsPaginationButton = document.querySelector('.projects-pagination-button')
+projectsPaginationButton.addEventListener('click', () => {
+  const hiddenProject = document.querySelector('.project.hide')
+  if (hiddenProject) {
+    hiddenProject.classList.remove('hide')
+  }
+})
