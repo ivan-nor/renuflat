@@ -127,7 +127,7 @@
 a.renovations-footer {
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
 
   font-size: 16px;
   line-height: 20px;
