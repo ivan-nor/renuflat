@@ -156,13 +156,13 @@ const handleChats = (e) => {
   chatButtons.forEach((button, index) => {
     if (!state.isChatsActive) {
       if (index === 2) {
-        fixedButtons.style.gap = '20px'
+        // fixedButtons.style.gap = '20px'
         chatButton.querySelector('.icon > img').src = "/assets/icons/cross.svg"
         state.isChatsActive = !state.isChatsActive
       } 
     } else {
       if (index === 2) {
-        fixedButtons.style.gap = '10px'
+        // fixedButtons.style.gap = '10px'
         chatButton.querySelector('.icon > img').src = "/assets/icons/chat.svg"
         state.isChatsActive = !state.isChatsActive
       } 
