@@ -420,6 +420,11 @@
   }
 
   /* REMONT */
+
+  .remont .container {
+    gap: 24px;
+  }
+
   .remont-title {
     font-size: 44px;
     line-height: 56px;
@@ -452,6 +457,7 @@
   }
 
   .remont-footer {
+    margin-top: 32px;
     max-width: 300px;
   }
 
