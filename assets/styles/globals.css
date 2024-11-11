@@ -49,9 +49,9 @@ img {
   pointer-events: none;
 }
 
-main {
+/* main {
   padding-top: calc(var(--header-height) + 40px);
-}
+} */
 
 .container {
   width: 100%;

@@ -175,5 +175,11 @@ const handleChats = (e) => {
 chatButton.addEventListener('click', handleChats)
 showModalButton.addEventListener("click", showModal)
 
+window.addEventListener('load', updateMainMargin);
+window.addEventListener('resize', updateMainMargin);
 
+function updateMainMargin() {
+  const headerHeight = document.querySelector('header').offsetHeight;
+  document.querySelector('main').style.paddingTop = `${headerHeight}px`;
+}
 
