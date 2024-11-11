@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/styles/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <title>Renuflat</title>
 </head>
 
@@ -154,6 +155,7 @@
   </header>
 
   <main class="content">
+    <!-- <a href="#modal-content" data-fancybox class="btn btn-primary">Открыть модальное окно</a> -->
     <section class="banner">
       <div class="container">
         <h1 class="banner-title">ДЕЛАЕМ<br>РЕМОНТ</h1>
@@ -169,7 +171,7 @@
           </p>
         </div>
         <div class="banner-footer">
-          <button class="banner-button button">Бесплатная консультация</button>
+          <a href="#modal-content" data-fancybox class="banner-button button" >Бесплатная консультация</a>
           <p class="banner-footer-description">
             Отправьте заявку сейчас, <br class="mobile-hidden">
             и наш специалист свяжется <br class="mobile-hidden">
@@ -211,7 +213,8 @@
                   <p class="services-card-price">от 1 500 ₽/м2</p>
                   <p class="services-card-period">14 дней</p>
                 </div>
-                <a href="" class="services-card-button button">Заказать ремонт</a>
+                <!-- <a href="#modal-content" data-fancybox class="banner-button button" >Бесплатная консультация</a> -->
+                <a href="#modal-content" data-fancybox class="services-card-button button">Заказать ремонт</a>
               </div>
             </div>
             <div class="services-card">
@@ -1262,6 +1265,24 @@
         <img src="/assets/images/arrow_forward.svg" alt="scroll top icon">
       </button>
     </div>
+
+    <div style="display: none;" id="modal-content" class="modal-content">
+      <div class="contacts-container">
+        <h2 class="contacts-form-title">обсудим ваш проект?</h2>
+        <form class="contacts-form">
+          <p class="contacts-form-description">Заполните форму, и наш специалист свяжется с вами в течении 1 часа</p>
+          <input class="contacts-form-input" type="text" placeholder="Как вас зовут?" name="name" autocomplete="off" />
+          <input class="contacts-form-input" type="text" placeholder="Ваш номер телефона" name="phone"
+            autocomplete="on" />
+          <div class="contacts-form-footer">
+            <button type="submit" class="contacts-form-button button">Отправить</button>
+            <p class="contacts-form-footer-description">Нажимая на кнопку <strong>Отправить</strong>, вы подтверждаете
+              согласие на обработку персональных данных</p>
+          </div>
+        </form>
+      </div>
+    <!-- <button data-fancybox-close class="btn btn-secondary">Закрыть</button> -->
+    </div>
   </main>
 
   <footer class="footer">
@@ -1277,6 +1298,7 @@
   <script src="swiper-bundle.min.js"></script>
   <script src="swiper.js"></script>
   <script src="accordion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 
 </html>
