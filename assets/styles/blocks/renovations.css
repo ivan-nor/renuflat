@@ -36,11 +36,11 @@
 
 
 .renovations-image {
-  height: 100%;
-  width: 100%;
+  height: auto;
   max-width: 550px;
-  /* aspect-ratio: 1; */
-  flex: 1;
+  min-width: 328px;
+
+  flex: 1 0 auto;
 
   background-image: url(/assets/images/renovations-image-1.png);
   background-size: cover;
@@ -48,12 +48,13 @@
   background-repeat: no-repeat;
 }
 
-.renovations-image > img {
+/* .renovations-image > img {
   height: 100%;
   aspect-ratio: 1;
-  object-fit: cover;
+
+  object-fit: contain;
   object-position: center;
-}
+} */
 
 .renovations-body-title {
   text-transform: none;
@@ -95,12 +96,8 @@
 
 .renovations-item > a {
   display: flex;
-  /* gap: 48px; */
-  /* align-items: center; */
+  gap: 8px;
   justify-content: space-between;
-
-  text-decoration: none;
-  color: inherit;
 }
 
 .renovations-item-title {
@@ -127,9 +124,9 @@
   border: 0.5px solid var(--light-grey-color);
 }
 
-.renovations-footer {
+a.renovations-footer {
   justify-content: flex-start;
-  /* align-items: center; */
+  align-items: center;
   gap: 8px;
 
   font-size: 16px;
