@@ -38,23 +38,16 @@
 .renovations-image {
   height: auto;
   max-width: 550px;
-  /* min-width: 328px; */
 
   flex: 1 0 auto;
-
-  background-image: url(/assets/images/renovations-image-1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-/* .renovations-image > img {
+.renovations-image > img {
   height: 100%;
-  aspect-ratio: 1;
+  width: auto;
 
   object-fit: contain;
-  object-position: center;
-} */
+}
 
 .renovations-body-title {
   text-transform: none;
@@ -120,14 +113,13 @@
 .renovations-item-divider {
   width: 100%;
   height: 1px;
-  /* box-sizing: content-box; */
+
   border: 0.5px solid var(--light-grey-color);
 }
 
 a.renovations-footer {
   justify-content: flex-start;
   align-items: center;
-  /* gap: 8px; */
 
   font-size: 16px;
   line-height: 20px;
