@@ -464,4 +464,11 @@
   .remont-button {
     max-width: max-content;
   }
+
+  /* MODAL */
+  .contacts-container {
+    max-width: 360px;
+    min-width: 360px;
+    padding-inline: 16px;
+  }
 }
