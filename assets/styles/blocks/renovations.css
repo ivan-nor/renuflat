@@ -38,7 +38,7 @@
 .renovations-image {
   height: auto;
   max-width: 550px;
-  min-width: 328px;
+  /* min-width: 328px; */
 
   flex: 1 0 auto;
 
