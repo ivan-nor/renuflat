@@ -1,0 +1,38 @@
+/*  portrait table */
+@media (min-width: 641px) and (max-width: 960px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+
+  /* .mobile-hidden {
+    display: inherit;
+  } */
+
+  .table-hidden {
+    display: none !important;
+  }
+
+  .banner .container {
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .banner-title {
+    font-size: clamp(4.5rem, 11vw, 5rem);
+  }
+
+  .banner-button {
+    grid-row:  1/2;
+    grid-column: 2/3;
+  }
+
+  .banner-footer-description {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .banner-image {
+    grid-column: 1/3;
+  }
+}

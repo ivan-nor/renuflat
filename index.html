@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- <header class="header" style="display: none;"> -->
   <header class="header">
     <div class="sub-header">
       <div class="container">
@@ -159,19 +160,12 @@
     <section class="banner">
       <div class="container">
         <h1 class="banner-title">ДЕЛАЕМ<br>РЕМОНТ</h1>
-        <div class="banner-description">
-          <p>качественно, быстро и надежно</p>
-          <p>от простой отделки помещений</p>
-          <p>до масштабных индивидуальных проектов</p>
-        </div>
-        <div class="banner-footer">
+        <p class="banner-description table-hidden">качественно, быстро и надежно<br> от простой отделки помещений<br>до масштабных индивидуальных проектов</p>
+
+        <!-- <div class="banner-footer"> -->
           <a href="#modal-content" data-fancybox class="banner-button button" >Бесплатная консультация</a>
-          <div class="banner-footer-description">
-            <p>Отправьте заявку сейчас,</p>
-            <p>и наш специалист свяжется</p>
-            <p>с вами в течении 1 часа</p>
-          </div>
-        </div>
+          <p class="banner-footer-description">Отправьте заявку сейчас, и наш специалист свяжется с вами в течении 1 часа</p>
+        <!-- </div> -->
         <img src="/assets/images/banner.png" alt="banner" class="banner-image" width="1160" height="550">
       </div>
     </section>
@@ -1280,19 +1274,19 @@
     </div>
 
     <div style="display: none;" id="modal-content" class="modal-content">
-      <div class="contacts-container">
-        <h2 class="contacts-form-title">обсудим ваш проект?</h2>
-        <form class="contacts-form">
-          <p class="contacts-form-description">Заполните форму, и наш специалист свяжется с вами в течении 1 часа</p>
-          <input class="contacts-form-input" type="text" placeholder="Как вас зовут?" name="name" autocomplete="off" />
-          <input class="contacts-form-input" type="text" placeholder="Ваш номер телефона" name="phone"
-            autocomplete="on" />
-          <div class="contacts-form-footer">
-            <button type="submit" class="contacts-form-button button">Отправить</button>
-            <p class="contacts-form-footer-description">Нажимая на кнопку <strong>Отправить</strong>, вы подтверждаете
-              согласие на обработку персональных данных</p>
-          </div>
-        </form>
+        <div class="contacts-container">
+          <h2 class="contacts-form-title">обсудим ваш проект?</h2>
+          <form class="contacts-form">
+            <p class="contacts-form-description">Заполните форму, и наш специалист свяжется с вами в течении 1 часа</p>
+            <input class="contacts-form-input" type="text" placeholder="Как вас зовут?" name="name" autocomplete="off" />
+            <input class="contacts-form-input" type="text" placeholder="Ваш номер телефона" name="phone"
+              autocomplete="on" />
+            <div class="contacts-form-footer">
+              <button type="submit" class="contacts-form-button button">Отправить</button>
+              <p class="contacts-form-footer-description">Нажимая на кнопку <strong>Отправить</strong>, вы подтверждаете
+                согласие на обработку персональных данных</p>
+            </div>
+          </form>
       </div>
     <!-- <button data-fancybox-close class="btn btn-secondary">Закрыть</button> -->
     </div>

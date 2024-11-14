@@ -1,0 +1,10 @@
+/*  landscape table */
+@media (min-width: 961px) and (max-width: 1199px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+
+  /* .mobile-hidden {
+    display: inherit;
+  } */
+}
