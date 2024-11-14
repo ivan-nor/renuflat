@@ -121,39 +121,37 @@
     content: url(/assets/images/banner-mobile.png);
     border-radius: 15px;
   }
+/* SERVICES */
+.services-cards {
+  flex-direction: column;
+  gap: 32px;
+}
 
+.services-card-title {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "Montserrat SemiBold";
+}
 
-  /* SERVICES */
-  .services-cards {
-    flex-direction: column;
-    gap: 32px;
-  }
+.services-card-chips-description {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+}
 
-  .services-card-title {
-    font-size: 22px;
-    line-height: 28px;
-    font-family: "Montserrat SemiBold";
-  }
+.services-card-chips-item {
+  font-size: 10px;
+  line-height: 16px;
+  font-family: "Montserrat Bold";
+}
 
-  .services-card-chips-description {
-    font-size: 16px;
-    line-height: 20px;
-    font-family: "Montserrat Regular";
-  }
+.services-card-price {
+  font: 24px/36px "Montserrat SemiBold";
+}
 
-  .services-card-chips-item {
-    font-size: 10px;
-    line-height: 16px;
-    font-family: "Montserrat Bold";
-  }
-
-  .services-card-price {
-    font: 24px/36px "Montserrat SemiBold";
-  }
-
-  .services-card-period {
-    font: 22px/28px "Montserrat Medium";
-  }
+.services-card-period {
+  font: 22px/28px "Montserrat Medium";
+}
 
   /* GUARANTEE */
   .guarantee-title {

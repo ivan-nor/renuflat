@@ -67,7 +67,7 @@
 }
 
 .services-card {
-  max-width: 360px;
+  /* max-width: 360px; */
   min-width: 280px;
   flex: 1 0 30%;
 
@@ -105,7 +105,7 @@
 }
 
 .services-card-title {
-  font-size: clamp(20px, 2vw, 24px);
+  font-size: clamp(20px, 2.1vw, 24px);
   line-height: 1.25;
   font-family: "Montserrat Medium";
   letter-spacing: -0.5%;

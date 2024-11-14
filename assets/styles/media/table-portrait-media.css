@@ -35,4 +35,8 @@
   .banner-image {
     grid-column: 1/3;
   }
+
+  .services-card-title {
+    font-family: "Montserrat SemiBold";
+  }
 }

@@ -57,6 +57,32 @@
     border-radius: 15px;
   }
 
+  .services-card-title {
+    font-size: 22px;
+    line-height: 28px;
+    font-family: "Montserrat SemiBold";
+  }
+  
+  .services-card-chips-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat Regular";
+  }
+  
+  .services-card-chips-item {
+    font-size: 10px;
+    line-height: 16px;
+    font-family: "Montserrat Bold";
+  }
+  
+  .services-card-price {
+    font: 24px/36px "Montserrat SemiBold";
+  }
+  
+  .services-card-period {
+    font: 22px/28px "Montserrat Medium";
+  }
+
   .swiper img {
     width: 100%;
   }
