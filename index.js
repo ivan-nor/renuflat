@@ -207,3 +207,12 @@ renovationsPaginations.forEach(renovationsPagination => renovationsPagination.ad
     hiddenRenovationItem.classList.remove('hide')
   }
 }))
+
+// клик по отзыву
+const afterElements = document.querySelectorAll('.reviews-card-after')
+afterElements.forEach((after) => after.addEventListener('click', () => {
+  const card = after.parentNode
+  const text = card.querySelector('.reviews-card-text')
+  card.style.maxHeight = 'max-content'
+  after.style.display = 'none'
+}))
