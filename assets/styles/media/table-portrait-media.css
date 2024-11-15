@@ -147,15 +147,31 @@
   .renovations .tabs {
     margin: 0;
     width: 50%;
+
     flex-direction: column;
+    
     border-radius: 24px;
   }
 
-  .renovations-item > a {
-    flex-wrap: wrap;
+  .renovations-card {
+    padding: 0;
+    overflow: hidden;
+
+    flex-direction: column-reverse;
+    gap: 0;
+
+    border-radius: 12px;
   }
-  .renovations-item-price {
-    flex-basis: 100%;
-    order: 3;
+
+  .renovations-image {
+    height: 280px;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .renovations-body {
+    flex: none;
+
+    padding: 32px;
   }
 }

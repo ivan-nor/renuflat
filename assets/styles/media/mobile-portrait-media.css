@@ -364,6 +364,10 @@
   .renovations-image {
     height: 160px;
     aspect-ratio: 1;
+
+    max-width: 100%;
+    width: 100%;
+    flex: none;
   }
 
   .renovations-body {
@@ -373,7 +377,6 @@
   }
 
   .renovations-body-title {
-    /* text-transform: none; */
     font-family: "Montserrat SemiBold";
     font-size: 22px;
     line-height: 28px;
@@ -401,7 +404,6 @@
   }
 
   /* REMONT */
-
   .remont .container {
     gap: 24px;
   }
