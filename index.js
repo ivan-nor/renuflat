@@ -9,14 +9,14 @@ dropdownOpenButton.addEventListener('click', (e) => {
   mainHeaderButton.classList.toggle('mobile-hidden')
   dropdownOpenButton.classList.add('hide')
   dropdownCloseButton.classList.remove('hide')
-  updateMainMargin()
+  // updateMainMargin()
 })
 dropdownCloseButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.add('mobile-hidden')
   mainHeaderButton.classList.add('mobile-hidden')
   dropdownCloseButton.classList.add('hide')
   dropdownOpenButton.classList.remove('hide')
-  updateMainMargin()
+  // updateMainMargin()
 })
 
 const servicesTabButtons = document.querySelectorAll('#services-tabs button')
