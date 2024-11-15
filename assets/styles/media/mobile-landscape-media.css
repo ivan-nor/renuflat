@@ -218,6 +218,7 @@
     text-align: center;
   }
 
+  /* RENOVATIONS */
   .tabs {
     margin: 0;
     width: 100%;
@@ -275,5 +276,52 @@
 
   .renovations-body-button {
     margin-top: 16px;
+  }
+
+  /* REMONT */
+  .remont .container {
+    gap: 24px;
+    /* align-items: center; */
+  }
+
+  .remont-title {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  .remont-lines-list {
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+
+  .remont-lines-item {
+    max-width: 300px;
+
+    flex-basis: 100%;
+
+    flex-direction: row;
+  }
+
+  .remont-lines-item p {
+    font: 22px/26px "Montserrat Medium";
+  }
+
+  .remont-line-header {
+    flex-direction: column;
+  }
+
+  .remont-line {
+    height: 90px;
+    width: 4px;
+    padding-inline: 0;
+  }
+
+  .remont-footer {
+    margin-top: 32px;
+    max-width: 300px;
+  }
+
+  .remont-button {
+    max-width: max-content;
   }
 }
