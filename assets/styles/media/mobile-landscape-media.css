@@ -217,4 +217,63 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  .tabs {
+    margin: 0;
+    width: 100%;
+
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  .renovations-card {
+    padding: 0;
+    overflow: hidden;
+
+    flex-direction: column-reverse;
+    gap: 16px;
+
+    border-radius: 12px;
+  }
+
+  .renovations-image {
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    flex: none;
+  }
+
+  .renovations-body {
+    padding: 0 16px 24px 16px;
+
+    gap: 16px;
+  }
+
+  .renovations-body-title {
+    /* text-transform: none; */
+    font-family: "Montserrat SemiBold";
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.5%;
+  }
+
+  .renovations-item-title {
+    text-transform: none;
+    font-family: "Montserrat SemiBold";
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .renovations-item a {
+    flex-wrap: wrap;
+  }
+
+  .renovations-item-price {
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .renovations-body-button {
+    margin-top: 16px;
+  }
 }

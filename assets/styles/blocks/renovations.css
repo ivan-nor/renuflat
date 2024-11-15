@@ -39,14 +39,17 @@
   height: auto;
   max-width: 550px;
 
-  flex: 1 0 auto;
+  flex-grow: 1;
+  flex-basis: 50%;
+  /* flex: 1 0 auto; */
 }
 
 .renovations-image > img {
   height: 100%;
-  width: auto;
+  width: 100%;
 
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 .renovations-body-title {
@@ -58,7 +61,7 @@
 }
 
 .renovations-body {
-  flex: 1;
+  flex: 1 1 50%;
 
   display: flex;
   flex-direction: column;

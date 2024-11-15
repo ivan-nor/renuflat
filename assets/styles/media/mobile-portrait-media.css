@@ -360,21 +360,18 @@
     padding: 0;
     overflow: hidden;
 
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 16px;
 
     border-radius: 12px;
   }
 
   .renovations-image {
-    order: 1;
-
     height: 160px;
     aspect-ratio: 1;
   }
 
   .renovations-body {
-    order: 2;
     padding: 0 16px 24px 16px;
 
     gap: 16px;
@@ -400,7 +397,7 @@
   }
 
   .renovations-item-price {
-    /* flex-basis: 100%; */
+    flex-basis: 100%;
     order: 3;
   }
 

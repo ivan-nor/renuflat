@@ -7,4 +7,12 @@
   /* .mobile-hidden {
     display: inherit;
   } */
+
+  #renovations-tabs .button {
+    padding: 16px 20px;
+  }
+
+  #renovations-tabs .tabs {
+    margin-bottom: 44px;
+  }
 }

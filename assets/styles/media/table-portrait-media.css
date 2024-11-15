@@ -94,4 +94,19 @@
   .contacts-form-footer-description {
     max-width: 80%;
   }
+
+  .renovations .tabs {
+    margin: 0;
+    width: 50%;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  .renovations-item > a {
+    flex-wrap: wrap;
+  }
+  .renovations-item-price {
+    flex-basis: 100%;
+    order: 3;
+  }
 }
