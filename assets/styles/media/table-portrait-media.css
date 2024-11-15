@@ -78,4 +78,8 @@
     grid-row: 3/5;
     grid-column: 3/5;
   }
+
+  .project-banner {
+    padding: 8px 24px;
+  }
 }
