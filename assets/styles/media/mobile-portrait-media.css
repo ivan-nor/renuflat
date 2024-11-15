@@ -333,13 +333,8 @@
     font: 22px/28px "Montserrat SemiBold";
   }
 
-  .contacts-form-description {
-    max-width: 100%;
-
-  }
-
-  .contacts-form-input {
-    max-width: 100%;
+  .contacts-form-footer-description {
+    max-width: 80%;
   }
 
   .contacts-form-footer {
@@ -453,7 +448,6 @@
 
   /* MODAL */
   .modal-content .contacts-container {
-    max-width: 360px;
     min-width: 360px;
     padding-inline: 16px;
   }

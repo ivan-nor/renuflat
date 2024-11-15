@@ -324,4 +324,8 @@
   .remont-button {
     max-width: max-content;
   }
+
+  .fancybox__content .contacts-form-title {
+    font: 22px / 28px "Montserrat SemiBold";
+  }
 }
