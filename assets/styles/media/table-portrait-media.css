@@ -1,19 +1,68 @@
 /*  portrait table */
 @media (min-width: 641px) and (max-width: 960px) {
-  .desktop-hidden {
+  /* .desktop-hidden {
     display: none !important;
-  }
-
-  /* .mobile-hidden {
-    display: inherit;
   } */
 
   .table-hidden {
-    display: none !important;
+    display: none;
   }
 
   section {
     padding: 44px 0;
+  }
+
+  .main-header {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .main-header-head {
+    /* width: 100%; */
+    flex-grow: 5;
+  }
+
+  .main-header-menu.mobile-hidden {
+    display: none;
+  }
+
+  .main-header-menu {
+    flex-basis: 100%;
+    order: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-header-menu-list {
+    /* flex-direction: column; */
+    padding: 0 16px;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .main-header-menu-link {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .sub-header-list {
+    padding-right: 8px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0.5px solid var(--light-grey-color);
+  }
+
+  .sub-menu-list {
+    padding: 0 8px;
   }
 
   .banner .container {

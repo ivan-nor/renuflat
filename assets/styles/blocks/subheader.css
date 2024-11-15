@@ -4,7 +4,7 @@
   position: relative;
 
   background-color: var(--bg-color);
-  box-shadow: 0 2px 4px -4px var(--black-color);
+  box-shadow: 0 2px 5px -4px var(--black-color);
 }
 
 .sub-header > .container {

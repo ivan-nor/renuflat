@@ -8,6 +8,59 @@
     padding: 44px 0;
   }
 
+  .main-header {
+    padding: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .main-header-menu-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+
+    background-color: var(--bg-color);
+  }
+
+  .main-header-logo-image {
+    width: 120px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main-header-menu .sub-menu-list {
+    background-color: var(--bg-color);
+  }
+
+  .main-header-head {
+    width: 100%;
+  }
+
+  .main-header-menu-link {
+    text-transform: uppercase;
+  }
+
+  .main-header-button {
+    margin-bottom: 24px;
+  }
+
+  .sub-header-list {
+    padding-right: 8px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0.5px solid var(--light-grey-color);
+  }
+
+
   .banner {
     padding-top: 0;
   }

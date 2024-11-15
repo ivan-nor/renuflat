@@ -2,29 +2,21 @@ const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
 const dropdownMenuElement = document.querySelector('.main-header-menu')
 const mainHeaderButton = document.querySelector('.main-header-button')
-// const header = document.querySelector('.main-header')
-// console.log(header);
-// document.addEventListener('focusout', e => console.log(e.target))
 
-// header.addEventListener('focusout', (e) => {
-//   console.log('header blur');
-//   dropdownMenuElement.classList.toggle('mobile-hidden')
-//   mainHeaderButton.classList.toggle('mobile-hidden')
-//   dropdownOpenButton.classList.remove('hide')
-//   dropdownCloseButton.classList.add('hide')
-// })
 dropdownOpenButton.addEventListener('click', (e) => {
   // header.focus()
   dropdownMenuElement.classList.toggle('mobile-hidden')
   mainHeaderButton.classList.toggle('mobile-hidden')
   dropdownOpenButton.classList.add('hide')
   dropdownCloseButton.classList.remove('hide')
+  updateMainMargin()
 })
 dropdownCloseButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.add('mobile-hidden')
   mainHeaderButton.classList.add('mobile-hidden')
   dropdownCloseButton.classList.add('hide')
   dropdownOpenButton.classList.remove('hide')
+  updateMainMargin()
 })
 
 const servicesTabButtons = document.querySelectorAll('#services-tabs button')
