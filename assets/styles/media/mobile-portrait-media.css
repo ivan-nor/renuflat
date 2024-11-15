@@ -174,17 +174,15 @@
   }
 
   .guarantee-items {
-    padding-inline: 16px;
-    height: auto;
-    width: 100%;
+    padding: 16px;
 
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     row-gap: 44px;
 
-    background-image: url(/assets/images/guarantee-mobile.svg);
+    background-image: url(/assets/images/guarantee-rotate.svg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
 
   .guarantee-item {

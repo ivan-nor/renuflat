@@ -83,6 +83,61 @@
     font: 22px/28px "Montserrat Medium";
   }
 
+  .guarantee-title {
+    margin-bottom: 32px;
+  }
+
+  .guarantee-items {
+    height: 600px;
+    width: auto;
+    padding: 16px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 44px;
+
+    background-image: url(/assets/images/guarantee-rotate.svg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .guarantee-item {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .guarantee-item-title {
+    gap: 16px;
+  }
+
+  .guarantee-item-title h3 {
+    font-size: 1.5rem;
+    /* line-height: 28px;
+    font-family: "Montserrat SemiBold";
+    letter-spacing: -0.5%; */
+  }
+
+  .guarantee-icon svg {
+    height:  100%;
+    width: auto;
+  }
+
+  .guarantee-item-5 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .guarantee-item-6 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .guarantee-item-15 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .guarantee-item-16 {
+    grid-area: 4 / 2 / 5 / 1;
+  }
+
   .swiper img {
     width: 100%;
   }
