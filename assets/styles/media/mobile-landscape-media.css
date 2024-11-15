@@ -4,6 +4,10 @@
     display: none !important;
   }
 
+  section {
+    padding: 44px 0;
+  }
+
   .banner {
     padding-top: 0;
   }
@@ -193,5 +197,24 @@
     margin-top: 12px;
 
     font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .contacts .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .contacts-card {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .contacts-card-title {
+    max-width: 600px;
+    font: 44px / 56px "Montserrat Medium";
+    text-transform: uppercase;
+    text-align: center;
   }
 }

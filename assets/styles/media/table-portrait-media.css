@@ -12,6 +12,10 @@
     display: none !important;
   }
 
+  section {
+    padding: 44px 0;
+  }
+
   .banner .container {
     grid-template-columns: auto 1fr;
     column-gap: 16px;
@@ -81,5 +85,13 @@
 
   .project-banner {
     padding: 8px 24px;
+  }
+
+  .contacts-form-footer {
+    flex-wrap: wrap;  
+  }
+
+  .contacts-form-footer-description {
+    max-width: 80%;
   }
 }
