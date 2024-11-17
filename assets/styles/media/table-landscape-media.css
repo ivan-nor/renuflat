@@ -70,4 +70,13 @@
     margin-bottom: 44px;
   }
 
+  .contacts-container {
+    flex-grow: 2;
+    flex-basis: auto;
+  }
+
+  .remont-title {
+    font: 44px/56px "Montserrat Medium";
+}
+
 }

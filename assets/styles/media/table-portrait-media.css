@@ -143,6 +143,14 @@
     padding: 8px 24px;
   }
 
+  .contacts-container {
+    max-width: 100%;
+
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
   .contacts-form-footer {
     flex-wrap: wrap;  
   }
@@ -180,5 +188,9 @@
     flex: none;
 
     padding: 32px;
+  }
+
+  .remont-title {
+    font: 44px / 56px "Montserrat Medium";
   }
 }
