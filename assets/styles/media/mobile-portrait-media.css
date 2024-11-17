@@ -1,3 +1,6 @@
+@media (min-width: 360px) and (max-width: 480px) {
+}
+
 @media (max-width: 480px) {
   /* .desktop-hidden {
     display: block !important;
@@ -72,22 +75,27 @@
   }
 
   /* BANNER */
+  .banner {
+    padding-top: 0;
+  }
+
   .banner .container {
     padding-top: 44px;
 
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
-    grid-gap: 16px;
-    justify-items: center
+    grid-gap: 12px;
+    justify-items: center;
   }
 
   .banner-title {
     padding-top: 24px;
+    padding-bottom: 4px;
 
     grid-row: 1/2;
     grid-column: 1/1;
 
-    font-size: clamp(50px, 12vw, 58px);
+    font-size: clamp(44px, 12vw, 58px);
     line-height: 1.25;
     font-family: "Montserrat SemiBold";
     /* font: 44px/56px "Montserrat SemiBold"; */
@@ -101,6 +109,8 @@
   }
 
   .banner-button {
+    margin-top: 12px;
+
     grid-row: 4/5;
     grid-column: 1/1;
   }
@@ -108,6 +118,8 @@
   .banner-footer-description {
     grid-row: 5/6;
     grid-column: 1/1;
+
+    text-align: center;
   }
 
   .banner-image {
