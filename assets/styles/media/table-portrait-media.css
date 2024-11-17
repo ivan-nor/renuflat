@@ -14,7 +14,8 @@
 
   .main-header {
     flex-wrap: wrap;
-    row-gap: 12px;
+    row-gap: 0;
+    column-gap: 20px;
   }
 
   .main-header-head {
@@ -27,6 +28,8 @@
   }
 
   .main-header-menu {
+    padding-bottom: 20px;
+
     flex-basis: 100%;
     order: 3;
 
@@ -73,6 +76,10 @@
 
   .banner-title {
     font-size: clamp(4.5rem, 11vw, 5rem);
+  }
+
+  .banner-description {
+    display: none;
   }
 
   .banner-button {

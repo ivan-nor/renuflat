@@ -2,6 +2,21 @@ const dropdownOpenButton = document.querySelector('.main-header-burger-button')
 const dropdownCloseButton = document.querySelector('.cross-button')
 const dropdownMenuElement = document.querySelector('.main-header-menu')
 const mainHeaderButton = document.querySelector('.main-header-button')
+const subHeader= document.querySelector('.sub-header')
+const mainHeaderHead = document.querySelector('.main-header-head')
+
+// ВЫЧИСЛЕНИЕ ОТСТУПА MAIN
+window.addEventListener('load', updateMainMargin);
+window.addEventListener('resize', updateMainMargin);
+function updateMainMargin() {
+  // const headerHeight = document.querySelector('header').offsetHeight;
+  const mainHeader = document.querySelector('.main-header');
+  const subHeaderHeight = subHeader.offsetHeight
+  const mainHeaderHeadHeight = mainHeaderHead.offsetHeight
+  const paddingHeight = subHeader.offsetHeight + mainHeaderHead.offsetHeight;
+  console.log(mainHeader, subHeaderHeight, mainHeaderHeadHeight, paddingHeight);
+  document.querySelector('main').style.paddingTop = `${paddingHeight}px`;
+}
 
 dropdownOpenButton.addEventListener('click', (e) => {
   // header.focus()
@@ -167,14 +182,6 @@ const handleChats = (e) => {
 chatButton.addEventListener('click', handleChats)
 showModalButton.addEventListener("click", showModal)
 
-
-// ВЫЧИСЛЕНИЕ ОТСТУПА MAIN
-window.addEventListener('load', updateMainMargin);
-window.addEventListener('resize', updateMainMargin);
-function updateMainMargin() {
-  const headerHeight = document.querySelector('header').offsetHeight;
-  document.querySelector('main').style.paddingTop = `${headerHeight}px`;
-}
 
 // ОБРАБОТКА ПАГИНАЦИИ ПРОЕКТОВ
 const projectsPagination = document.querySelector('.projects-pagination-button')
