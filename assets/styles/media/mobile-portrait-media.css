@@ -1,3 +1,6 @@
+@media (min-width: 320px) and (max-width: 360px) {
+}
+
 @media (min-width: 360px) and (max-width: 480px) {
 }
 
@@ -135,6 +138,12 @@
   }
 
   /* SERVICES */
+  .services-title {
+    font-size: 28px;
+    line-height: 36px;
+    font-family: "Montserrat Semibold";
+  }
+
   .services-cards {
     flex-direction: column;
     gap: 32px;
@@ -462,7 +471,7 @@
 
   /* MODAL */
   .modal-content .contacts-container {
-    min-width: 360px;
+    min-width: 250px;
     padding-inline: 16px;
   }
 }

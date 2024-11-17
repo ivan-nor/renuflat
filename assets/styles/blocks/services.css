@@ -129,7 +129,7 @@
 }
 
 .services-card-chips-item {
-  padding: 8px;
+  padding: 8px 12px;
 
   border: 1px solid var(--gray-color);
   border-radius: 30px;
