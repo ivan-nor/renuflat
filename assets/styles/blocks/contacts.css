@@ -1,25 +1,30 @@
-.contacts {
+.contacts .container {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .contacts-container {
   padding: 16px;
+  max-width: 760px;
+
+  flex-basis: 760px;
+  flex-shrink: 2;
 
   display: flex;
   flex-direction: column;
   gap: 24px;
 
-  flex: 2 1 66%;
-
   border-radius: 12px;
   background-image: url('/renuflat/assets/images/contacts-background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .contacts-form {
-  max-width: 56%;
+  max-width: 400px;
 
   display: flex;
   flex-direction: column;
@@ -27,13 +32,15 @@
 }
 
 .contacts-form-title {
-  max-width: 60%;
+  max-width: 400px;
+
   font: 44px/56px "Montserrat Medium";
 }
 
 .contacts-form-input {
   height: 52px;
-  width: 80%;
+  max-width: 80%;
+  min-width: 250px;
   display: inline-block;
 
   color: var(--black-color);
@@ -51,10 +58,12 @@
 .contacts-form-description {
   max-width: 80%;
   font: 16px/20px "Montserrat Regular";
+  letter-spacing: -0.5%;
 }
 
 .contacts-form-footer {
   display: flex;
+  align-items: flex-start;
   gap: 12px;
 }
 
@@ -68,15 +77,19 @@
 }
 
 .contacts-card {
+  /* max-height: 260px; */
+  /* min-height: 260px; */
   max-width: 360px;
+  min-width: 280px;
   padding: 16px;
 
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-
-  flex: 1 1 33%;
   align-self: flex-start;
+
+  flex-basis: 360px;
+  /* flex-grow: 2; */
 
   background-color: var(--white-color);
   border-radius: 12px;

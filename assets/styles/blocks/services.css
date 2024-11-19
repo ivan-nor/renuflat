@@ -1,4 +1,4 @@
-.services {
+.services > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,27 +24,29 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  box-sizing: border-box;
   border-radius: var(--border-radius);
 
   background-color: var(--white-color);
 }
 
 .tab-button {
-  /* box-sizing: border-box; */
   border: 0;
 }
 
 .tab-button[tabindex="0"] {
-  box-sizing: border-box;
-
   background-color: var(--orange-color);
   color: var(--white-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Montserrat Bold";
 }
 
 .tab-button[tabindex="-1"]  {
   background-color: var(--white-color);
   color: var(--black-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Montserrat Regular";
 }
 
 .services-cards {
@@ -52,95 +54,64 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+  align-items: stretch;
+  gap: clamp(20px, 3vw, 40px);
 }
 
 .services-tabpanel {
   display: none;
-  transition: all 0.2s;
 }
 
 .services-tabpanel.active {
-  display: flex;
+  display: block;
 }
 
 .services-card {
-  max-width: 360px;
+  /* max-width: 360px; */
+  min-width: 280px;
+  flex: 1 0 30%;
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
 
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--white-color);
 }
 
-.services-card-title {
-  padding: 16px;
-  font: 24px/30px "Montserrat Medium";
-  letter-spacing: -0.5%;
-  text-transform: none;
-}
-
-.services-card-image {
-  object-fit: cover;
-  box-sizing: border-box;
-  /* overflow: hidden; */
-}
-
-
-.services-card-body {
+.services-card-bottom {
   padding: 0 16px 16px 16px;
 
   display: flex;
   flex-direction: column;
-  /* gap: 12px; */
 }
 
-
-
-.services-card-description {
-  margin-bottom: 12px;
-
-  font: 16px/20px "Montserrat Regular";
-  letter-spacing: -0.5%;
+.services-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  /* overflow: hidden; */
 }
 
-.services-card-body-content {
-  margin: 32px 0;
+.services-card-body {
+  padding: 16px;
 
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
-
-
-/* .services-card:nth-child(1) {
-  background-image: url("./renuflat/assets/images/card_1.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-origin: border-box;
-  background-position: top;
-  
+.services-card-title {
+  font-size: clamp(20px, 2.1vw, 24px);
+  line-height: 1.25;
+  font-family: "Montserrat Medium";
+  letter-spacing: -0.5%;
+  text-transform: none;
+  white-space: nowrap;
 }
-
-.services-card:nth-child(2) {
-  background-image: url("2");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-origin: border-box;
-  background-position: top;
-}
-
-.services-card:nth-child(3) {
-  background-image: url("./renuflat/assets/images/card_3.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-origin: border-box;
-  background-position: top;
-} */
 
 .services-card-chips {
   display: flex;
@@ -148,19 +119,29 @@
   gap: 12px;
 }
 
-.services-card-chips-disabled-button {
+.services-card-chips-description {
+  flex: 1 0 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+  letter-spacing: -0.5%;
+}
+
+.services-card-chips-item {
+  padding: 8px 12px;
+
   border: 1px solid var(--gray-color);
   border-radius: 30px;
   color: var(--gray-color);
   white-space: nowrap;
-  padding: 8px;
   font: 12px/16px "Montserrat SemiBold";
   background-color: transparent;
   cursor: default;
 }
 
 .services-card-button {
-  width: 100%;
+  margin-top: 32px;
 }
 
 .services-card-price {

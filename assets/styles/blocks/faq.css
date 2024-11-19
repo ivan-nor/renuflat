@@ -26,9 +26,12 @@
 }
 
 .faq-item-title {
-  /* margin: 0; */
   font: 16px/20px "Montserrat SemiBold";
   text-transform: none;
+}
+
+.faq-item-description {
+  padding-right: 40px;
 }
 
 .faq-item-button {
@@ -41,6 +44,7 @@
   justify-content: center;
 
   background-color: var(--bg-color);
+  border-color: var(--bg-color);
   border-radius: 50%;
 }
 
@@ -48,22 +52,17 @@
   cursor: pointer;
 }
 
-.faq-item-button-icon {
-  width: 40px;
-  height: 40px;
-  background-image: url("/renuflat/assets/images/arrow_back_ios_new.svg");
-  background-size: contain;
+.faq-item-button svg {
+  fill: var(--black-color);
 }
 
-.faq-item:hover .faq-item-button-icon {
-  width: 40px;
-  height: 40px;
-  background-image: url("/renuflat/assets/images/arrow_back_white.svg");
-  background-size: contain;
+.faq-item:hover .faq-item-button svg {
+  fill: var(--white-color);
 }
 
 .faq-item:hover .faq-item-button {
   background-color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .faq-item-divider {
@@ -75,5 +74,5 @@
 }
 
 .faq * {
-  transition: all 0.2s;
+  transition: rotate 0.2s;
 }

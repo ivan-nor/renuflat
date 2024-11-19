@@ -1,8 +1,5 @@
-.guarantee {
-  position: relative;
+.guarantee-items {
   height: 600px;
-  padding: 0;
-  margin: 64px 0;
   width: 100%;
   
   display: grid;
@@ -14,45 +11,50 @@
   background-size: 100%;
   background-origin: border-box;
   background-position: center;
-
-  counter-reset: items 0;
 }
 
 .guarantee-title {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-
   font: 44px/56px "Montserrat Medium";
 }
 
 .guarantee-item {
+  padding: 20px;
+
   display: flex;
   flex-direction: column;
-  gap: 16px;
-
-  padding: 20px;
+  gap: 1.3vw;
 }
 
 .guarantee-item-title {
   display: flex;
-  gap: 16px;
+  gap: 1.3vw;
   align-items: center;
 }
 
-.guarantee-item-title svg {
-  height: 30px;
+.guarantee-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guarantee-icon svg {
+  height:  clamp(1rem, 2vw, 1.25rem);
+  width: auto;
 }
 
 .guarantee-item-title h3 {
   margin: 0;
-  font: 24px/30px "Montserrat Medium";
+
+  font-size:  22px;
+  line-height: 30px;
+  font-family: "Montserrat Medium";
 }
 
 .guarantee-item p {
-  font: 16px/20px "Montserrat Regular";
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+  letter-spacing: -0.5%;
 }
 
 .guarantee-item-5 {

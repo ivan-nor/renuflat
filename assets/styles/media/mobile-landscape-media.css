@@ -1,0 +1,401 @@
+/*  landscape mobile */
+@media (min-width: 481px) and (max-width: 640px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  section {
+    padding: 44px 0;
+  }
+
+  .main-header {
+    padding: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .main-header-menu-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+
+    background-color: var(--bg-color);
+  }
+
+  .main-header-logo-image {
+    width: 120px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main-header-menu .sub-menu-list {
+    background-color: var(--bg-color);
+  }
+
+  .main-header-head {
+    width: 100%;
+
+    padding: 0;
+  }
+
+  .main-header-menu-link {
+    text-transform: uppercase;
+  }
+
+  .main-header-button {
+    margin-bottom: 24px;
+  }
+
+  .sub-header-list {
+    padding-right: 8px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0.5px solid var(--light-grey-color);
+  }
+
+
+  .banner {
+    padding-top: 0;
+
+    box-shadow: 0 2px 5px -4px var(--black-color);
+  }
+
+  .banner .container {
+    padding-top: 44px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 16px;
+    justify-items: center
+  }
+
+  .banner-title {
+    padding-top: 24px;
+
+    grid-row: 1/2;
+    grid-column: 1/1;
+
+    font-size: clamp(50px, 12vw, 58px);
+    line-height: 1.25;
+    font-family: "Montserrat SemiBold";
+    text-align: center;
+  }
+
+  .banner-description {
+    grid-row: 2/3;
+    grid-column: 1/1;
+    text-align: center;
+  }
+
+  .banner-button {
+    grid-row: 4/5;
+    grid-column: 1/1;
+  }
+
+  .banner-footer-description {
+    grid-row: 5/6;
+    grid-column: 1/1;
+
+    text-align: center;
+  }
+
+  .banner-image {
+    z-index: -1;
+    height: auto;
+    width: 100%;
+
+    grid-row: 1/4;
+    grid-column: 1/1;
+
+    content: url(/assets/images/banner-mobile.png);
+    border-radius: 15px;
+  }
+
+  .services-card-title {
+    /* font-size: 22px;
+    line-height: 28px; */
+    font-family: "Montserrat SemiBold";
+  }
+  
+  .services-card-chips-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat Regular";
+  }
+  
+  .services-card-chips-item {
+    font-size: 10px;
+    line-height: 16px;
+    font-family: "Montserrat Bold";
+  }
+  
+  .services-card-price {
+    font: 24px/36px "Montserrat SemiBold";
+  }
+  
+  .services-card-period {
+    font: 22px/28px "Montserrat Medium";
+  }
+
+  .guarantee-title {
+    margin-bottom: 32px;
+  }
+
+  .guarantee-items {
+    height: 600px;
+    width: auto;
+    padding: 16px 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 44px;
+
+    background-image: url(/assets/images/guarantee-rotate.svg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .guarantee-item {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .guarantee-item-title {
+    gap: 16px;
+  }
+
+  .guarantee-item-title h3 {
+    font-size: 1.5rem;
+  }
+
+  .guarantee-icon svg {
+    height:  100%;
+    width: auto;
+  }
+
+  .guarantee-item-5 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .guarantee-item-6 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .guarantee-item-15 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .guarantee-item-16 {
+    grid-area: 4 / 2 / 5 / 1;
+  }
+
+  .swiper img {
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 2px !important;
+    margin-inline: 4px !important;
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 32px !important;
+  }
+
+  .project-banner {
+    top: 16px;
+    left: 16px;
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 12px;
+    column-gap: 16px;
+
+    border-radius: 12px;
+  }
+
+  .project-banner div:first-child {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    font-size: clamp(16px, 4.4vw, 20px);
+    line-height: 1.25;
+    font-family: "Montserrat SemiBold";
+    letter-spacing: -0.5%;
+  }
+
+  .project-area {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .project-period {
+    /* display: flex; */
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .project-price {
+    /* display: flex; */
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .project-button {
+    position: static;
+    width: 100%;
+    margin-top: 12px;
+
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .contacts .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .contacts-card {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .contacts-card-title {
+    max-width: 600px;
+    font: 44px / 56px "Montserrat Medium";
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts-form-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  /* RENOVATIONS */
+  .tabs {
+    margin: 0;
+    width: 100%;
+
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  .renovations-card {
+    padding: 0;
+    overflow: hidden;
+
+    flex-direction: column-reverse;
+    gap: 16px;
+
+    border-radius: 12px;
+  }
+
+  .renovations-image {
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    flex: none;
+  }
+
+  .renovations-body {
+    padding: 0 16px 24px 16px;
+
+    gap: 16px;
+  }
+
+  .renovations-body-title {
+    /* text-transform: none; */
+    font-family: "Montserrat SemiBold";
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.5%;
+  }
+
+  .renovations-item-title {
+    text-transform: none;
+    font-family: "Montserrat SemiBold";
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .renovations-item a {
+    flex-wrap: wrap;
+  }
+
+  .renovations-item-price {
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .renovations-body-button {
+    margin-top: 16px;
+  }
+
+  /* REMONT */
+  .remont .container {
+    gap: 24px;
+    /* align-items: center; */
+  }
+
+  .remont-title {
+    font: 44px/56px "Montserrat Medium";
+  }
+
+  .remont-lines-list {
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+
+  .remont-lines-item {
+    max-width: 300px;
+
+    flex-basis: 100%;
+
+    flex-direction: row;
+  }
+
+  .remont-lines-item p {
+    font: 22px/26px "Montserrat Medium";
+  }
+
+  .remont-line-header {
+    flex-direction: column;
+  }
+
+  .remont-line {
+    height: 90px;
+    width: 4px;
+    padding-inline: 0;
+  }
+
+  .remont-footer {
+    margin-top: 32px;
+    max-width: 300px;
+  }
+
+  .remont-button {
+    max-width: max-content;
+  }
+
+  .fancybox__content .contacts-form-title {
+    font: 22px / 28px "Montserrat SemiBold";
+  }
+}

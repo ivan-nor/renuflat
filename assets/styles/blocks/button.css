@@ -1,7 +1,6 @@
 .button {
-  height: 52px;
-  width: max-content;
   padding: 16px 24px;
+  margin: 0;
 
   display: inline-flex;
   align-items: center;
@@ -16,29 +15,24 @@
 
   background-color: var(--orange-color);
   color: var(--white-color);
-  box-sizing: border-box;
-  border: none;
-  border-radius: 100px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 .button:hover {
   background-color: var(--gray-color);
   color: var(--white-color);
-  border: none;
+  border-color: var(--gray-color);
   cursor: pointer;
-  box-sizing: border-box;
 }
 
 .button.transparent {
-  /* position: relative; */
   color: var(--black-color);
   background-color: transparent;
-  border: var(--border);
-
 }
 
 .button.transparent:hover {
   color: var(--white-color);
   background-color: var(--gray-color);
-  border: none;
+  border-color: var(--gray-color);
 }
