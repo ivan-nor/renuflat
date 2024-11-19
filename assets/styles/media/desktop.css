@@ -7,4 +7,8 @@
   /* .mobile-hidden {
     display: inherit;
   } */
+
+  .contacts-card-title.table-hidden {
+    display: none;
+  }
 }
