@@ -1,0 +1,192 @@
+/*  portrait table */
+@media (min-width: 641px) and (max-width: 960px) {
+  /* .desktop-hidden {
+    display: none !important;
+  } */
+
+  .table-hidden {
+    display: none;
+  }
+
+  section {
+    padding: 44px 0;
+  }
+
+  .main-header {
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 20px;
+  }
+
+  .main-header-head {
+    flex-grow: 5;
+  }
+
+  .main-header-menu.mobile-hidden {
+    display: none;
+  }
+
+  .main-header-menu {
+    padding-bottom: 20px;
+
+    flex-basis: 100%;
+    order: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-header-menu-list {
+    padding: 0 16px;
+
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .main-header-menu-link {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .sub-header-list {
+    padding-right: 8px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+
+    border: 0.5px solid var(--light-grey-color);
+  }
+
+  .sub-menu-list {
+    padding: 0 8px;
+  }
+
+  .banner .container {
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .banner-title {
+    font-size: clamp(4.5rem, 11vw, 5rem);
+  }
+
+  .banner-description {
+    display: none;
+  }
+
+  .banner-button {
+    grid-row:  1/2;
+    grid-column: 2/3;
+  }
+
+  .banner-footer-description {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .banner-image {
+    grid-column: 1/3;
+  }
+
+  .services-card-title {
+    font-family: "Montserrat SemiBold";
+  }
+
+  /* .guarantee-items {
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .guarantee-item-title {
+    gap: 16px;
+  }
+
+  .guarantee-item-title h3 {
+    font-size: 1.5rem;
+  }
+
+  .guarantee-icon svg {
+    height:  100%;
+    width: auto;
+  } */
+
+  .guarantee-item-5 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .guarantee-item-6 {
+    grid-row: 2/3;
+    grid-column: 3/5;
+  }
+  .guarantee-item-15 {
+    grid-row: 3/5;
+    grid-column: 1/3;
+  }
+  .guarantee-item-16 {
+    grid-row: 3/5;
+    grid-column: 3/5;
+  }
+
+  .project-banner {
+    padding: 8px 24px;
+  }
+
+  .contacts-container {
+    max-width: 100%;
+
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
+  .contacts-form-footer {
+    flex-wrap: wrap;  
+  }
+
+  .contacts-form-footer-description {
+    max-width: 80%;
+  }
+
+  .renovations .tabs {
+    margin: 0;
+    width: 50%;
+
+    flex-direction: column;
+    
+    border-radius: 24px;
+  }
+
+  .renovations-card {
+    padding: 0;
+    overflow: hidden;
+
+    flex-direction: column-reverse;
+    gap: 0;
+
+    border-radius: 12px;
+  }
+
+  .renovations-image {
+    height: 280px;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .renovations-body {
+    flex: none;
+
+    padding: 32px;
+  }
+
+  .remont-title {
+    font: 44px / 56px "Montserrat Medium";
+  }
+}

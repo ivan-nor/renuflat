@@ -12,5 +12,13 @@
 @import url('blocks/projects.css');
 @import url('blocks/reviews.css');
 @import url('blocks/contacts.css');
+@import url('blocks/renovations.css');
+@import url('blocks/remont.css');
+@import url('blocks/faq.css');
 @import url('blocks/footer.css');
-@import url('media.css');
+/* @import url('media/media.css'); */
+@import url('media/desktop.css');
+@import url('media/table-portrait-media.css');
+@import url('media/table-landscape-media.css');
+@import url('media/mobile-landscape-media.css');
+@import url('media/mobile-portrait-media.css');

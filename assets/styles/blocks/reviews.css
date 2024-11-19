@@ -1,28 +1,40 @@
+.reviews .container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews-title {
+  max-width: 600px;
+
   font: 44px/56px "Montserrat Medium";
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 64px;
 }
 
 .reviews-cards {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 12px;
+    width: 100%;
+    overflow-x: auto;
 
-  /* это для медиазапросов */
-  overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .reviews-card {
   position: relative;
 
   padding: 16px;
-  max-height: 360px;
+  max-height: 260px;
   min-height: 260px;
   max-width: 360px;
-  flex: 0 0 33%;
+  width: 30%;
+  min-width: 280px;
+  flex-grow: 2;
+  /* flex: 0 0 33%; */
 
   display: flex;
   flex-direction: column;
@@ -31,16 +43,30 @@
   border-radius: 12px;
   background-color: var(--white-color);
   overflow: hidden;
+
+  transition: height 4s;
 }
 
-.reviews-card::after {
-  content: "";
+.reviews-card-after {
+  /* content: ""; */
+
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 32px;
-  background: linear-gradient(180deg, transparent, var(--white-color) 50%);
+
+  background: linear-gradient(180deg, transparent, var(--white-color) 70%);
+  cursor: pointer;
+
+  transition: all 0s;
+}
+
+.reviews-card-after:hover {
+  background: linear-gradient(180deg, transparent, #f1f1f1 90%);
+  height: 52px;
+
+  /* transition: all 0s; */
 }
 
 .reviews-card-header {
@@ -62,4 +88,6 @@
 
 .reviews-card-text {
   font: 16px/20px "Montserrat Regular";
+
+  /* cursor: pointer; */
 }

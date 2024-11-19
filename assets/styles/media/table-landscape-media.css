@@ -1,0 +1,82 @@
+/*  landscape table */
+@media (min-width: 961px) and (max-width: 1199px) {
+  /* .desktop-hidden {
+    display: none !important;
+  } */
+
+  /* .mobile-hidden {
+    display: inherit;
+  } */
+
+  .table-hidden {
+    display: none;
+  }
+
+  .main-header {
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 20px;
+  }
+
+  .main-header-head {
+    /* width: 100%; */
+    flex-grow: 5;
+  }
+
+  .main-header-menu.mobile-hidden {
+    display: none;
+  }
+
+  .main-header-menu {
+    padding-bottom: 20px;
+
+    flex-basis: 100%;
+    order: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-header-menu-list {
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .sub-header-list {
+    padding-right: 8px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .sub-header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0.5px solid var(--light-grey-color);
+  }
+
+  .sub-menu-list {
+    padding: 0 8px;
+  }
+
+  #renovations-tabs .button {
+    padding: 16px 20px;
+  }
+
+  #renovations-tabs .tabs {
+    margin-bottom: 44px;
+  }
+
+  .contacts-container {
+    flex-grow: 2;
+    flex-basis: auto;
+  }
+
+  .remont-title {
+    font: 44px/56px "Montserrat Medium";
+}
+
+}

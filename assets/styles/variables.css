@@ -1,9 +1,10 @@
 :root {
   --bg-color: #f4f4f4;
-  --black-color: #333;
+  --black-color: #161614;
   --white-color: #fefefe;
   --orange-color: #FB9B2A;
   --gray-color: #9E9E9E;
+  --light-grey-color: #D0D0D0;
 
   --container-width: 1200px;
   --container-padding-x: 20px;

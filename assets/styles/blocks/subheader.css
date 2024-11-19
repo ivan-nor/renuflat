@@ -1,23 +1,29 @@
 .sub-header {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   z-index: 2000;
+  position: relative;
 
   background-color: var(--bg-color);
-  box-shadow: 0 2px 4px -4px var(--black-color);
+  box-shadow: 0 2px 5px -4px var(--black-color);
+}
+
+.sub-header > .container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .sub-header-list {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  align-self: center;
+  /* align-self: center; */
   /* gap: 20px; */
 }
 
 .sub-header-item {
-  height: 100%;
+  /* height: 100%; */
   /* padding-inline: 10px; */
   /* display: flex;
   align-items: center;
@@ -27,31 +33,33 @@
   font: 14px/20px "Montserrat Regular";
 }
 
+
 .sub-header-link {
-  height: 40px;
+  /* height: 40px; */
+  padding: 8px 0;
   display: flex;
   align-items: center;
-  gap: 10px;
-
+  /* gap: 10px; */
+  
   color: var(--black-color);
   text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+}
 
+.sub-header-item:first-child > .sub-header-link {
+  padding-left: 0;
+}
+
+.sub-header-item:last-child > .sub-header-link {
+  padding-right: 0;
 }
 
 .sub-header-divider {
   height: 20px;
   width: 1px;
+  margin: 0 8px;
   border: 0.5px solid var(--black-color);
-  /* box-sizing: content-box; */
 }
 
-.sub-header-dropdown {
-  background-image: url(/assets/images/dropdown-triangle.png);
-  background-repeat: no-repeat;
-  
-  width: 8px;
-  height: 4px;
-
-  padding-inline: 10px;
-}
 

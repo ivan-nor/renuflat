@@ -1,4 +1,4 @@
-.dropdown {
+.dropdown-menu {
   position: absolute;
   top: 100px;
   left: 0;
@@ -15,6 +15,8 @@
 }
 
 .dropdown-menu-list {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,19 +48,14 @@
   border-radius: var(--border-radius);
 }
 
-.dropdown-menu-button {
-  /* margin: 44px; */
-}
-
 .cross-button {
-  position: absolute;
-  right: 18px;
-  top: -75px;
+  position: relative;
+
   border-radius: var(--border-radius);
   border: 0;
   background-color: var(--bg-color);
-  width: 50px;
-  height: 50px;
+  width: 24px;
+  height: 24px;
 }
 
 .cross-button:hover {
@@ -69,8 +66,8 @@
   content: '';
   position: absolute;
   top: 50%;
-  left: 7px;
-  width: 70%;
+  right: 0;
+  width: 100%;
   height: 2px;
   background-color: var(--black-color);
   border-radius: 5px;
