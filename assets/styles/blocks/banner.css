@@ -7,7 +7,7 @@
   /* align-items: center; */
 
   grid-template-columns: auto 250px auto;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
   row-gap: 2em;
   column-gap: 2em;
 }
