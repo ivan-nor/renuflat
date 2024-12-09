@@ -7,11 +7,17 @@
 }
 
 .reviews-title {
-  max-width: 600px;
+  /* max-width: 600px; */
+  align-self: start;
 
   font: 44px/56px "Montserrat Medium";
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.reviews-description {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .reviews-cards {
