@@ -17,7 +17,7 @@
   gap: 24px;
 
   border-radius: 12px;
-  background-image: url('/assets/images/contacts-background.png');
+  background-image: url('../../images/contacts-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

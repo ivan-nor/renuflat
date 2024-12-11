@@ -80,7 +80,7 @@
     grid-row: 1/4;
     grid-column: 1/1;
 
-    content: url(/assets/images/banner-mobile.png);
+    content: url("assets/images/banner-mobile.png");
     border-radius: 15px;
   }
 
@@ -267,7 +267,7 @@
     grid-row: 1/4;
     grid-column: 1/1;
 
-    content: url(/assets/images/banner-mobile.png);
+    content: url("assets/images/banner-mobile.png");
     /* object-fit: cover;
     object-position: bottom right;
     box-sizing: content-box; */
@@ -336,7 +336,7 @@
     grid-template-rows: repeat(4, auto);
     row-gap: 44px;
 
-    background-image: url(/assets/images/guarantee-mobile.svg);
+    background-image: url("assets/images/guarantee-mobile.svg");
     background-position: center;
     background-size: contain;
   }

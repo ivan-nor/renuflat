@@ -39,7 +39,7 @@
   width: 140px;
   height: 24px;
 
-  background-image: url("/assets/images/logo.svg");
+  background-image: url("../../images/logo.svg");
 }
 
 .main-header-menu-list {
@@ -147,5 +147,5 @@
 }
 
 .sub-menu {
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
